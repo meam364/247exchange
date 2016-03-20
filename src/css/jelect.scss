@@ -20,9 +20,6 @@
   padding-left: 8px;
   padding-right: 8px;
 }
-.jelect_state_active {
-  box-shadow: 0 0 0 1px #ccc, 0 2px 4px rgba(0,0,0,0.25);
-}
 .jelect_state_disabled {
   opacity: 0.5;
   cursor: default;
@@ -78,8 +75,9 @@
 }
 .jelect-options {
   position: absolute;
-  top: 100%;
-  left: 0;
+  padding: 7px;
+  top: 23px;
+  left: -3px;
   z-index: 200;
   margin-top: 1px;
   display: none;
@@ -162,11 +160,15 @@
   overflow-wrap: normal;
   text-overflow: ellipsis;
   white-space: nowrap;
-  color: #222;
+  color: #353a3f;
   transition: 0.125s ease-out;
   backface-visibility: hidden;
   transform: translateZ(0);
   will-change: background-color, text-decoration;
+  margin-bottom: 2px;
+  &:last-of-type {
+      margin-bottom: 0;
+  }
 }
 .jelect-option:last-child {
   margin-bottom: 0;

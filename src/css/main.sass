@@ -141,6 +141,7 @@ a:focus
             text-decoration: none
             color: #fff
             border: 2px solid transparent
+            background-clip: padding-box
 
 .btn-action
     position: relative
@@ -153,9 +154,9 @@ a:focus
     font-weight: 400
     text-transform: uppercase
     width: 100%
-    height: 53px
+    height: 50px
     text-align: center
-    line-height: 53px
+    line-height: 50px
     z-index: 1
     &:before
         position: absolute
@@ -169,10 +170,6 @@ a:focus
     @media (max-width: 950px)
         height: 46px
         line-height: 46px
-    @media (max-width: 766px)
-        height: 73px
-        line-height: 73px
-        font-size: 140%
     &:hover
         color: #fff
         text-decoration: none
@@ -340,11 +337,11 @@ a:focus
 
     &__logo
         display: block
-        margin-left: -150px
+        margin-left: -100px
         background: url(../images/logo.png) no-repeat
         background-size: contain
-        width: 618px
-        height: 325px
+        width: 588px
+        height: 309px
         @media (max-width: 950px)
             margin-left: 0
             width: 278px
@@ -426,19 +423,70 @@ a:focus
             font-weight: 700
             text-transform: uppercase
             cursor: pointer
+            &-en
+                &:before
+                    content: ''
+                    display: inline-block
+                    width: 28px
+                    height: 18px
+                    background: url(../images/en-mob.png) no-repeat
+                    margin-right: 8px
+                    vertical-align: middle
+            &-ru
+                &:before
+                    content: ''
+                    display: inline-block
+                    width: 28px
+                    height: 18px
+                    background: url(../images/ru-mob.png) no-repeat
+                    margin-right: 8px
+                    vertical-align: middle
 
-        &__list
-            display: none
+            &-es
+                &:before
+                    content: ''
+                    display: inline-block
+                    width: 28px
+                    height: 18px
+                    background: url(../images/es-mob.png) no-repeat
+                    margin-right: 8px
+                    vertical-align: middle
+
 
         &__en
             &:before
                 content: ''
                 display: inline-block
-                width: 28px
-                height: 18px
+                width: 21px
+                height: 14px
                 background: url(../images/en-mob.png) no-repeat
                 margin-right: 8px
                 vertical-align: middle
+                background-size: contain
+        &__ru
+            &:before
+                content: ''
+                display: inline-block
+                width: 21px
+                height: 14px
+                background: url(../images/ru-mob.png) no-repeat
+                margin-right: 8px
+                vertical-align: middle
+                background-size: contain
+
+        &__es
+            &:before
+                content: ''
+                display: inline-block
+                width: 21px
+                height: 14px
+                background: url(../images/es-mob.png) no-repeat
+                margin-right: 8px
+                vertical-align: middle
+                background-size: contain
+        &__list
+            display: none
+
 
 
         @media (min-width: $screen-sm-min)
@@ -574,7 +622,6 @@ a:focus
 
         .menu__link
             padding-top: 47px
-
     &__item
         background-image: linear-gradient(to top, #ececec 0%, #f1f1f1 100%)
 
@@ -601,23 +648,32 @@ a:focus
         &:hover
             color: #fff
             text-decoration: none
-    & .open
+    .open
         background-image: linear-gradient(to top, #f5881f 0%, #ffbf10 100%)
 
-    & .open &
-        &__link
+    & > .open
+        > .menu__link
             color: #fff
             &:before
                 transform: rotate(90deg)
                 color: #d73e20
-        &__dropdown
+        > .menu__dropdown
             display: block
+    .dropdown-menu,
     &__dropdown
+        position: static
+        float: none
         margin-top: -1px
         margin-bottom: 1px
         display: none
+        background: none
+        border: none
+        padding: 0
+        margin: 0
         list-style: none
         padding: 0
+        &_in
+            display: none
         &-item
             border-top: 1px solid #ffefc1
             box-shadow: 0 -1px 0 #e97200
@@ -1176,6 +1232,106 @@ a:focus
                 background-position: -52px -99px
 
 .modal
+    &-login-mob
+        &__logo
+            margin-top: 22px
+        .btn-modal
+            background: url(../images/modal-btn.png) no-repeat 50% 50%
+            background-size: cover
+            height: 40px
+            text-shadow: 0.5px 0.9px 0 #dededb
+            color: #1b1b1b
+            font-size: 21px
+            font-weight: 900
+            padding: 0 10px
+            text-align: center
+            text-transform: uppercase
+            &:hover
+                background: url(../images/modal-btn-hover.png) no-repeat 50% 50%
+                background-size: cover
+        &__btn
+            text-align: right
+    &-login-mob &
+        &__link
+            font-size: 18px
+            color: white
+        &__tabs
+            text-align: left
+            .active
+                a
+                    background: none!important
+                    color: #fff!important
+                    font-size: 22px!important
+                    text-decoration: none!important
+        &__tabs_mini
+            margin-bottom: 16px
+            border: none
+            .modal__tab
+                a
+                    font-size: 18px!important
+                    text-transform: uppercase!important
+                    padding: 8px 18px!important
+                    border: 2px solid white!important
+                    background: none!important
+                    border-radius: 2px!important
+                    text-decoration: none!important
+                    color: #fff!important
+                    &:hover
+                        color: #151515!important
+
+            .active
+                a
+                    border: 2px solid transparent!important
+                    border-bottom: 1px dashed #fff!important
+                    padding: 0px!important
+
+
+
+
+
+
+        &__tab
+            color: white
+            font-size: 18px
+            background: none
+            vertical-align: middle
+
+            a
+                text-decoration: underline
+                background: none
+                &:hover
+                    color: #151515
+                    text-decoration: underline
+                    background: none
+        &-footer
+            text-align: right
+        &__link
+            color: #fff
+            font-size: 18px
+            text-decoration: underline
+        &-content
+             background-color: #8db70e
+             border-radius: 0
+             .close
+                 position: absolute
+                 top: 10px
+                 right: 10px
+                 background-image: none
+                 width: auto
+                 height: auto
+                 &:hover
+                     background-image: none
+                     svg
+                         path
+                             fill: #f5881f
+             .input
+                 height: 40px
+                 line-height: 40px
+
+        &-dialog
+            margin: 0
+
+
     &-content
         background-color: white
         border-radius: 6px
@@ -1199,11 +1355,23 @@ a:focus
 
     &-header
         border: none
-        padding: 0
+        padding: 0 15px
     &__tabs
         text-align: right
         border: none
         margin-bottom: 20px
+        .active
+            a
+                border: none!important
+                box-shadow: none
+                color: #8cb60e!important
+                font-size: 12px!important
+                border-bottom: dashed 1px #92ba0c!important
+                background-image: none
+                padding: 0
+                margin: 0 10px
+                padding-bottom: 2px
+
 
     &__tab
         display: inline-block!important
@@ -1221,17 +1389,6 @@ a:focus
             &:hover
                 box-shadow: none
 
-    .active
-        a
-            border: none!important
-            box-shadow: none
-            color: #8cb60e!important
-            font-size: 12px!important
-            border-bottom: dashed 1px #92ba0c!important
-            background-image: none
-            padding: 0
-            margin: 0 10px
-            padding-bottom: 2px
 
     &-footer
         text-align: left

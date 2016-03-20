@@ -9,6 +9,71 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <div class="modal-login-mob modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                        <path fill="#fff" fill-rule="evenodd" d="M.83 4.81L4.81.83l28.2 28.19-3.99 3.99L.83 4.81z"/>
+                        <path fill="#fff" fill-rule="evenodd" d="M32.44 4.01L28.42-.01-.01 28.42l4.02 4.02L32.44 4.01z"/>
+                      </svg>
+                  </button>
+                  <img src="./images/logo-menu.png" class="modal-login-mob__logo img-responsive"/>
+                </div>
+                <div class="modal-body">
+                    <ul class="nav nav-tabs modal__tabs" role="tablist">
+                      <li class="active modal__tab"><a href="#Login"  role="tab" data-toggle="tab">Авторизация</a></li>
+                      <li class="modal__tab" ><a href="#register" data-toggle="tab">Регистрация</a></li>
+                    </ul>
+                    <div class="tab-content">
+                      <div class="tab-pane active" id="Login">
+                          <input type="email" placeholder="E-mail" class="form-control input">
+                          <input type="password" placeholder="Password" class="form-control input">
+                          <div class="modal__justify">
+                              <a href="#" class="modal__link">Forgot Password?</a>
+                          </div>
+                          <div class="modal-login-mob__btn">
+                              <button type="button" class="btn btn-modal">Login</button>
+                          </div>
+
+                      </div>
+                      <div class="tab-pane" id="register">
+                          <ul class="nav nav-tabs modal__tabs_mini" role="tablist">
+                            <li class="active modal__tab"><a href="#personal-mob" data-toggle="tab">Personal</a></li>
+                            <li class="modal__tab" ><a href="#corporate-mob"  data-toggle="tab">Corporate</a></li>
+                          </ul>
+                          <div class="tab-content">
+
+                              <div class="tab-pane active" id="personal-mob">
+                                  <input type="email" placeholder="Confirm E-mail" class="form-control input">
+                                  <input type="text" placeholder="First Name" class="form-control input">
+                                  <input type="text" placeholder="Last Name" class="form-control input">
+                                  <div class="modal-login-mob__btn">
+                                      <button type="button" class="btn btn-modal">Register</button>
+                                  </div>
+                              </div>
+                              <div class="tab-pane" id="corporate-mob">
+                                  <input type="email" placeholder="E-mail" class="form-control input">
+                                  <input type="text" placeholder="Company Name" class="form-control input">
+                                  <input type="text" placeholder="Company Position" class="form-control input">
+                                  <input type="text" placeholder="FirstName" class="form-control input">
+                                  <input type="text" placeholder="LastName" class="form-control input">
+                                  <div class="modal-login-mob__btn">
+                                      <button type="button" class="btn btn-modal">Register</button>
+                                  </div>
+                              </div>
+                          </div>
+
+
+                      </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="modal-login modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
         <div class="modal-dialog modal-sm">
             <div class="modal-content">
@@ -38,18 +103,16 @@
                 </div>
                 <div class="modal-body">
                     <ul class="nav nav-tabs modal__tabs" role="tablist">
-                      <li role="presentation" class="active modal__tab"><a href="#Personal" aria-controls="Personal" role="tab" data-toggle="tab">Personal</a></li>
-                      <li role="presentation" class="modal__tab" ><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Corporate</a></li>
+                      <li class="active modal__tab"><a href="#Personal" aria-controls="Personal" role="tab" data-toggle="tab">Personal</a></li>
+                      <li class="modal__tab" ><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Corporate</a></li>
                     </ul>
                     <div class="tab-content">
-                      <div role="tabpanel" class="tab-pane active" id="Personal">
+                      <div class="tab-pane active" id="Personal">
                           <input type="e-mail" placeholder="Confirm E-mail" class="input form-control">
                           <input type="text" placeholder="First Name" class="input form-control">
                           <input type="text" placeholder="Last Name" class="input form-control">
                       </div>
-                      <div role="tabpanel" class="tab-pane" id="profile">...</div>
-                      <div role="tabpanel" class="tab-pane" id="messages">...</div>
-                      <div role="tabpanel" class="tab-pane" id="settings">...</div>
+                      <div class="tab-pane" id="profile">...</div>
                     </div>
 
 
@@ -69,18 +132,18 @@
                 <div class="col-sm-7 col-xs-5 header__bar">
                     <div id="jelectTool1" role="combobox" class="jelect js-jelect choose-lang-mob">
                         <input id="jelectToolInput" value="en" data-text="EN" type="text" class="jelect-input js-jelect-input">
-                        <div tabindex="1" role="button" class="choose-lang-mob__current choose-lang-mob__en js-jelect-current">en</div>
+                        <div tabindex="1" role="button" class="choose-lang-mob__current js-jelect-current choose-lang-mob__current-en">en</div>
                         <div role="list-box" class="jelect-options js-jelect-options">
                             <div class="jelect-scroller js-jelect-scroller">
-                                <div data-val="en" tabindex="1" role="option" class="jelect-option js-jelect-option jelect-option_state_active"><div class='jelect-option__value js-jelect-option-value choose-lang-mob__en'>EN</div></div>
-                                <div data-val="es" tabindex="1" role="option" class="jelect-option js-jelect-option"><div class='jelect-option__value js-jelect-option-value choose-lang-mob__sp'>ES</div></div>
-                                <div data-val="ru" tabindex="1" role="option" class="jelect-option js-jelect-option"><div class='jelect-option__value js-jelect-option-value choose-lang-mob__ru'>RU</div></div>
+                                <div data-val="en" tabindex="1" role="option" class="jelect-option js-jelect-option  choose-lang-mob__en jelect-option_state_active"><div class='jelect-option__value js-jelect-option-value'>EN</div></div>
+                                <div data-val="es" tabindex="1" role="option" class="jelect-option js-jelect-option choose-lang-mob__es "><div class='jelect-option__value js-jelect-option-value'>ES</div></div>
+                                <div data-val="ru" tabindex="1" role="option" class="jelect-option js-jelect-option choose-lang-mob__ru "><div class='jelect-option__value js-jelect-option-value'>RU</div></div>
                             </div>
                         </div>
                     </div>
-                    <a href="#" data-toggle="modal" data-target=".modal-register"class="btn-simple">Register</a>
+                    <a href="#" data-toggle="modal" data-target=".modal-register" class="btn-simple">Register</a>
                     <a href="#" data-toggle="modal" data-target=".modal-login" class="btn-simple">Login</a>
-                    <a href="#" class="header__login">
+                    <a href="#" href="#" data-toggle="modal" data-target=".modal-login-mob" class="header__login" >
                         <svg height="40" width="35" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 40">
                             <path stroke-width="5" stroke="#272c31" fill="none" fill-rule="evenodd" d="M 32 29.84 C 32 29.84 31.89 29.98 31.89 29.98 C 28.05 34.51 22.94 37 17.5 37 C 12.06 37 6.95 34.51 3.12 29.98 C 3.12 29.98 3 29.84 3 29.84 C 3 29.84 3.03 29.67 3.03 29.67 C 3.77 24.92 6.83 19.63 10.68 17.45 C 10.68 17.45 12.92 20.85 17.5 20.85 C 21.14 20.85 24.32 17.45 24.32 17.45 C 28.17 19.63 31.23 24.92 31.98 29.67 C 31.98 29.67 32 29.84 32 29.84 Z M 17.5 19.98 C 22.26 19.98 26.13 16.17 26.13 11.49 C 26.13 6.81 22.26 3 17.5 3 C 12.74 3 8.87 6.81 8.87 11.49 C 8.87 16.17 12.74 19.98 17.5 19.98 Z" />
                         </svg>
@@ -161,23 +224,41 @@
                 <div class="col-md-3">
                     <div class="sidebar">
                         <ui class="menu">
-                            <li class="menu__item"><a class="menu__link" href="#">Main page</a></li>
-                            <li class="menu__item"><a class="menu__link" href="#">About our company</a></li>
-                            <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
-                            <li class="menu__item"><a class="menu__link" href="#">Our rates</a></li>
-                            <li class="menu__item"><a class="menu__link" href="#">ATM cards</a></li>
-                            <li class="menu__item">
-                                <a class="menu__link menu__toggle"
-                                     id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Affiliate program</a>
+                            <li class="menu__item"><a class="menu__link" href="#">SERVICES</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">RATES & FEES</a></li>
+                            <li class="menu__item dropdown">
+                                <a class="menu__link menu__toggle dropdown-toggle"
+                                     id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown">Affiliate program</a>
                                     <ul class="menu__dropdown" aria-labelledby="dLabel">
                                         <li class="menu__dropdown-item"><a class="menu__dropdown-link" href="#">Main page</a></li>
                                         <li class="menu__dropdown-item"><a class="menu__dropdown-link" href="#">About our company</a></li>
                                         <li class="menu__dropdown-item"><a class="menu__dropdown-link" href="#">Services</a></li>
                                     </ul>
                             </li>
-                            <li class="menu__item"><a class="menu__link" href="#">о платёжных системах</a></li>
-                            <li class="menu__item"><a class="menu__link" href="#">f.a.q.</a></li>
-                            <li class="menu__item"><a class="menu__link" href="#">Contacts</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">PAYMENT METHODS</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">DIGITAL CURRENCIES</a></li>
+                            <li class="menu__item dropdown">
+                                <a class="menu__link menu__toggle dropdown-toggle"
+                                      data-target="#" href="http://example.com" data-toggle="dropdown">About</a>
+                                    <ul class="menu__dropdown">
+                                        <li class="menu__dropdown-item">
+                                            <a class="menu__dropdown-link menu__toggle trigger"
+                                                    id="test"
+                                                  data-target="test" data-toggle="dropdown">Legal Info</a>
+                                                <ul class="menu__dropdown sub-menu" aria-labelledby="test">
+                                                    <li class="menu__dropdown-item"><a class="menu__dropdown-link" href="#">Out Company</a></li>
+                                                    <li class="menu__dropdown-item"><a class="menu__dropdown-link" href="#">Out Company</a></li>
+                                                    <li class="menu__dropdown-item"><a class="menu__dropdown-link" href="#">Out Company</a></li>
+                                                    <li class="menu__dropdown-item"><a class="menu__dropdown-link" href="#">Out Company</a></li>
+                                                    <li class="menu__dropdown-item"><a class="menu__dropdown-link" href="#">Out Company</a></li>
+                                                    <li class="menu__dropdown-item"><a class="menu__dropdown-link" href="#">Out Company</a></li>
+                                                </ul>
+                                        </li>
+                                        <li class="menu__dropdown-item"><a class="menu__dropdown-link" href="#">Legal Info</a></li>
+                                        <li class="menu__dropdown-item"><a class="menu__dropdown-link" href="#">Newst</a></li>
+                                    </ul>
+                            </li>
+                            <li class="menu__item"><a class="menu__link" href="#">Help</a></li>
                         </ui>
                         <div class="latest-news">
                             <h4 class="heading heading_orange">Latest news</h4>
@@ -287,12 +368,8 @@
                                         <h3 class="heading heading_orange">What's hot</h3>
                                         <ul class="hot__list">
                                             <li class="hot__item">
-                                                <a href="#" class="hot__title">Pecunix за LR без комиссий!</a>
-                                                <p class="hot__text">buy 1000 to 2000 petsunih for HR without commissions</p>
-                                            </li>
-                                            <li class="hot__item">
-                                                <a href="#" class="hot__title">LR за WMU,комиссия 1%!</a>
-                                                <p class="hot__text">buy 1000 to 2000 petsunih for HR without commissions</p>
+                                                <a href="#" class="hot__title">Bank withdrawals are cheaper now</a>
+                                                <p class="hot__text">Our fee for withdrawing Bitcoin and altcoins with a bank wire (SWIFT) transfer (USD, EUR) and SEPA transfer is only 0.25% now! You can submit your orders here.</p>
                                             </li>
                                         </ul>
                                         <div class="more"><a href="#" class="more__btn">All offers</a></div>
