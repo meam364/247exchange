@@ -1151,6 +1151,8 @@ a:focus
             top: 0
             color: #b1b1b1
             font-family: Tahoma
+            @media (max-width: 766px)
+                top: 5px
 
     &__link
         color: #4d4d4c
@@ -1158,6 +1160,9 @@ a:focus
         text-decoration: underline
         line-height: 14px
         display: block
+        @media (max-width: 766px)
+            font-size: 16px
+            line-height: 30px
 
     &__copy
         color: #b6b6b6
@@ -1172,7 +1177,13 @@ a:focus
     &__banners
         @media (max-width: 766px)
             text-align: center
-
+    &__banner
+        width: 66px
+        height: 26px
+        @media (max-width: 766px)
+            margin-right: 20px
+            &:last-of-type
+                margin-right: 0
 .follow-mob
     margin-top: 40px
     display: none
