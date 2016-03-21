@@ -61,6 +61,9 @@ a:focus
     line-height: 28px
     display: none
     vertical-align: middle
+    &:hover,
+    &:active
+        background-color: #f4f4f6
 
 .btn-collapse
     display: block
@@ -113,6 +116,9 @@ a:focus
 
     @media (max-width: 766px)
         border-bottom: none
+        position: absolute
+        top: -8px
+        right: 0
     &__btn
         display: inline-block
         font-size: 14px
@@ -237,6 +243,11 @@ a:focus
         @media (min-width: 950px)
             display: none
 
+    &__navbar-padding
+        padding: 44px 49px 25px 34px
+        @media (max-width: 766px)
+            padding-top: 34px
+
     &__login
         width: 34px
         height: 39px
@@ -286,13 +297,11 @@ a:focus
             &-collapse
                 position: absolute
                 z-index: 1000
-                top: 0
+                top: -7px
                 right: 0
                 background-color: #8db70e
-                padding: 44px 49px 40px 34px
                 width: 275px
                 @media (max-width: 766px)
-                    padding-top: 34px
                     left: 0
                     right: 0
                     top: 0
@@ -756,6 +765,7 @@ a:focus
         font-size: 26px
         padding-bottom: 20px
         margin-bottom: 29px
+        padding-right: 170px
     &_orange
         color: #f5881f
         border-color: #f5881f
@@ -780,8 +790,6 @@ a:focus
         min-height: 355px
         min-height: 0
         margin-bottom: 30px
-        .more
-            position: static
 
     &__list
         padding: 0
@@ -888,6 +896,8 @@ a:focus
     @media (max-width: 766px)
         & p
             font-size: 18px
+        .more
+            position: static
 
     .btn-collapse
         display: none
@@ -946,8 +956,6 @@ a:focus
         bottom: 0
         right: 0
         width: 100%
-        @media (max-width: 766px)
-            position: static
 
     @media (max-width: 950px)
         min-height: 178px
@@ -1022,8 +1030,6 @@ a:focus
         width: 100%
         @media (max-width: 950px)
             bottom: -18px
-        @media (max-width: 766px)
-            position: static
 
     &__list
         padding: 0
@@ -1063,6 +1069,7 @@ a:focus
         border: 8px solid #f2f2f2
 
 .press
+    position: relative
     font-size: 0
 
     &__item
@@ -1127,6 +1134,8 @@ a:focus
         margin-right: 12px
         filter: grayscale(100%)
         transition: filter .3s ease-in-out
+        @media (max-width: 950px)
+            filter: grayscale(0)
         &:hover
             filter: none
         img
@@ -1181,6 +1190,7 @@ a:focus
         display: none
 .footer
     margin-top: 46px
+    margin-bottom: 40px
     &__list
         list-style: none
         padding: 0
@@ -1241,6 +1251,7 @@ a:focus
     & .heading
         text-align: justify
         font-size: 0
+        padding-right: 0
         &:after
             content: ''
             display: inline-block
