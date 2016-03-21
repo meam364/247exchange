@@ -274,13 +274,11 @@ a:focus
                 margin: 0
                 border: none
                 padding: 0
-                transition: all .3s ease-in-out
                 &:hover,
                 &:active
                     background: none
-                    margin-right: 6px
                     .icon-bar:nth-child(3)
-                        margin-left: 0
+                        right: 0
 
 
             &-collapse
@@ -331,9 +329,10 @@ a:focus
             width: 25px
             height: 3px
             background-color: #272c31!important
-            transition: margin-left .3s ease-in-out
+            transition: right .3s ease-in-out
             &:nth-of-type(3)
-                margin-left: 6px
+                position: relative
+                right: -6px
 
 
     &__logo
