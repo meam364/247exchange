@@ -91,10 +91,10 @@ a:focus
     font-weight: 900
 .btn-form
     padding: 0
-    background: url(../images/btn-bg.png) no-repeat
+    background: url(../images/btn-login.png) no-repeat
     width: 90px
-    height: 30px
-    line-height: 30px
+    height: 26px
+    line-height: 26px
     text-align: center
     text-shadow: 0.5px 0.9px 0 #dededb
     color: #5c5c5c
@@ -103,7 +103,7 @@ a:focus
     text-transform: uppercase
     border: none
     &:hover
-        background: url(../images/btn-bg-hover.png) no-repeat
+        background-position: 0 -26px
         color: #5c5c5c
 
 .more
@@ -200,8 +200,10 @@ a:focus
 .header
     @media (max-width: 766px)
         background-color: #fff
-        padding-top: 36px
+        padding-top: 18px
         margin-bottom: 30px
+    &__btns
+        padding: 0
     &__col
         padding: 0
         padding-right: 10px
@@ -218,7 +220,7 @@ a:focus
         @media (max-width: 766px)
             position: static
             margin-top: 0
-            margin-bottom: 26px
+            margin-bottom: 0px
 
         // font-size: 0
         &:after
@@ -354,6 +356,7 @@ a:focus
             background-image: url(../images/logo-mob.png)
 
     &__actions
+        font-size: 0
         margin-top: 18px
         @media (max-width: 950px)
             margin-left: 10px
@@ -371,7 +374,8 @@ a:focus
             width: 135px
             margin-right: 5px
         @media (max-width: 766px)
-            width: 30%
+            margin-right: 0
+            width: 33.3%
         &-text
             text-align: right
             color: #e34627
@@ -627,6 +631,27 @@ a:focus
 
         &:hover
             background-image: linear-gradient(to top, #f5881f 0%, #ffbf10 100%)
+    .sub-menu
+        .menu__dropdown-link
+            position: relative
+            &:hover
+                color: #ffb737
+            &:before
+                content: ''
+                width: 3px
+                height: 3px
+                background: white
+                display: inline-block
+                vertical-align: middle
+                margin-top: -2px
+                margin-right: 8px
+        .menu__dropdown-item
+            border: none
+            box-shadow: none
+            &:hover
+                background: none
+            &:hover + .menu__dropdown-item
+                border: none !important
 
     &__link
         display: block
@@ -651,7 +676,22 @@ a:focus
     .open
         background-image: linear-gradient(to top, #f5881f 0%, #ffbf10 100%)
 
-    & > .open
+    &__dropdown-submenu.open
+        background: linear-gradient(to bottom, rgba(255,94,38,1) 0%,rgba(227,70,39,1) 100%)
+        border-top: 1px solid #ffefc1!important
+        box-shadow: 0 -1px 0 #e97200!important
+        &:hover + .menu__dropdown-item
+            border-top: 1px solid #ffefc1!important
+            box-shadow: 0 -1px 0 #e97200!important
+
+
+        .trigger:before
+            transform: rotate(90deg)
+        .sub-menu
+            display: block!important
+    .sub-menu
+        display: none!important
+    .open
         > .menu__link
             color: #fff
             &:before
@@ -698,6 +738,8 @@ a:focus
                 color: white
                 font-family: Tahoma
                 margin-right: 4px
+                display: inline-block
+                transition: transform .25s ease-in-out
 
             &:hover
                 text-decoration: none
@@ -727,18 +769,20 @@ a:focus
     @media (max-width: 950px)
         margin-top: 17px
         min-height: 465px
+        .more
+            position: absolute
+            bottom: 0
+            right: 0
+            width: 100%
+
     @media (max-width: 766px)
         margin-top: 0
         min-height: 355px
         min-height: 0
         margin-bottom: 30px
-    .more
-        position: absolute
-        bottom: 0
-        right: 0
-        width: 100%
-        @media (max-width: 766px)
+        .more
             position: static
+
     &__list
         padding: 0
         margin: 0
@@ -839,6 +883,7 @@ a:focus
             &:hover
                 background-position: -85px -87px
 .about
+    font-size: 12px
     margin-bottom: 42px
     @media (max-width: 766px)
         & p

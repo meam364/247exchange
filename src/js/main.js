@@ -29,6 +29,7 @@ $(function(){
 		grandparent.find('.left-caret').not(this).toggleClass('right-caret left-caret');
 		grandparent.find(".sub-menu:visible").not(current).hide();
 		current.toggle();
+        current.parent().toggleClass('open');
 		e.stopPropagation();
 	});
 	$(".menu__dropdown > li > a:not(.trigger)").on("click",function(){
