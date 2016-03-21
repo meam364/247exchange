@@ -119,6 +119,7 @@ a:focus
         margin-bottom: -1px
         background-image: linear-gradient(to top, #f5881f 0%, #ffbf10 99%, #ffbf10 100%)
         color: #fff
+        background-clip: padding-box
         padding: 3px 10px 4px 13px
         @media (max-width: 766px)
             border: 2px solid #f5881f
@@ -126,6 +127,8 @@ a:focus
             background-image: none
             font-size: 19px
             padding: 7px 22px 6px
+            &:hover
+                border: 2px solid transparent
         &:focus
             color: #fff
 
@@ -140,8 +143,6 @@ a:focus
             background-image: linear-gradient(to top, #848484 0%, #d2d2d2 99%, #d2d2d2 100%)
             text-decoration: none
             color: #fff
-            border: 2px solid transparent
-            background-clip: padding-box
 
 .btn-action
     position: relative
