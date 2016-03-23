@@ -12,29 +12,50 @@ $('.btn-collapse').on('click', function() {
     isMore = !isMore;
 })
 var jelect = $('.js-jelect'),
-    option = $('.js-jelect-option'),
-    current = $('.js-jelect-current'),
-    type;
+    current = $('.js-jelect-current');
 
 jelect.on( 'change', function (e) {
     current[0].className = 'choose-lang-mob__current js-jelect-current choose-lang-mob__current-' + this.value;
 });
 
 $(function(){
-	$(".menu__dropdown > li > a.trigger").on("click",function(e){
-		var current=$(this).next();
-		var grandparent=$(this).parent().parent();
-		if($(this).hasClass('left-caret')||$(this).hasClass('right-caret'))
-			$(this).toggleClass('right-caret left-caret');
-		grandparent.find('.left-caret').not(this).toggleClass('right-caret left-caret');
-		grandparent.find(".sub-menu:visible").not(current).hide();
-		current.toggle();
+	$(".trigger").on("click",function(e){
+		var current=$('.sub-menu');
+		current.stop(true, true).slideToggle(250);
         current.parent().toggleClass('open');
 		e.stopPropagation();
 	});
-	$(".menu__dropdown > li > a:not(.trigger)").on("click",function(){
-		var root=$(this).closest('.dropdown');
-		root.find('.left-caret').toggleClass('right-caret left-caret');
-		root.find('.sub-menu:visible').hide();
-	});
 });
+
+    $btns = $('.more__btn');
+
+    $(window).on('resize', checkResolution);
+
+    $(window).on('load', checkResolution);
+
+
+    function checkResolution() {
+        var $window = $(window);
+        if($window.width() >= 766) {
+            setName(true);
+        }else {
+            setName(false);
+        }
+    }
+
+    function setName(flag) {
+        $btns.map(function(i, btn) {
+            if(!flag) {
+                $(btn).html('View All')
+            }else {
+                $(btn).text($(this).data('text'))
+            }
+        })
+    }
+    // ADD SLIDEDOWN ANIMATION TO DROPDOWN //
+    $('.dropdown').on('click', function(e){
+      $(this).find('.menu__dropdown').first().stop(true, true).slideToggle(250);
+      $(this).toggleClass('open');
+    });
+
+    // ADD SLIDEUP ANIMATION TO DROPDOWN //
