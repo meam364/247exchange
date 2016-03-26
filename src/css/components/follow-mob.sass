@@ -1,0 +1,58 @@
+.follow-mob
+    margin-top: 40px
+    display: none
+    @media (max-width: 950px)
+        display: block
+    &__heading
+        color: #191919
+        font-size: 24px
+        display: inline-block
+    & .heading
+        text-align: justify
+        font-size: 0
+        padding-right: 0
+        &:after
+            content: ''
+            display: inline-block
+            height: 0
+            width: 100%
+
+    &__list
+        display: inline-block
+        vertical-align: bottom
+        font-size: 0
+
+    &__item
+
+        background-image: url(../images/follow-mob-sprite.png)
+        background-repeat: no-repeat
+        display: inline-block
+        width: 37px
+        height: 37px
+        margin-right: 4px
+        &:last-of-type
+            margin-right: 0
+
+        &_fb
+            background-position: -5px -5px
+
+            &:hover
+                background-position: -51px -5px
+
+        &_gp
+            background-position: -5px -52px
+
+            &:hover
+                background-position: -52px -52px
+
+        &_tw
+            background-position: -97px -5px
+
+            &:hover
+                background-position: -99px -52px
+
+        &_vk
+            background-position: -5px -99px
+
+            &:hover
+                background-position: -52px -99px

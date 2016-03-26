@@ -1,0 +1,155 @@
+.btn-simple
+    width: 140px
+    height: 28px
+    border: 1px solid #d2d2d2
+    text-align: center
+    color: #353a3f
+    font-size: 13px
+    text-transform: uppercase
+    line-height: 28px
+    display: none
+    vertical-align: middle
+    &:hover,
+    &:active
+        background-color: #f4f4f6
+
+.btn-collapse
+    display: block
+    width: 100%
+    background-color: #ebebeb
+    margin-top: 16px
+    .fa
+        transition: transform .3s ease-in-out
+    &_in
+        & .fa
+            transform: rotate(180deg)
+    &:focus
+        box-shadow: none!important
+    &__text
+        color: #494949
+        font-size: 18px
+        margin: 0 20px
+
+.btn-modal
+    background-image: linear-gradient(to top, #f5881f 0%, #ffbf10 100%)
+    border-radius: 3px
+    text-transform: uppercase
+    height: 42px
+    line-height: 42px
+    padding: 0 22px
+    color: #fefefe
+    font-size: 16pxm
+    font-weight: 900
+.btn-form
+    padding: 0
+    background: url(../images/btn-login.png) no-repeat
+    width: 90px
+    height: 26px
+    line-height: 26px
+    text-align: center
+    text-shadow: 0.5px 0.9px 0 #dededb
+    color: #5c5c5c
+    font-family: Verdana
+    font-size: 12px
+    text-transform: uppercase
+    border: none
+    &:hover
+        background-position: 0 -26px
+        color: #5c5c5c
+
+.more
+    display: block
+    border-bottom: 1px solid #d6d6d6
+    text-align: right
+
+    @media (max-width: 766px)
+        border-bottom: none
+        position: absolute
+        top: -8px
+        right: 0
+    &__btn
+        display: inline-block
+        font-size: 14px
+        margin-bottom: -1px
+        background-image: linear-gradient(to top, #f5881f 0%, #ffbf10 99%, #ffbf10 100%)
+        color: #fff
+        background-clip: padding-box
+        padding: 3px 10px 4px 13px
+        @media (max-width: 766px)
+            border: 2px solid #f5881f
+            color: #f5881f
+            background-image: none
+            font-size: 18px
+            padding: 7px 16px 6px
+            &:hover
+                border: 2px solid transparent
+        &:focus
+            color: #fff
+
+        &_green
+            background-image: linear-gradient(to top, #8cb60e 0%, #b9d500 99%, #b9d500 100%)
+            @media (max-width: 766px)
+                border: 2px solid #8db60d
+                color: #8db60d
+                background-image: none
+
+        &:hover
+            background-image: linear-gradient(to top, #848484 0%, #d2d2d2 99%, #d2d2d2 100%)
+            text-decoration: none
+            color: #fff
+
+.btn-action
+    position: relative
+    display: inline-block
+    background-color: #d73e20
+    background-image: linear-gradient(to top, #e34627 0%, #ff5e26 100%)
+    color: white
+    font-family: Impact
+    font-size: 18px
+    font-weight: 400
+    text-transform: uppercase
+    width: 100%
+    height: 50px
+    text-align: center
+    line-height: 50px
+    z-index: 1
+    @media (max-width: 766px)
+        max-width: 150px
+
+    &:before
+        position: absolute
+        left: 0
+        bottom: 0
+        top: 0
+        content: ''
+        background: url(../images/arrow-red.png) no-repeat
+        width: 46px
+        z-index: -1
+    @media (max-width: 950px)
+        height: 46px
+        line-height: 46px
+    &:hover
+        color: #fff
+        text-decoration: none
+        &:after
+            content: ''
+            position: absolute
+            top: 0
+            bottom: 0
+            right: 0
+            z-index: 10
+            left: 0
+            z-index: -1
+            background: rgba(255,255,255, .1)
+
+    &_color_green
+        background-color: #77b500
+        background-image: linear-gradient(to top, #8cb60e 0%, #b9d500 98%, #b9d500 100%)
+        &:before
+            background: url(../images/arrow-green.png) no-repeat
+
+    &_color_orange
+        background-color: #f3801f
+        background-image: linear-gradient(to top, #f5881f 0%, #ffbf10 100%)
+        &:before
+            background: url(../images/arrow-orange.png) no-repeat

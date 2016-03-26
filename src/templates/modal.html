@@ -1,0 +1,127 @@
+<div class="modal-login-mob modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                    <path fill="#fff" fill-rule="evenodd" d="M.83 4.81L4.81.83l28.2 28.19-3.99 3.99L.83 4.81z"/>
+                    <path fill="#fff" fill-rule="evenodd" d="M32.44 4.01L28.42-.01-.01 28.42l4.02 4.02L32.44 4.01z"/>
+                  </svg>
+              </button>
+              <img src="./images/logo-menu.png" class="modal-login-mob__logo img-responsive"/>
+            </div>
+            <div class="modal-body">
+                <div class="tab-content">
+                  <div class="tab-pane active" id="Login">
+                      <input type="email" placeholder="E-mail" class="form-control input">
+                      <input type="password" placeholder="Password" class="form-control input">
+                      <div class="modal__justify">
+                          <a href="#" class="modal__link">Forgot Password?</a>
+                          <a href="#register" class='modal__link' data-toggle="tab">Регистрация</a>
+                      </div>
+                      <div class="modal-login-mob__btn-wrap">
+                          <button type="button" class="modal-login-mob__btn">Login</button>
+                      </div>
+
+                  </div>
+                  <div class="tab-pane" id="register">
+                      <ul class="nav nav-tabs modal__tabs modal__tabs_mini" role="tablist">
+                        <li class="active modal__tab"><a href="#personal-mob" data-toggle="tab">Personal</a></li>
+                        <li class="modal__tab" ><a href="#corporate-mob"  data-toggle="tab">Corporate</a></li>
+                      </ul>
+                      <div class="tab-content">
+
+                          <div class="tab-pane active" id="personal-mob">
+                              <input type="email" placeholder="Confirm E-mail" class="form-control input">
+                              <input type="text" placeholder="First Name" class="form-control input">
+                              <input type="text" placeholder="Last Name" class="form-control input">
+                              <div class="modal-login-mob__btn-wrap">
+                                  <button type="button" class="modal-login-mob__btn">Register</button>
+                              </div>
+                          </div>
+                          <div class="tab-pane" id="corporate-mob">
+                              <input type="email" placeholder="E-mail" class="form-control input">
+                              <input type="text" placeholder="Company Name" class="form-control input">
+                              <input type="text" placeholder="Company Position" class="form-control input">
+                              <input type="text" placeholder="FirstName" class="form-control input">
+                              <input type="text" placeholder="LastName" class="form-control input">
+                              <div class="modal-login-mob__btn-wrap">
+                                  <button type="button" class="modal-login-mob__btn">Register</button>
+                              </div>
+                          </div>
+                      </div>
+
+
+                  </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-login modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                    <path fill="#fff" fill-rule="evenodd" d="M.83 4.81L4.81.83l28.2 28.19-3.99 3.99L.83 4.81z"/>
+                    <path fill="#fff" fill-rule="evenodd" d="M32.44 4.01L28.42-.01-.01 28.42l4.02 4.02L32.44 4.01z"/>
+                  </svg>
+              </button>
+            </div>
+            <div class="modal-body">
+                <input type="email" placeholder="E-mail" class="form-control input">
+                <input type="password" placeholder="Password" class="form-control input">
+                <div class="modal__justify">
+                    <a href="#" data-toggle="modal" data-target=".modal-register" data-dismiss="modal" class="modal__link modal__link_red">Register</a>
+                    <a href="#" class="modal__link">Forgot Password?</a>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-modal">Login</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal-register modal fade " tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                    <path fill="#fff" fill-rule="evenodd" d="M.83 4.81L4.81.83l28.2 28.19-3.99 3.99L.83 4.81z"/>
+                    <path fill="#fff" fill-rule="evenodd" d="M32.44 4.01L28.42-.01-.01 28.42l4.02 4.02L32.44 4.01z"/>
+                  </svg>
+              </button>
+            </div>
+            <div class="modal-body">
+                <ul class="nav nav-tabs modal__tabs" role="tablist">
+                  <li class="active modal__tab"><a href="#Personal" data-toggle="tab">Personal</a></li>
+                  <li class="modal__tab" ><a href="#coorp" data-toggle="tab">Corporate</a></li>
+                </ul>
+                <div class="tab-content">
+                  <div class="tab-pane active" id="Personal">
+                      <input type="e-mail" placeholder="Confirm E-mail" class="input form-control">
+                      <input type="text" placeholder="First Name" class="input form-control">
+                      <input type="text" placeholder="Last Name" class="input form-control">
+                  </div>
+                  <div class="tab-pane" id="coorp">
+                      <input type="email" placeholder="E-mail" class="form-control input">
+                      <input type="text" placeholder="Company Name" class="form-control input">
+                      <input type="text" placeholder="Company Position" class="form-control input">
+                      <input type="text" placeholder="FirstName" class="form-control input">
+                      <input type="text" placeholder="LastName" class="form-control input">
+                  </div>
+                </div>
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-modal">Register</button>
+            </div>
+        </div>
+    </div>
+</div>

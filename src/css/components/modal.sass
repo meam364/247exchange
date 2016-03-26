@@ -1,0 +1,173 @@
+.modal
+    &-login-mob
+        &__logo
+            margin-top: 22px
+            height: 30px
+        &__btn
+            border: 2px solid #fff
+            padding: 8px 20px
+            text-align: center
+            color: #fff
+            display: inline-block
+            background: none
+            font-size: 18px
+        &__btn-wrap
+            text-align: right
+            margin-top: 10px
+    &-login-mob &
+        &__tabs
+            text-align: left
+            .active
+                a
+                    background: none!important
+                    color: #fff!important
+                    font-size: 18px!important
+                    text-decoration: none!important
+                    vertical-align: middle
+        &__tabs_mini
+            margin-bottom: 16px
+            border: none
+
+        &__tabs
+            text-align: left
+            .active
+                a
+                    background: none!important
+                    color: #fff!important
+                    font-size: 18px!important
+                    text-decoration: none!important
+                    vertical-align: middle
+        &__tabs_mini
+            margin-bottom: 16px
+            border: none
+
+        &__tab
+            color: white
+            font-size: 18px
+            background: none
+            vertical-align: middle
+
+            a
+                text-decoration: underline
+                background: none
+                vertical-align: middle
+                &:hover
+                    color: #151515
+                    text-decoration: underline
+                    background: none
+
+        &-footer
+            text-align: right
+        &__link
+            color: #fff
+            font-size: 16px
+            text-decoration: underline
+        &-content
+             background-color: #8db70e
+             border-radius: 0
+             .close
+                 position: absolute
+                 top: 10px
+                 right: 10px
+                 background-image: none
+                 width: auto
+                 height: auto
+                 &:hover
+                     background-image: none
+                     svg
+                         path
+                             fill: #f5881f
+             .input
+                 height: 40px
+                 line-height: 40px
+
+        &-dialog
+            margin: 0
+
+
+    &-content
+        background-color: white
+        border-radius: 6px
+        box-shadow: none
+
+        .close
+            position: absolute
+            z-index: 100
+            top: -4px
+            right: -8px
+            width: 28px
+            height: 28px
+            background-image: linear-gradient(to top, #e34627 0%, #ff5e26 100%)
+            display: inline-block
+            text-align: center
+            border-radius: 50%
+            opacity: 1
+            color: #fff
+            &:hover
+                background-image: linear-gradient(to top, #e65a3f 0%, #ff703e 100%)
+
+    &-header
+        border: none
+        padding: 0 15px
+    &__tabs
+        text-align: right
+        border: none
+        margin-bottom: 10px
+        .active
+            a
+                border: none!important
+                box-shadow: none
+                font-size: 12px!important
+                background-image: linear-gradient(to top, #b9d500 0%, #b9d500 2%, #8cb60e 100%)
+                padding: 8px 10px 6px!important
+                color: #fff!important
+                &:hover
+                    background-image: linear-gradient(to top, #b9d500 0%, #b9d500 2%, #8cb60e 100%)!important
+                    color: #fff!important
+
+
+    &__tab
+        display: inline-block!important
+        float: none!important
+        border: none
+        a
+            border: none!important
+            border-radius: 2px!important
+            box-shadow: none!important
+            font-size: 12px
+            text-transform: uppercase
+            background-image: none
+            padding: 0!important
+            margin: 0 10px!important
+            color: #8cb60e!important
+            border-bottom: dashed 1px #92ba0c!important
+
+            &:hover
+                box-shadow: none
+                background: none!important
+                color: #151515!important
+    &-footer
+        text-align: left
+        border: none
+        padding-top: 0
+
+    &__justify
+        font-size: 0
+        text-align: justify
+        &:after
+            content: ''
+            width: 100%
+            height: 0
+            display: inline-block
+
+    &__link
+        color: #f5891f
+        font-size: 12px
+        text-decoration: underline
+        display: inline-block
+
+        &_red
+            color: #e54727
+
+    &-body
+        padding-top: 42px

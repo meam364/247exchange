@@ -1,0 +1,58 @@
+
+body
+    font-family: Arial
+    font-size: 14px
+    font-weight: 400
+    background-color: #fff
+    color: #494949
+    @media (max-width: 766px)
+        background-color: #f9f9f9
+
+.container
+    @media (min-width: 950px)
+        padding: 0
+.clear
+    clear: both
+    @media (min-width: $screen-sm)
+        clear: none
+
+a:focus
+    text-decoration: none
+    color: inherit
+.form-control
+    border-radius: 0
+    color: #9e9e9e
+    height: 24px
+    padding-bottom: 0
+    padding-top: 0
+    font-family: Arial
+    font-size: 12px
+    &:hover
+        border: 1px solid #9a9b9b
+        box-shadow: none
+    &:active,
+    &:focus
+        border: 1px solid #9a9b9b
+        box-shadow: 0 0 3px rgba(251, 170, 22, 0.75)
+
+.sidebar
+    width: 230px
+    @media (max-width: 950px)
+        display: none
+
+.main
+    border-bottom: 1px solid #ececec
+    padding-bottom: 40px
+    margin-bottom: 44px
+
+    @media (max-width: 949px)
+        border-bottom: none
+
+.wrap
+    padding-left: 50px
+    @media (max-width: 950px)
+        padding-left: 0
+
+.hide-tab
+    @media (max-width: 950px)
+        display: none

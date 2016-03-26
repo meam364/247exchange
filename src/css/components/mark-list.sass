@@ -1,0 +1,17 @@
+.mark-list
+    list-style: none
+    padding: 0
+
+    &__item
+        color: #494949
+        font-size: 14px
+        margin-bottom: 6px
+        @media (max-width: 766px)
+            font-size: 18px
+        &:before
+            content: ''
+            display: inline-block
+            width: 18px
+            height: 15px
+            background: url(../images/mark.png) no-repeat
+            margin-right: 10px

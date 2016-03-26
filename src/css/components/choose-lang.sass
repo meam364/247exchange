@@ -1,0 +1,153 @@
+.choose-lang
+    background-color: #8cb60e
+    background-image: linear-gradient(to top, #8cb60e 0%, #b9d500 38%, #8cb60e 78%, #8cb60e 100%)
+    border-radius: 0px 0px 6px 6px
+    text-align: center
+    padding: 6px 12px 10px
+    box-shadow: 0 4px 2px -2px rgba(0,0,0,.5)
+    display: inline-block
+    width: 150px
+    vertical-align: top
+    margin-right: 6px
+
+    @media (max-width: 950px)
+        display: none
+
+    &-mob
+        display: none
+        vertical-align: middle
+
+        &__current
+            color: #353a3f
+            font-size: 11px
+            font-weight: 700
+            text-transform: uppercase
+            cursor: pointer
+            &-en
+                &:before
+                    content: ''
+                    display: inline-block
+                    width: 28px
+                    height: 18px
+                    background: url(../images/en-mob.png) no-repeat
+                    margin-right: 8px
+                    vertical-align: middle
+            &-ru
+                &:before
+                    content: ''
+                    display: inline-block
+                    width: 28px
+                    height: 18px
+                    background: url(../images/ru-mob.png) no-repeat
+                    margin-right: 8px
+                    vertical-align: middle
+
+            &-es
+                &:before
+                    content: ''
+                    display: inline-block
+                    width: 28px
+                    height: 18px
+                    background: url(../images/es-mob.png) no-repeat
+                    margin-right: 8px
+                    vertical-align: middle
+
+
+        &__en
+            &:before
+                content: ''
+                display: inline-block
+                width: 21px
+                height: 14px
+                background: url(../images/en-mob.png) no-repeat
+                margin-right: 8px
+                vertical-align: middle
+                background-size: contain
+        &__ru
+            &:before
+                content: ''
+                display: inline-block
+                width: 21px
+                height: 14px
+                background: url(../images/ru-mob.png) no-repeat
+                margin-right: 8px
+                vertical-align: middle
+                background-size: contain
+
+        &__es
+            &:before
+                content: ''
+                display: inline-block
+                width: 21px
+                height: 14px
+                background: url(../images/es-mob.png) no-repeat
+                margin-right: 8px
+                vertical-align: middle
+                background-size: contain
+        &__list
+            display: none
+
+
+
+        @media (min-width: $screen-sm-min)
+            display: inline-block
+
+    &__title
+        color: white
+        font-family: Arial
+        font-size: 9px
+        font-weight: 400
+        text-transform: uppercase
+        margin-bottom: 5px
+
+    &__item
+        display: block
+        background-color: #cfe294
+        color: #739b2c
+        font-family: Verdana
+        font-size: 11px
+        font-weight: 700
+        text-transform: uppercase
+        margin-bottom: 3px
+        padding: 4px 0
+
+        &_ru
+            &:before
+                content: ''
+                display: inline-block
+                background: url(../images/ru.png) no-repeat
+                width: 15px
+                height: 12px
+                margin-right: 12px
+                vertical-align: middle
+                margin-top: -1px
+
+        &_en
+            &:before
+                content: ''
+                display: inline-block
+                background: url(../images/uk.png) no-repeat
+                width: 15px
+                height: 12px
+                margin-right: 12px
+                vertical-align: middle
+                margin-top: -1px
+
+        &_sp
+            &:before
+                content: ''
+                display: inline-block
+                background: url(../images/sp.png) no-repeat
+                width: 15px
+                height: 12px
+                margin-right: 12px
+                vertical-align: middle
+                margin-top: -1px
+
+        &:last-of-type
+            margin-bottom: 0
+
+        &_active,
+        &:hover
+            background-color: #729800
+            color: #fff

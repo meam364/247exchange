@@ -1,0 +1,102 @@
+<div class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-5 col-xs-7 header__col">
+                <a class="header__logo" href="#"></a>
+            </div>
+            <div class="col-sm-7 col-xs-5 header__bar">
+                <div id="jelectTool1" role="combobox" class="jelect js-jelect choose-lang-mob">
+                    <input id="jelectToolInput" value="en" data-text="EN" type="text" class="jelect-input js-jelect-input">
+                    <div tabindex="1" role="button" class="choose-lang-mob__current js-jelect-current choose-lang-mob__current-en">en</div>
+                    <div role="list-box" class="jelect-options js-jelect-options">
+                        <div class="jelect-scroller js-jelect-scroller">
+                            <div data-val="en" tabindex="1" role="option" class="jelect-option js-jelect-option  choose-lang-mob__en jelect-option_state_active"><div class='jelect-option__value js-jelect-option-value'>EN</div></div>
+                            <div data-val="es" tabindex="1" role="option" class="jelect-option js-jelect-option choose-lang-mob__es "><div class='jelect-option__value js-jelect-option-value'>ES</div></div>
+                            <div data-val="ru" tabindex="1" role="option" class="jelect-option js-jelect-option choose-lang-mob__ru "><div class='jelect-option__value js-jelect-option-value'>RU</div></div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" data-toggle="modal" data-target=".modal-register" class="btn-simple">Register</a>
+                <a href="#" data-toggle="modal" data-target=".modal-login" class="btn-simple">Login</a>
+                <a href="#" href="#" data-toggle="modal" data-target=".modal-login-mob" class="header__login" >
+                    <svg height="40" width="35" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 40">
+                        <path stroke-width="5" stroke="#272c31" fill="none" fill-rule="evenodd" d="M 32 29.84 C 32 29.84 31.89 29.98 31.89 29.98 C 28.05 34.51 22.94 37 17.5 37 C 12.06 37 6.95 34.51 3.12 29.98 C 3.12 29.98 3 29.84 3 29.84 C 3 29.84 3.03 29.67 3.03 29.67 C 3.77 24.92 6.83 19.63 10.68 17.45 C 10.68 17.45 12.92 20.85 17.5 20.85 C 21.14 20.85 24.32 17.45 24.32 17.45 C 28.17 19.63 31.23 24.92 31.98 29.67 C 31.98 29.67 32 29.84 32 29.84 Z M 17.5 19.98 C 22.26 19.98 26.13 16.17 26.13 11.49 C 26.13 6.81 22.26 3 17.5 3 C 12.74 3 8.87 6.81 8.87 11.49 C 8.87 16.17 12.74 19.98 17.5 19.98 Z" />
+                    </svg>
+                </a>
+                <div class="header__navbar">
+                    <nav class="navbar navbar-default">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                          </button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <div class="header__navbar-padding">
+                                <img src="./images/logo-menu.png" class="navbar-collapse__logo img-responsive"/>
+                                <div class="navbar-collapse__close">
+                                    <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                                      <path fill="#fff" fill-rule="evenodd" d="M.83 4.81L4.81.83l28.2 28.19-3.99 3.99L.83 4.81z"/>
+                                      <path fill="#fff" fill-rule="evenodd" d="M32.44 4.01L28.42-.01-.01 28.42l4.02 4.02L32.44 4.01z"/>
+                                    </svg>
+                                </div>
+                                <ul class="nav navbar-nav">
+                                    <li><a href="#">Services</li></a>
+                                    <li><a href="#">Rates & Fees</li></a>
+                                    <li><a href="#">Affiliate Program</li></a>
+                                    <li><a href="#">Payment Methods</li></a>
+                                    <li><a href="#">Digital Currencies</li></a>
+                                    <li><a href="#">About</li></a>
+                                    <li><a href="#">Help</li></a>
+                                </ul>
+                            </div>
+                        </div><!-- /.navbar-collapse -->
+                    </nav>
+                </div>
+            </div>
+            <div class="col-sm-7 col-md-6 clear header__btns">
+                <div class="hide-tab">
+                    <div class="choose-lang">
+                        <div class="choose-lang__title">choose language:</div>
+                        <div class="choose-lang__list">
+                            <a href="#" class="choose-lang__item choose-lang__item_en">english</a>
+                            <a href="#" class="choose-lang__item choose-lang__item_ru choose-lang__item_active">russian</a>
+                            <a href="#" class="choose-lang__item choose-lang__item_sp">spanish</a>
+                        </div>
+                    </div>
+                    <form class="form" action="get">
+                        <div class="form__hello">Впервые? <a href="#" data-toggle="modal" data-target=".modal-register" class="form__link">Зарегистрируйтесь</a></div>
+                        <div class="form__inputs">
+                            <input type="text" class="form-control" placeholder="логин">
+                            <input type="password" class="form-control" placeholder="пароль">
+                        </div>
+                        <div class="form__controls">
+                            <button type="submit" class="btn btn-form">Login</button>
+                            <a href="#" class='form__forget'>Forget password?</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="header__actions">
+                    <div class="header__action">
+                        <a href="#" class="btn-action">Buy</a>
+                        <p class="header__action-text">Purchase <a href='#'>Bitcoin</a>, Litecoin, others using fiat currency</p>
+                    </div>
+                    <div class="header__action header__action_color_green">
+                        <a href="#" class="btn-action btn-action_color_green">Sell</a>
+                        <p class="header__action-text">Withdraw Bitcoin, <a href='#'>Litecoin</a> and others to fiat money</p>
+                    </div>
+                    <div class="header__action header__action_color_orange">
+                        <a href="#" class="btn-action btn-action_color_orange">Exchange</a>
+                        <p class="header__action-text">Convert one electronic currency to another</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+.ask
+    position: relative
+    width: 230px
+    height: 144px
+    background: url(../images/support.png) no-repeat 50% 50%
+    display: block
+    padding-top: 28px
+    padding-left: 32px
+    margin-top: 20px
+    margin-bottom: 36px
+    &:hover
+        text-decoration: none
+        &:before
+            position: absolute
+            top: 0
+            left: 0
+            bottom: 0
+            right: 0
+            content: ''
+            background: rgba(0,0,0,.5)
+
+
+    &__text
+        font-size: 14px
+        line-height: 18px
+        text-transform: uppercase
+        color: #fff
+        position: relative
+        z-index: 1
+        &:before
+            content: ''
+            display: block
+            background: url(../images/ask.png) no-repeat
+            width: 17px
+            height: 15px
+            margin-bottom: 15px

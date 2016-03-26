@@ -1,0 +1,32 @@
+.press
+    position: relative
+    font-size: 0
+
+    &__item
+        display: inline-block
+        width: 50%
+        margin-bottom: 24px
+        padding-right: 40px
+
+        @media (max-width: 766px)
+            display: block
+            width: 100%
+            padding-right: 0
+
+
+    &__date
+        color: #8db70e
+        font-size: 12px
+        margin-bottom: 2px
+        @media (max-width: 766px)
+            font-size: 18px
+
+    &__text
+        font-size: 14px
+        line-height: 20px
+        color: #000
+        @media (max-width: 766px)
+            color: #f5881f
+            font-size: 20px
+            line-height: 28px
+            text-decoration: underline

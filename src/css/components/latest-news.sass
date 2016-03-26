@@ -1,0 +1,44 @@
+.latest-news
+    position: relative
+    @media (max-width: 950px)
+        margin-top: 17px
+        min-height: 465px
+        .more
+            position: absolute
+            bottom: 0
+            right: 0
+            width: 100%
+
+    @media (max-width: 766px)
+        min-height: 355px
+        min-height: 0
+        margin: 0 23px 30px
+
+    &__list
+        padding: 0
+        margin: 0
+        margin-bottom: 40px
+        list-style: none
+    &__date
+        color: #8a8a8a
+        font-size: 12px
+        margin-bottom: 2px
+        @media (max-width: 766px)
+            font-size: 18px
+            color: #fcae18
+    &__item
+     @media (max-width: 766px)
+         margin-bottom: 24px
+         &:nth-of-type(2n+1)
+             display: none
+
+    &__link
+        display: block
+        margin-bottom: 18px
+        font-size: 14px
+        line-height: 20px
+        color: #000
+        @media (max-width: 766px)
+            font-size: 19px
+            color: #4f4f4f
+            line-height: 28px
