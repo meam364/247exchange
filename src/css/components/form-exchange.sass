@@ -1,4 +1,6 @@
 .form-exchange
+    @media (max-width: 766px)
+        margin: 0 -15px
     &__label
         font-size: 14px
         color: #fff
@@ -21,6 +23,8 @@
         text-align: right
         margin-top: 24px
         margin-bottom: 28px
+        @media (max-width: 766px)
+            text-align: left
     &__btn
         text-align: center
     &__select
@@ -32,11 +36,16 @@
         &_mini
             display: inline-block
             width: 180px
+            @media (max-width: 950px)
+                width: 100%
+                margin-bottom: 8px
+                text-align: center
         &_big
             display: inline-block
             width: 276px
-
-
+            @media (max-width: 950px)
+                width: 100%
+                text-align: center
         &_huge
             text-align: center
             & .selectivity-single-select
@@ -54,9 +63,16 @@
         font-size: 14px
         color: #fff
         margin: 0 30px 8px
+        @media (max-width: 766px)
+            margin: 0 0 8px
+            display: block
         &_solo
             display: block
             margin-bottom: 0
+    &__tax-item-arrow
+        display: inline-block
+        vertical-align: middle
+        margin-left: 6px
     &__select-tip
         height: 76px
 
@@ -66,6 +82,8 @@
         background-image: linear-gradient(to top, #e34627 0%, #ff5e26 100%)
         border-radius: 6px
         padding: 34px 24px 36px
+        @media (max-width: 766px)
+            border-radius: 0
         &_sell
             background: linear-gradient(to top, #8CB60E 0%, #B9D500 100%)
         &_exchange
@@ -110,6 +128,8 @@
             font-size: 14px
             font-weight: 700
             display: inline-block
+            @media (max-width: 950px)
+                display: none
 
         &-title
             color: #f48e2c
@@ -143,6 +163,8 @@
 
         &-col-left
             padding-right: 4px
+            @media (max-width: 766px)
+                padding-right: 15px
             &:before
                 content: ''
                 position: absolute
@@ -153,9 +175,13 @@
                 width: 29px
                 height: 102px
                 background: url(../../images/arrows.png) no-repeat
+                @media (max-width: 766px)
+                    display: none
 
         &-col-right
             padding-left: 4px
+            @media (max-width: 766px)
+                padding-left: 15px
 .form-exchange-rate
     background-color: #ebecec
     border-radius: 6px 6px 0 0
@@ -164,6 +190,10 @@
     text-align: center
     padding: 10px 0 7px
     margin-bottom: 16px
+    @media (max-width: 766px)
+        padding: 22px 42px
+        border-radius: 0
+        margin-bottom: 0
     &__highlighted
         color: #e44727
         font-weight: 700
