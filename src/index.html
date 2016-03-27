@@ -20,10 +20,55 @@
                 </div>
                 <div class="col-md-9">
                     <div class="wrap">
-                        //= ./templates/about.html
+                        <div class="about">
+                            <div class="heading">Easy, safe & instant way to buy/sell Bitcoins:</div>
+                            <p>InterMoney Exchange (the owner of the service) is
+                                creating the new standard of digital currencies exchange
+                                - easy, safe, affordable and available for everyone!
+                                We have a number of advantages that distinguish us from the competition:</p>
+                            <div class="about-collapse collapse">
+                                <ul class="mark-list about__list">
+                                    <li class="mark-list__item">Licensed financial activity (details) by reputable compliant company;</li>
+                                    <li class="mark-list__item">Risk-free service without holding clients’ funds, instant delivery;</li>
+                                    <li class="mark-list__item">Lowest fees, regular promotions and special offers;</li>
+                                    <li class="mark-list__item">Local payment options in 110+ countries!</li>
+                                </ul>
+                                <p><b>Accepting all credit/debit cards; 400,000 locations to buy/sell bitcoins with cash worldwide!</b></p>
+                                <div class="more"><a href="#" class="more__btn">read more</a></div>
+                            </div>
+                            <button class="btn btn-collapse" type="button" data-toggle="collapse" data-target=".about-collapse" aria-expanded="false" aria-controls="collapseExample">
+                                <i class="fa fa-chevron-down"></i><span class="btn-collapse__text">show me more</span><i class="fa fa-chevron-down"></i>
+                            </button>
+
+                        </div>
                         <div class="row block_sm">
                             <div class="col-sm-5 hidden-xs">
-                                //= ./templates/latest-news.html
+                                <div class="latest-news">
+                                    <h4 class="heading heading_orange">Latest news</h4>
+                                    <ul class="latest-news__list">
+                                        <li class="latest-news__item">
+                                            <p class="latest-news__date">07 Mar, 2016</p>
+                                            <a href="#" class="latest-news__link">Scheduled maintenance at the card payment processor on March, 9 and 11</a>
+                                        </li>
+                                        <li class="latest-news__item">
+                                            <p class="latest-news__date">29 Feb, 2016</p>
+                                            <a href="#" class="latest-news__link">247exchange.com covers Canada with instant ways of buying Bitcoin</a>
+                                        </li>
+                                        <li class="latest-news__item">
+                                            <p class="latest-news__date">19 Feb, 2016</p>
+                                            <a href="#" class="latest-news__link">More than 50 000 users now!</a>
+                                        </li>
+                                        <li class="latest-news__item">
+                                            <p class="latest-news__date">09 Feb, 2016</p>
+                                            <a href="#" class="latest-news__link">Approaching 50,000 users! Discounts are coming!</a>
+                                        </li>
+                                        <li class="latest-news__item">
+                                            <p class="latest-news__date">14 Jan, 2016</p>
+                                            <a href="#" class="latest-news__link">Buying and selling limits for bank transfers increased</a>
+                                        </li>
+                                    </ul>
+                                    <div class="more"><a href="#" data-text='All news' class="more__btn">All news</a></div>
+                                </div>
                             </div>
                             <div class="col-sm-7">
                                 <div class="block block_testimonials">
@@ -210,37 +255,7 @@
                 </a>
             </div>
         </div>
-        <div class="footer">
-            <div class="row">
-                <div class="col-sm-7 col-md-8 col-md-push-4 col-sm-push-5">
-                    <div class="col-sm-6  col-md-5 col-md-offset-2 ">
-                        <ul class="footer__list">
-                            <li class='footer__item'><a href='#' class='footer__link'>User Agreement</a></li>
-                            <li class='footer__item'><a href='#' class='footer__link'>Information Security Statement</a></li>
-                            <li class='footer__item'><a href='#' class='footer__link'>AML Policy</a></li>
-                            <li class='footer__item'><a href='#' class='footer__link'>Consent to Receive Electronic Communication</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6 col-md-5">
-                        <ul class="footer__list">
-                            <li class='footer__item'><a href='#' class='footer__link'>Privacy Statement</a></li>
-                            <li class='footer__item'><a href='#' class='footer__link'>Risk Disclosure Statement</a></li>
-                            <li class='footer__item'><a href='#' class='footer__link'>Refund Policy</a></li>
-                            <li class='footer__item'><a href='#' class='footer__link'>Delivery Policy</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-5 col-md-4 col-md-pull-8 col-sm-pull-7">
-                    <p class="footer__copy">© 2014-2015, InterMoney Exchange™, Group of Companies. All rights reserved.</p>
-                    <div class="footer__banners">
-                        <img src="./images/verify-visa.png" alt="" class="footer__banner">
-                        <img src="./images/mc-security.png" alt="" class="footer__banner">
-                        <img src="./images/dss.png" alt="" class="footer__banner">
-                    </div>
-                </div>
-            </div>
-
-        </div>
+        //= ./templates/footer.html
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>

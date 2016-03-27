@@ -321,168 +321,95 @@
                 <div class="col-md-9">
                     <div class="wrap">
                         <div class="about">
-                            <div class="heading">Easy, safe & instant way to buy/sell Bitcoins:</div>
-                            <p>InterMoney Exchange (the owner of the service) is
-                                creating the new standard of digital currencies exchange
-                                - easy, safe, affordable and available for everyone!
-                                We have a number of advantages that distinguish us from the competition:</p>
-                            <div class="about-collapse collapse">
-                                <ul class="mark-list about__list">
-                                    <li class="mark-list__item">Licensed financial activity (details) by reputable compliant company;</li>
-                                    <li class="mark-list__item">Risk-free service without holding clients’ funds, instant delivery;</li>
-                                    <li class="mark-list__item">Lowest fees, regular promotions and special offers;</li>
-                                    <li class="mark-list__item">Local payment options in 110+ countries!</li>
-                                </ul>
-                                <p><b>Accepting all credit/debit cards; 400,000 locations to buy/sell bitcoins with cash worldwide!</b></p>
-                                <div class="more"><a href="#" class="more__btn">read more</a></div>
-                            </div>
-                            <button class="btn btn-collapse" type="button" data-toggle="collapse" data-target=".about-collapse" aria-expanded="false" aria-controls="collapseExample">
-                                <i class="fa fa-chevron-down"></i><span class="btn-collapse__text">show me more</span><i class="fa fa-chevron-down"></i>
-                            </button>
-
+                            <h3 class="heading">Buy form</h3>
+                            <p>
+                                Dear Customer! You can buy cryptocurrency
+                                (deposit to your digital currency account) like
+                                Bitcoins, Litecoins and others. You can pay your
+                                 purchase order with USD, EUR, GBP and other
+                                 currencies using credit card and debit card
+                                 (instantly online!), local and international
+                                  bank wire transfer, SEPA transfer, cash deposit
+                                   at 400,000 locations worldwide, instant money
+                                   transfer and other methods.
+                            </p>
                         </div>
-                        <div class="row block_sm">
-                            <div class="col-sm-5 hidden-xs">
-                                <div class="latest-news">
-                                    <h4 class="heading heading_orange">Latest news</h4>
-                                    <ul class="latest-news__list">
-                                        <li class="latest-news__item">
-                                            <p class="latest-news__date">07 Mar, 2016</p>
-                                            <a href="#" class="latest-news__link">Scheduled maintenance at the card payment processor on March, 9 and 11</a>
-                                        </li>
-                                        <li class="latest-news__item">
-                                            <p class="latest-news__date">29 Feb, 2016</p>
-                                            <a href="#" class="latest-news__link">247exchange.com covers Canada with instant ways of buying Bitcoin</a>
-                                        </li>
-                                        <li class="latest-news__item">
-                                            <p class="latest-news__date">19 Feb, 2016</p>
-                                            <a href="#" class="latest-news__link">More than 50 000 users now!</a>
-                                        </li>
-                                        <li class="latest-news__item">
-                                            <p class="latest-news__date">09 Feb, 2016</p>
-                                            <a href="#" class="latest-news__link">Approaching 50,000 users! Discounts are coming!</a>
-                                        </li>
-                                        <li class="latest-news__item">
-                                            <p class="latest-news__date">14 Jan, 2016</p>
-                                            <a href="#" class="latest-news__link">Buying and selling limits for bank transfers increased</a>
-                                        </li>
-                                    </ul>
-                                    <div class="more"><a href="#" data-text='All news' class="more__btn">All news</a></div>
-                                </div>
+                        <div class="form-exchange">
+                            <div class="form-exchange-rate">
+                                 <span class="form-exchange-rate__highlighted">1</span> Bitcoin = <span class="form-exchange-rate__highlighted">412.85</span> USD / <span class="form-exchange-rate__highlighted">369.84</span> EUR / <span class="form-exchange-rate__highlighted">292.3</span> GBP / <span class="form-exchange-rate__highlighted">546.75</span> CAD <a href="#">other rates >></a>
                             </div>
-                            <div class="col-sm-7">
-                                <div class="block block_testimonials">
-                                    <div class="testimonials">
-                                        <h3 class="heading heading_green">Testimonials</h3>
-                                        <ul class="testimonials__list">
-                                            <li class="testimonials__item">
-                                                <p class="testimonials__name">Bogdan, <span class="testimonials__name_type">Bitcoin > USD (Western Union)</span></p>
-                                                <p class="testimonials__date">April 5, 2012</p>
-                                                <p class="testimonials__text">Excellent service! In just few hours i had money out! I recomend their services and ill be back !</p>
-                                            </li>
-                                        </ul>
-                                        <div class="more"><a href="#" data-text='All testimonials' class="more__btn more__btn_green">All testimonials</a></div>
+                            <form action="get" class="form-exchange__form form-exchange__form_exchange">
+                                <div class="form-exchange__select form-exchange__select_huge" id="country"></div>
+                                <div class="form-exchange__form-info">
+                                    3583 agents in Ukraine! Choose "Express Cash Transfer" for details!
+                                </div>
+                                <div class="form-exchange__form-info form-exchange__form-info_danger">
+                                    Sorry, you can sell cryptocurrency like Bitcoins, Litecoins and others and get fiat money <br>
+                                    (convert BTC to cash in USD, EUR y GBP).
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6 form-exchange__form-col-left">
+                                        <div class="form-exchange__form-block">
+                                            <div class="form-exchange__form-title">You'll SEND</div>
+                                            <div class="form-exchange__select-tip">
+                                                <div class="form-exchange__select" id="e-currency"></div>
+                                                <div class="form-exchange__select-tip-wrap">
+                                                    <div class="form-exchange__form-tip">Max amount: 5000USD </div>
+                                                    <a href="#" class="form-exchange__form-tip-link">Need more?</a>
+                                                </div>
+                                            </div>
+                                            <input placeholder="Amount" type="text" class="form-exchange__form-amount">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 form-exchange__form-col-right">
+                                        <div class="form-exchange__form-block">
+                                            <div class="form-exchange__form-title">You'll RECEIVE</div>
+                                            <div class="form-exchange__select-tip">
+                                                <div class="form-exchange__select" id="payment-method"></div>
+                                            </div>
+                                            <input placeholder="Amount" type="text" class="form-exchange__form-amount">
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="latest-news visible-xs">
-                                    <h4 class="heading heading_orange">Latest news</h4>
-                                    <ul class="latest-news__list">
-                                        <li class="latest-news__item">
-                                            <p class="latest-news__date">07 Mar, 2016</p>
-                                            <a href="#" class="latest-news__link">Scheduled maintenance at the card payment processor on March, 9 and 11</a>
-                                        </li>
-                                        <li class="latest-news__item">
-                                            <p class="latest-news__date">29 Feb, 2016</p>
-                                            <a href="#" class="latest-news__link">247exchange.com covers Canada with instant ways of buying Bitcoin</a>
-                                        </li>
-                                        <li class="latest-news__item">
-                                            <p class="latest-news__date">19 Feb, 2016</p>
-                                            <a href="#" class="latest-news__link">More than 50 000 users now!</a>
-                                        </li>
-                                        <li class="latest-news__item">
-                                            <p class="latest-news__date">09 Feb, 2016</p>
-                                            <a href="#" class="latest-news__link">Approaching 50,000 users! Discounts are coming!</a>
-                                        </li>
-                                        <li class="latest-news__item">
-                                            <p class="latest-news__date">14 Jan, 2016</p>
-                                            <a href="#" class="latest-news__link">Buying and selling limits for bank transfers increased</a>
-                                        </li>
-                                    </ul>
-                                    <div class="more"><a href="#" class="more__btn">All newst</a></div>
-                                </div>
-
-                                <div class="block">
-                                    <div class="hot">
-                                        <h3 class="heading heading_orange">What's hot</h3>
-                                        <ul class="hot__list">
-                                            <li class="hot__item">
-                                                <a href="#" class="hot__title">Bank withdrawals are cheaper now</a>
-                                                <p class="hot__text">Our fee for withdrawing Bitcoin and altcoins with a bank wire (SWIFT) transfer (USD, EUR) and SEPA transfer is only 0.25% now! You can submit your orders here.</p>
-                                            </li>
-                                        </ul>
-                                        <div class="more"><a href="#" data-text='All offers' class="more__btn">All offers</a></div>
+                                <div class="form-exchange__form-block form-exchange__form-block_mini">
+                                    <div class="form-exchange__form-type">
+                                        <div class="form-exchange__form-type-title">Choose type:</div>
+                                        <div class="form-exchange__select form-exchange__select_mini" id="bank-branch"></div>
+                                        <div class="form-exchange__select form-exchange__select_big" id="bank-branch-2"></div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="block block_lg">
-                            <div class="row">
-                                <div class="col-md-7">
-                                    <div class="testimonials">
-                                        <h3 class="heading heading_green">Testimonials</h3>
-                                        <ul class="testimonials__list">
-                                            <li class="testimonials__item">
-                                                <p class="testimonials__name">Bogdan, <span class="testimonials__name_type">Bitcoin > USD (Western Union)</span></p>
-                                                <p class="testimonials__date">April 5, 2012</p>
-                                                <p class="testimonials__text">Excellent service! In just few hours i had money out! I recomend their services and ill be back !</p>
-                                            </li>
-                                        </ul>
-                                        <div class="more"><a href="#" data-text='All testimonials' class="more__btn more__btn_green">All testimonials</a></div>
+                                <div class="form-exchange__tax">
+                                    <div class="form-exchange__tax-item">Bitcoin Fee: 0.0001 BTC</div>
+                                    <div class="form-exchange__tax-item">
+                                        <svg height="7" width="26" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 7">
+                                          <path fill="#fff" fill-rule="evenodd" d="M.01 2.99h19.1c-.92-1.04-1.38-1.71-1.43-2.64 2.1 1.59 4.82 2.42 8.11 3.2-3.29.74-5.89 1.65-8.11 3.19.14-1 .53-1.61 1.46-2.71H.01V2.99z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="form-exchange__tax-item">Bank fee: 0.5% + 20USD</div>
+                                    <div class="form-exchange__tax-item form-exchange__tax-item_solo">Our fee: 30 USD (Min)</div>
+                                </div>
+                                <div class="form-exchange__input-group">
+                                    <div class="row">
+                                        <div  class="col-sm-3">
+                                            <a href="#" class="form-exchange__label" for="form-exchange-email">Your E-mail<sup>[?]</sup></a>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input id="form-exchange-email" type="email" class="form-exchange__input">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <a href="#" class="form-exchange__label"for="form-exchange-discount">Discount code<sup>[?]</sup></a>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input id="form-exchange-discount" type="text" class="form-exchange__input">
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-md-5">
-                                    <div class="hot">
-                                        <h3 class="heading heading_orange">What's hot</h3>
-                                        <ul class="hot__list">
-                                            <li class="hot__item">
-                                                <a href="#" class="hot__title">Bank withdrawals are cheaper now</a>
-                                                <p class="hot__text">Our fee for withdrawing Bitcoin and altcoins with a bank wire (SWIFT) transfer (USD, EUR) and SEPA transfer is only 0.25% now! You can submit your orders here.</p>
-                                            </li>
-                                        </ul>
-                                        <div class="more"><a href="#" data-text='All offers' class="more__btn">All offers</a></div>
-                                    </div>
+                                <div class="form-exchange__btn">
+                                    <button class="btn btn-form-exchange">Make order</button>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="video">
-                            <h3 class="heading">Video tutorial</h3>
-                            <div class="video__wrap">
-                                <div class="embed-responsive embed-responsive-16by9">
-                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/anvd0qY3FFE"></iframe>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="block">
-                            <div class="press">
-                                <h3 class="heading heading_green">Press about us</h3>
-                                <div class="press__item">
-                                    <p class="press__date">April 5, 2012</p>
-                                    <a href="#" class="press__text">Excellent service! In just few hours i had money out! I recomend their services and ill</a>
-                                </div>
-                                <div class="press__item">
-                                    <p class="press__date">April 5, 2012</p>
-                                    <a href="#" class="press__text">Excellent service! In just few hours i had money out! I recomend their services and ill</a>
-                                </div>
-                                <div class="press__item">
-                                    <p class="press__date">April 5, 2012</p>
-                                    <a href="#" class="press__text">Excellent service! In just few hours i had money out! I recomend their services and ill</a>
-                                </div>
-                                <div class="press__item">
-                                    <p class="press__date">April 5, 2012</p>
-                                    <a href="#" class="press__text">Excellent service! In just few hours i had money out! I recomend their services and ill</a>
-                                </div>
-                                <div class="more"><a href="#" class="more__btn more__btn_green">view all</a></div>
-                            </div>
+                            </form>
                         </div>
                         <div class="follow-mob">
                             <h3 class="heading">

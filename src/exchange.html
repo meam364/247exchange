@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    //= ./templates/modal.html
+
+    //= ./templates/header.html
+    <div class="container">
+        <div class="main">
+            <div class="row">
+                <div class="col-md-3">
+                    //= ./templates/sidebar.html
+                </div>
+                <div class="col-md-9">
+                    <div class="wrap">
+                        <div class="about">
+                            <h3 class="heading">Buy form</h3>
+                            <p>
+                                Dear Customer! You can buy cryptocurrency
+                                (deposit to your digital currency account) like
+                                Bitcoins, Litecoins and others. You can pay your
+                                 purchase order with USD, EUR, GBP and other
+                                 currencies using credit card and debit card
+                                 (instantly online!), local and international
+                                  bank wire transfer, SEPA transfer, cash deposit
+                                   at 400,000 locations worldwide, instant money
+                                   transfer and other methods.
+                            </p>
+                        </div>
+                        <div class="form-exchange">
+                            <div class="form-exchange-rate">
+                                 <span class="form-exchange-rate__highlighted">1</span> Bitcoin = <span class="form-exchange-rate__highlighted">412.85</span> USD / <span class="form-exchange-rate__highlighted">369.84</span> EUR / <span class="form-exchange-rate__highlighted">292.3</span> GBP / <span class="form-exchange-rate__highlighted">546.75</span> CAD <a href="#">other rates >></a>
+                            </div>
+                            <form action="get" class="form-exchange__form form-exchange__form_exchange">
+                                <div class="form-exchange__select form-exchange__select_huge" id="country"></div>
+                                <div class="form-exchange__form-info">
+                                    3583 agents in Ukraine! Choose "Express Cash Transfer" for details!
+                                </div>
+                                <div class="form-exchange__form-info form-exchange__form-info_danger">
+                                    Sorry, you can sell cryptocurrency like Bitcoins, Litecoins and others and get fiat money <br>
+                                    (convert BTC to cash in USD, EUR y GBP).
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6 form-exchange__form-col-left">
+                                        <div class="form-exchange__form-block">
+                                            <div class="form-exchange__form-title">You'll SEND</div>
+                                            <div class="form-exchange__select-tip">
+                                                <div class="form-exchange__select" id="e-currency"></div>
+                                                <div class="form-exchange__select-tip-wrap">
+                                                    <div class="form-exchange__form-tip">Max amount: 5000USD </div>
+                                                    <a href="#" class="form-exchange__form-tip-link">Need more?</a>
+                                                </div>
+                                            </div>
+                                            <input placeholder="Amount" type="text" class="form-exchange__form-amount">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 form-exchange__form-col-right">
+                                        <div class="form-exchange__form-block">
+                                            <div class="form-exchange__form-title">You'll RECEIVE</div>
+                                            <div class="form-exchange__select-tip">
+                                                <div class="form-exchange__select" id="payment-method"></div>
+                                            </div>
+                                            <input placeholder="Amount" type="text" class="form-exchange__form-amount">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-exchange__form-block form-exchange__form-block_mini">
+                                    <div class="form-exchange__form-type">
+                                        <div class="form-exchange__form-type-title">Choose type:</div>
+                                        <div class="form-exchange__select form-exchange__select_mini" id="bank-branch"></div>
+                                        <div class="form-exchange__select form-exchange__select_big" id="bank-branch-2"></div>
+                                    </div>
+                                </div>
+                                <div class="form-exchange__tax">
+                                    <div class="form-exchange__tax-item">Bitcoin Fee: 0.0001 BTC</div>
+                                    <div class="form-exchange__tax-item">
+                                        <svg height="7" width="26" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 7">
+                                          <path fill="#fff" fill-rule="evenodd" d="M.01 2.99h19.1c-.92-1.04-1.38-1.71-1.43-2.64 2.1 1.59 4.82 2.42 8.11 3.2-3.29.74-5.89 1.65-8.11 3.19.14-1 .53-1.61 1.46-2.71H.01V2.99z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="form-exchange__tax-item">Bank fee: 0.5% + 20USD</div>
+                                    <div class="form-exchange__tax-item form-exchange__tax-item_solo">Our fee: 30 USD (Min)</div>
+                                </div>
+                                <div class="form-exchange__input-group">
+                                    <div class="row">
+                                        <div  class="col-sm-3">
+                                            <a href="#" class="form-exchange__label" for="form-exchange-email">Your E-mail<sup>[?]</sup></a>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input id="form-exchange-email" type="email" class="form-exchange__input">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <a href="#" class="form-exchange__label"for="form-exchange-discount">Discount code<sup>[?]</sup></a>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input id="form-exchange-discount" type="text" class="form-exchange__input">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-exchange__btn">
+                                    <button class="btn btn-form-exchange">Make order</button>
+                                </div>
+                            </form>
+                        </div>
+                        //= ./templates/follow-mob.html
+                    </div>
+                </div>
+            </div>
+        </div>
+        //= ./templates/accept.html
+        //= ./templates/footer.html
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $('.navbar-collapse__close').on('click', function() {
+                $('.navbar-collapse').removeClass('in');
+            })
+            $('.choose-lang-mob__current').on('click', function() {
+                $('.choose-lang-mob__list').toggle();
+            })
+          $('.accept__list').slick({
+              infinite: true,
+              speed: 300,
+              slidesToShow: 9,
+              slidesToScroll: 1,
+              centerMode: true,
+              variableWidth: true,
+              nextArrow: '<div class="accept__arrow"><i class="fa fa-chevron-right"></i></div>',
+              prevArrow: '<div class="accept__arrow accept__arrow_prev"><i class="fa fa-chevron-left"></i></div>',
+              responsive: [
+                {
+                  breakpoint: 950,
+                  settings: {
+                    slidesToShow: 6,
+                    slidesToScroll: 1,
+                    infinite: true,
+                  }
+                },
+                {
+                  breakpoint: 768,
+                  settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 2
+                  }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+              ]
+            });
+        });
+    </script>
+</body>
+</html>

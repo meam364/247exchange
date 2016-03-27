@@ -1,4 +1,6 @@
-//= jelect.js
+//= ./jelect.js
+
+//= ./selectivity-full.min.js
 
 $('.jelect').jelect();
 
@@ -59,3 +61,32 @@ $(function(){
     });
 
     // ADD SLIDEUP ANIMATION TO DROPDOWN //
+    $('#e-currency').selectivity({
+        allowClear: false,
+        items: ['test', 'test1', 'test2'],
+        placeholder: 'Choose E-currency'
+    });
+
+    $('#payment-method').selectivity({
+        allowClear: false,
+        items: ['test', 'test1', 'test2'],
+        placeholder: 'Choose payment method'
+    });
+
+    $('#bank-branch').selectivity({
+        allowClear: false,
+        items: ['test', 'test1', 'test2'],
+        placeholder: 'Choose payment method'
+    });
+
+    $('#bank-branch-2').selectivity({
+        allowClear: false,
+        items: ['test', 'test1', 'test2'],
+        placeholder: 'Choose payment method'
+    });
+
+    $('#country').selectivity({
+        allowClear: false,
+        items: ['test', 'test1', 'test2'],
+        placeholder: 'Please Choose Country of Your Residence'
+    });
