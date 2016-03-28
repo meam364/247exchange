@@ -1,5 +1,8 @@
 .modal
     &-login-mob
+        .modal-body
+            padding-top: 0!important
+
         &__logo
             margin-top: 22px
             height: 30px
@@ -24,10 +27,6 @@
                     font-size: 18px!important
                     text-decoration: none!important
                     vertical-align: middle
-        &__tabs_mini
-            margin-bottom: 16px
-            border: none
-
         &__tabs
             text-align: left
             .active
@@ -37,24 +36,27 @@
                     font-size: 18px!important
                     text-decoration: none!important
                     vertical-align: middle
+                    &:hover
+                        background: none!important
+
         &__tabs_mini
             margin-bottom: 16px
             border: none
 
         &__tab
-            color: white
-            font-size: 18px
-            background: none
-            vertical-align: middle
-
             a
                 text-decoration: underline
                 background: none
                 vertical-align: middle
+                color: #fff !important
+                font-size: 14px
+                background: none
+                vertical-align: middle
+
                 &:hover
                     color: #151515
                     text-decoration: underline
-                    background: none
+                    background: none!important
 
         &-footer
             text-align: right
