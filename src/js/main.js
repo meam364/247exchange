@@ -90,3 +90,8 @@ $(function(){
         items: ['test', 'test1', 'test2'],
         placeholder: 'Please Choose Country of Your Residence'
     });
+
+    $(".modal-login-mob").on("hidden.bs.modal", function(){
+        $(".js-modal-tab-register").removeClass('active');
+        $(".js-modal-tab-login").addClass('active');
+    });
