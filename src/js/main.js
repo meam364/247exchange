@@ -76,13 +76,13 @@ $(function(){
     $('#bank-branch').selectivity({
         allowClear: false,
         items: ['test', 'test1', 'test2'],
-        placeholder: 'Choose payment method'
+        placeholder: 'Bank branch'
     });
 
     $('#bank-branch-2').selectivity({
         allowClear: false,
         items: ['test', 'test1', 'test2'],
-        placeholder: 'Choose payment method'
+        placeholder: 'Tutte le Banche di Credito Cooperativo'
     });
 
     $('#country').selectivity({

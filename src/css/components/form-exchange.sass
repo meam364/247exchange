@@ -6,24 +6,44 @@
         color: #fff
         font-weight: 400
         vertical-align: middle
-        margin-top: 14px
+        margin-top: 6px
         display: inline-block
         text-decoration: none
         sup
             margin-left: 4px
+        @media (max-width: 950px)
+            margin-top: 12px
+        @media (max-width: 766px)
+            margin-top: 0
+            margin-bottom: 6px
     &__input
-        height: 43px
+        height: 30px
         border-radius: 1px
         background: #fff
         border: none
         width: 100%
-        margin-bottom: 8px
+        margin-bottom: 15px
         vertical-align: middle
+        border: 1px solid transparent
+        @media (max-width: 950px)
+            height: 41px
+            margin-bottom: 11px
+        @media (max-width: 766px)
+            height: 35px
+            margin-bottom: 41px
+        &_textarea
+            height: 70px
+            max-height: 70px
+            max-width: 100%
+            resize: none
     &__input-group
         text-align: right
         margin-top: 24px
-        margin-bottom: 28px
+        margin-bottom: 4px
+        @media (max-width: 950px)
+            margin-bottom: 18px
         @media (max-width: 766px)
+            margin-bottom: -17px
             text-align: left
     &__btn
         text-align: center
@@ -32,7 +52,28 @@
         & .selectivity-single-select
             background: #fff
             border-radius: 0
-            min-height: 32px
+            height: 30px
+            line-height: 30px
+            padding: 0
+            @media (max-width: 950px)
+                height: 43px
+                line-height: 43px
+            @media (max-width: 766px)
+                height: 36px
+                line-height: 36px
+        & .selectivity-single-result-container
+            top: 0
+            left: 15px
+        & .selectivity-single-select-input
+            height: 30px
+            @media (max-width: 950px)
+                height: 43px
+            @media (max-width: 766px)
+                height: 36px
+        & .selectivity-placeholder
+            color: #262626
+            font-size: 14px
+            font-weight: 400
         &_mini
             display: inline-block
             width: 180px
@@ -56,6 +97,7 @@
         border-radius: 2px
         text-align: center
         padding: 10px 0
+        margin-top: 18px
 
     &__tax-item
         display: inline-block
@@ -74,7 +116,11 @@
         vertical-align: middle
         margin-left: 6px
     &__select-tip
-        height: 76px
+        height: 54px
+        @media (max-width: 950px)
+            height: 75px
+        @media (max-width: 766px)
+            height: 64px
 
     &__select-tip-wrap
         text-align: right
@@ -90,6 +136,9 @@
             background-image: linear-gradient(to top, #f5881f 0%, #ffbf10 100%)
             .btn-form-exchange
                 background-image: linear-gradient(to top, #e34627 0%, #ff5e26 100%)
+            .form-exchange__form-info
+                background: linear-gradient(to top, #8CB60E 0%, #B9D500 100%)
+
 
 
         &-info
@@ -102,20 +151,25 @@
             padding: 10px
 
             &_danger
-                background-image: none
-                background-color: #d90f00
+                background-image: none!important
+                background-color: #d90f00!important
                 font-size: 13px
                 color: #fff
         &-block
             background-image: linear-gradient(to top, #d2d2d2 0%, #f6f6f6 100%)
             border-radius: 2px
             box-shadow: 2.5px 4.3px 5px rgba(0, 0, 0, 0.12)
-            padding: 20px 22px
+            padding: 14px 22px
             text-align: center
-            min-height: 196px
+            min-height: 172px
             margin-bottom: 6px
+            @media (max-width: 950px)
+                padding-bottom: 21px
             &_mini
                 min-height: 0
+                padding: 25px 22px
+                @media (max-width: 950px)
+                    padding: 21px 22px
         &-type
             text-align: justify
             font-size: 0
@@ -136,6 +190,8 @@
             font-size: 22px
             font-weight: 700
             margin-bottom: 8px
+            @media (max-width: 950px)
+                margin-bottom: 6px
 
         &-amount
             width: 118px
@@ -154,7 +210,11 @@
             color: #7fa900
             font-size: 11px
             display: inline-block
-            margin-top: 11px
+            margin-top: 0
+            @media (max-width: 950px)
+                margin-top: 11px
+            @media (max-width: 766px)
+                margin-top: 7px
 
         &-tip-link
             color: #e34627
