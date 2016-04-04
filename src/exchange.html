@@ -22,17 +22,14 @@
                     <div class="wrap">
                         <div class="about">
                             <h3 class="heading">Buy form</h3>
-                            <p>
-                                Dear Customer! You can buy cryptocurrency
-                                (deposit to your digital currency account) like
-                                Bitcoins, Litecoins and others. You can pay your
-                                 purchase order with USD, EUR, GBP and other
-                                 currencies using credit card and debit card
-                                 (instantly online!), local and international
-                                  bank wire transfer, SEPA transfer, cash deposit
-                                   at 400,000 locations worldwide, instant money
-                                   transfer and other methods.
-                            </p>
+                            <p>Dear Cuctomer! If you have a cryptocurrency like <a href="https://www.247exchange.com/bitcoin">Bitcoins</a>, Litecoins and other altcoins, and you wish to convert it to another cryptocurrency instantly with minimal fees (for example, exchange Bitcoin to Litecoin, Namecoin to Peercoin, etc.), please fill in the fields below and press "Make order" button. <strong>You will not need to make trade orders, the process is instant and easy as 1-2-3! </strong>Exchanging cryptocurrencies has never been so easy!&nbsp;</p>
+                            <div class="about-collapse collapse">
+                                <p>Dear Cuctomer! If you have a cryptocurrency like <a href="https://www.247exchange.com/bitcoin">Bitcoins</a>, Litecoins and other altcoins, and you wish to convert it to another cryptocurrency instantly with minimal fees (for example, exchange Bitcoin to Litecoin, Namecoin to Peercoin, etc.), please fill in the fields below and press "Make order" button. <strong>You will not need to make trade orders, the process is instant and easy as 1-2-3! </strong>Exchanging cryptocurrencies has never been so easy!&nbsp;</p>
+                            </div>
+                            <button class="btn btn-collapse" type="button" data-toggle="collapse" data-target=".about-collapse" aria-expanded="false" aria-controls="collapseExample">
+                                <i class="fa fa-chevron-down"></i><span class="btn-collapse__text">show me more</span><i class="fa fa-chevron-down"></i>
+                            </button>
+
                         </div>
                         <div class="form-exchange">
                             <div class="form-exchange-rate">
@@ -92,8 +89,11 @@
                                 </div>
                                 <div class="form-exchange__input-group">
                                     <div class="row">
-                                        <div  class="col-sm-3">
-                                            <a href="#" class="form-exchange__label" for="form-exchange-email">Your E-mail<sup>[?]</sup></a>
+                                        <div class="col-sm-3">
+                                            <div class="form-exchange__label">
+                                                <a href="#" class="form-exchange__label-link">Bitcoin Address</a>
+                                                <sup class="form-exchange__label-mark">[?]</sup>
+                                            </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <input id="form-exchange-email" type="email" class="form-exchange__input">
@@ -101,18 +101,24 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-sm-3">
-                                            <a href="#" class="form-exchange__label"for="form-exchange-discount">Discount code<sup>[?]</sup></a>
+                                            <div class="form-exchange__label">
+                                                <a href="#" class="form-exchange__label-link">Your E-mail</a>
+                                                <sup class="form-exchange__label-mark">[?]</sup>
+                                            </div>
                                         </div>
                                         <div class="col-sm-6">
-                                            <input id="form-exchange-discount" type="text" class="form-exchange__input">
+                                            <input id="form-exchange-email" type="email" class="form-exchange__input">
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-sm-3">
-                                            <a href="#" class="form-exchange__label"for="form-exchange-discount">Comments</a>
+                                            <div class="form-exchange__label">
+                                                <a href="#" class="form-exchange__label-link">Discount Code</a>
+                                                <sup class="form-exchange__label-mark">[?]</sup>
+                                            </div>
                                         </div>
                                         <div class="col-sm-6">
-                                            <textarea class="form-exchange__input form-exchange__input_textarea"></textarea>
+                                            <input id="form-exchange-discount" type="text" class="form-exchange__input">
                                         </div>
                                     </div>
                                 </div>
@@ -120,6 +126,17 @@
                                     <button class="btn btn-form-exchange">Make order</button>
                                 </div>
                             </form>
+                        </div>
+                        <div class="about">
+                            <p><strong>If you're using our service for the first time, we recommend you to read our quick start guides:</strong></p>
+                            <ul class="mark-list about__list">
+                                <li class="mark-list__item"><a href="https://help.247exchange.com/index.php?/Knowledgebase/Article/View/124/3/how-to-sell-e-currency-using-credit-card" target="_blank"><em><strong>How can I exchange bitcoin, litecoin and other cryptocurrencies?</strong></em></a></li>
+                                <li class="mark-list__item"><a href="http://help.247exchange.com/index.php?/Knowledgebase/Article/View/35/2/i-need-to-buy-e-currency-how-can-i-pay-for-it" target="_blank"><em><strong>How to pay my digital currency exchange order?</strong></em></a></li>
+                                <li class="mark-list__item"><a href="http://help.247exchange.com/index.php?/Knowledgebase/Article/View/35/2/i-need-to-buy-e-currency-how-can-i-pay-for-it" target="_blank"><em><strong>How much time will it take to complete my exchange order?</strong></em></a></li>
+                                <li class="mark-list__item"><a href="http://help.247exchange.com/index.php?/Knowledgebase/Article/View/35/2/i-need-to-buy-e-currency-how-can-i-pay-for-it" target="_blank"><em><strong>What should I do if digital currency which I need isn't presented in your list?</strong></em></a></li>
+                                <li class="mark-list__item"><a href="http://help.247exchange.com/index.php?/Knowledgebase/Article/View/35/2/i-need-to-buy-e-currency-how-can-i-pay-for-it" target="_blank"><em><strong>What should I do to complete verification process?</strong></em></a></li>
+                            </ul>
+                            <p>More questions and answers regarding the exchanging process can be found&nbsp;<a href="http://help.247exchange.com/index.php?/Knowledgebase/List/Index/4/exchange-questions" target="_blank">here</a>.</p>
                         </div>
                         //= ./templates/follow-mob.html
                     </div>

@@ -31,11 +31,17 @@ $(function(){
 
     $btns = $('.more__btn');
 
-    $(window).on('resize', checkResolution);
+    $(window).on('resize', function() {
+        checkResolution();
+        fixCollapse();
+    });
 
     $(window).on('load', checkResolution);
 
-
+    function fixCollapse() {
+        if($(window).width() > 766)
+            $('.about-collapse').height('auto');
+    }
     function checkResolution() {
         var $window = $(window);
         if($window.width() >= 766) {
