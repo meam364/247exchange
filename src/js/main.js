@@ -13,6 +13,12 @@ $('.btn-collapse').on('click', function() {
         .text(isMore ? less : more);
     isMore = !isMore;
 })
+$('.btn-collapse-more').on('click', function() {
+    $(this)
+        .text(isMore ? less : more);
+    isMore = !isMore;
+})
+
 var jelect = $('.js-jelect'),
     current = $('.js-jelect-current');
 
@@ -69,14 +75,30 @@ $(function(){
     // ADD SLIDEUP ANIMATION TO DROPDOWN //
     $('#e-currency').selectivity({
         allowClear: false,
-        items: ['test', 'test1', 'test2'],
-        placeholder: 'Choose E-currency'
+        items: [{
+            text: 'International Bank Wire',
+            children: ['SWIFT Transfer (USD)']
+        },
+        {
+            text: 'Credit/Debit Card',
+            children: ['Visa/Mastercard (EUR)', 'Visa/Mastercard (USD)']
+        }],
+        placeholder: 'Choose E-currency',
+        showSearchInputInDropdown: false
     });
+
+
 
     $('#payment-method').selectivity({
         allowClear: false,
-        items: ['test', 'test1', 'test2'],
-        placeholder: 'Choose payment method'
+        items: [
+            'Bitcoin (BTC)',
+            'Litecoin (LTC)',
+            'Namecoin (NMC)',
+            'Peercoin (PPC)'
+        ],
+        placeholder: 'Choose payment method',
+        showSearchInputInDropdown: false
     });
 
     $('#bank-branch').selectivity({
@@ -93,7 +115,34 @@ $(function(){
 
     $('#country').selectivity({
         allowClear: false,
-        items: ['test', 'test1', 'test2'],
+        items: [
+                'Abkhazia',
+                'Afghanistan',
+                'Albania',
+                'Algeria',
+                'Andorra',
+                'Angola',
+                'Anguilla',
+                'Antarctica',
+                'Antigua and/or Barbuda',
+                'Argentina',
+                'Armenia',
+                'Aruba',
+                'Australia',
+                'Austria',
+                'Azerbaijan',
+                'Bahamas',
+                'Bahrain',
+                'Barbados',
+                'Belarus',
+                'Belgium',
+                'Benin',
+                'Bermuda',
+                'Bhutan',
+                'Bolivia',
+                'Bosnia and Herzegovina',
+                'Botswana'
+        ],
         placeholder: 'Please Choose Country of Your Residence'
     });
 
