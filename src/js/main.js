@@ -4,6 +4,7 @@
 
 $('.jelect').jelect();
 
+
 var more = 'Show me more',
     less = 'Show me less'
 var isMore = true;
@@ -25,7 +26,17 @@ var jelect = $('.js-jelect'),
 jelect.on( 'change', function (e) {
     current[0].className = 'choose-lang-mob__current js-jelect-current choose-lang-mob__current-' + this.value;
 });
+$('#full-view').on('click', function(e) {
+        e.preventDefault();
+        var mobileWidth =  (window.innerWidth > 0) ?
+                        window.innerWidth :
+                        screen.width;
+    var viewport = (mobileWidth > 766) ?
+                    'width=device-width, initial-scale=1.0' :
+                    'width=1200';
+    $("meta[name=viewport]").attr('content', viewport);
 
+})
 $(function(){
 	$(".trigger").on("click",function(e){
 		var current=$('.sub-menu');
