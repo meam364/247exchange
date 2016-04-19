@@ -104,13 +104,15 @@ $(function(){
     $('#bank-branch').selectivity({
         allowClear: false,
         items: ['test', 'test1', 'test2'],
-        placeholder: 'Bank branch'
+        placeholder: 'Bank branch',
+        showSearchInputInDropdown: false
     });
 
     $('#bank-branch-2').selectivity({
         allowClear: false,
         items: ['test', 'test1', 'test2'],
-        placeholder: 'Tutte le Banche di Credito Cooperativo'
+        placeholder: 'Tutte le Banche di Credito Cooperativo',
+        showSearchInputInDropdown: false
     });
 
     $('#country').selectivity({
