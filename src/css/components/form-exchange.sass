@@ -2,6 +2,27 @@
     margin-bottom: 32px
     @media (max-width: 766px)
         margin: 0 -15px 32px
+
+    &__error
+        position: relative
+        width: 100%
+        padding: 12px 9px
+        color: #fff
+        font-size: 13px
+        background-color: #a7c806
+        border-radius: 3px
+        text-align: left
+        &:before
+            content: ''
+            position: absolute
+            top: 14px
+            left: -7px
+            width: 0
+            height: 0
+            border-style: solid
+            border-width: 4.5px 7px 4.5px 0
+            border-color: transparent #a8c806 transparent transparent
+
     &__label
         vertical-align: middle
         margin-top: 6px
@@ -159,6 +180,12 @@
             .form-exchange__form-info_danger
                 background-color: #d90f00!important
                 color: #fff
+            .form-exchange__error
+                background-color: #d90f00!important
+                &:before
+                    border-color: transparent #d90f00 transparent transparent
+
+
 
         &_exchange
             background-image: linear-gradient(to top, #f5881f 0%, #ffbf10 100%)
@@ -208,12 +235,12 @@
                     padding: 21px 22px
         &-type
             &-col
-                padding-right: 3px
+                padding-right: 4px
                 @media (max-width: 766px)
                     padding-right: 15px
                     margin-bottom: 6px
                 &_right
-                    padding-left: 3px
+                    padding-left: 4px
                     @media (max-width: 766px)
                         padding-left: 15px
 
