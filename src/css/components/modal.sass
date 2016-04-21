@@ -1,4 +1,8 @@
 .modal
+    &-location
+        & .modal-content
+            background: #F9F9F9
+
     &-login-mob
         .modal-body
             padding-top: 12px!important
@@ -174,3 +178,32 @@
 
     &-body
         padding-top: 42px
+
+    &__map
+        height: 450px
+        margin-bottom: 6px
+
+    &__select
+        margin-bottom: 6px
+
+    &__location
+        &-title
+            margin-top: 0
+            text-align: center
+        &-list
+            list-style: none
+            padding: 0
+            margin: 0
+        &-item
+            margin-bottom: 10px
+            padding-left: 20px
+            position: relative
+            &:before
+                content: '»'
+                position: absolute
+                left: 0
+                top: 0
+                color: #b1b1b1
+                font-family: Tahoma
+                @media (max-width: 766px)
+                    top: 5px

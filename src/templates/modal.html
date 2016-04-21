@@ -125,3 +125,55 @@
         </div>
     </div>
 </div>
+
+<div class="modal-location modal fade " tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                    <path fill="#fff" fill-rule="evenodd" d="M.83 4.81L4.81.83l28.2 28.19-3.99 3.99L.83 4.81z"/>
+                    <path fill="#fff" fill-rule="evenodd" d="M32.44 4.01L28.42-.01-.01 28.42l4.02 4.02L32.44 4.01z"/>
+                  </svg>
+              </button>
+            </div>
+            <div class="modal-body">
+                <div class="tab-content">
+                  <div class="tab-pane active" id="map">
+                      <div id="modal__map" class="modal__map"></div>
+                  </div>
+                  <div class="tab-pane" id="instruction">
+                      <h3 class="modal__location-title">MoneyPolo agents in Czech Republic</h3>
+                      <p class="modal__location-text">Agreement between InterMoney Exchange (247exchange operator) and MoneyPolo makes it possible for our customers to pay in cash for Bitcoin, Litecoin and others using more than 24 MoneyPolo agents in Czech Republic. You can find the most convenient location in the form. Members of MoneyPolo network in Czech Republic:</p>
+                      <ul class="modal__location-list">
+                          <li class="modal__location-item">
+                              <strong>MoneyPolo</strong> &nbsp;- It’s obviously that the cheapest way to use MoneyPolo system is to send the payment transfer from MoneyPolo branch. Check the list of branches in the form below. Also you can explore MoneyPolo branches with location lists of partners.
+                          </li>
+                          <li class="modal__location-item">
+                              Agent’s branches of <a href="https://www.contact-sys.com/en/where/list/" target="_blank">Contact payment system</a> and <a href="http://www.anelik.ru/index.php/en/individuals/index.php?option=com_servicestations&amp;view=servicestations&amp;Itemid=356" target="_blank">Anelik money transfer</a> can be used to send the payment with cash as well. Please refer to the relevant websites for more information about these networks.
+                          </li>
+                      </ul>
+                      <p class="modal__location-text">
+                          <em>24/7 multilingual Support Team would be happy to find the most convenient payment location for you.</em>
+                      </p>
+                      <p class="modal__location-text">
+                          <strong id="docs-internal-guid-b9b0a9f5-54ac-8e4a-5e3a-13714b5a7a75">Agents locator is in beta-phase, unfortunately it shows less locations than are actually available in Czech Republic. For most complete lists, please check the links above («full lists» of every money transmitter’s agents).</strong>
+                      </p>
+                  </div>
+                </div>
+                <ul class="nav nav-tabs modal__tabs" role="tablist">
+                  <li class="active modal__tab"><a href="#map" data-toggle="tab">map</a></li>
+                  <li class="modal__tab" ><a href="#instruction" data-toggle="tab">instruction</a></li>
+                  <li class="modal__tab" ><a href="javascript:window.print()">print</a></li>
+                </ul>
+                <div class="form-exchange__select modal__select" id="cites"></div>
+                <div class="form-exchange__select modal__select" id="points"></div>
+                <ul class="nav nav-tabs modal__tabs" role="tablist">
+                  <li class="modal__tab"><a href="#">copy all</a></li>
+                  <li class="modal__tab"><a href="#">copy current</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>

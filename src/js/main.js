@@ -163,3 +163,58 @@ $(function(){
         $(".js-modal-tab-register").removeClass('active');
         $(".js-modal-tab-login").addClass('active');
     });
+
+    $('#cites').selectivity({
+        allowClear: false,
+        items: [
+                'Abkhazia',
+                'Afghanistan',
+                'Albania',
+                'Algeria',
+                'Andorra',
+                'Angola',
+                'Anguilla',
+                'Antarctica',
+                'Antigua and/or Barbuda',
+                'Argentina',
+                'Armenia',
+                'Aruba',
+                'Australia',
+                'Austria',
+                'Azerbaijan',
+                'Bahamas',
+                'Bahrain',
+                'Barbados',
+                'Belarus',
+                'Belgium',
+                'Benin',
+                'Bermuda',
+                'Bhutan',
+                'Bolivia',
+                'Bosnia and Herzegovina',
+                'Botswana'
+        ],
+        placeholder: 'Please Choose Country of Your Residence'
+    });
+
+
+        $('#points').selectivity({
+            allowClear: false,
+            items: [
+                'Bitcoin (BTC)',
+                'Litecoin (LTC)',
+                'Namecoin (NMC)',
+                'Peercoin (PPC)'
+            ],
+            placeholder: 'Choose payment method',
+            showSearchInputInDropdown: false
+        });
+
+
+    var map;
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('modal__map'), {
+        center: {lat: -34.397, lng: 150.644},
+        zoom: 8
+      });
+    }
