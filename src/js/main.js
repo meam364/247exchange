@@ -2,7 +2,14 @@
 
 //= ./selectivity-full.min.js
 
+//= ./matchHeight.js
+
+//= ./clipboard.js
 $('.jelect').jelect();
+
+
+$('.match-height').matchHeight(false);
+
 
 
 var more = 'Show me more',
