@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- start.modals -->
+    <div class="modal-login-mob modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                        <path fill="#fff" fill-rule="evenodd" d="M.83 4.81L4.81.83l28.2 28.19-3.99 3.99L.83 4.81z"/>
+                        <path fill="#fff" fill-rule="evenodd" d="M32.44 4.01L28.42-.01-.01 28.42l4.02 4.02L32.44 4.01z"/>
+                      </svg>
+                  </button>
+                  <img src="./images/logo-menu.png" class="modal-login-mob__logo img-responsive"/>
+                </div>
+                <div class="modal-body">
+                    <div class="tab-content">
+                      <div class="tab-pane active js-modal-tab-login" id="Login">
+                          <input type="email" placeholder="E-mail" class="form-control input">
+                          <input type="password" placeholder="Password" class="form-control input">
+                          <div class="modal__justify">
+                              <a href="#" class="modal__link">Forgot Password?</a>
+                              <a href="#register" class="modal__link" data-toggle="tab">Регистрация</a>
+                          </div>
+                          <div class="modal-login-mob__btn-wrap">
+                              <button type="button" class="modal-login-mob__btn">Login</button>
+                          </div>
+    
+                      </div>
+                      <div class="tab-pane js-modal-tab-register" id="register">
+                          <ul class="nav nav-tabs modal__tabs modal__tabs_mini" role="tablist">
+                            <li class="active modal__tab"><a href="#personal-mob" data-toggle="tab">Personal</a></li>
+                            <li class="modal__tab" ><a href="#corporate-mob"  data-toggle="tab">Corporate</a></li>
+                          </ul>
+                          <div class="tab-content">
+                              <form method="get" class="tab-pane active" id="personal-mob">
+                                  <input type="email" placeholder="Confirm E-mail" class="form-control input">
+                                  <input type="text" placeholder="First Name" class="form-control input">
+                                  <input type="text" placeholder="Last Name" class="form-control input">
+                                  <div class="modal-login-mob__btn-wrap">
+                                      <button type="button" class="modal-login-mob__btn">Register</button>
+                                  </div>
+                              </form>
+                              <form method="get" class="tab-pane" id="corporate-mob">
+                                  <input type="email" placeholder="E-mail" class="form-control input">
+                                  <input type="text" placeholder="Company Name" class="form-control input">
+                                  <input type="text" placeholder="Company Position" class="form-control input">
+                                  <input type="text" placeholder="FirstName" class="form-control input">
+                                  <input type="text" placeholder="LastName" class="form-control input">
+                                  <div class="modal-login-mob__btn-wrap">
+                                      <button type="button" class="modal-login-mob__btn">Register</button>
+                                  </div>
+                              </form>
+                          </div>
+    
+    
+                      </div>
+                    </div>
+    
+    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-login modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                        <path fill="#fff" fill-rule="evenodd" d="M.83 4.81L4.81.83l28.2 28.19-3.99 3.99L.83 4.81z"/>
+                        <path fill="#fff" fill-rule="evenodd" d="M32.44 4.01L28.42-.01-.01 28.42l4.02 4.02L32.44 4.01z"/>
+                      </svg>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <input type="email" placeholder="E-mail" class="form-control input">
+                    <input type="password" placeholder="Password" class="form-control input">
+                    <div class="modal__justify">
+                        <a href="#" data-toggle="modal" data-target=".modal-register" data-dismiss="modal" class="modal__link modal__link_red">Register</a>
+                        <a href="#" class="modal__link">Forgot Password?</a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-modal">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal-register modal fade " tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                        <path fill="#fff" fill-rule="evenodd" d="M.83 4.81L4.81.83l28.2 28.19-3.99 3.99L.83 4.81z"/>
+                        <path fill="#fff" fill-rule="evenodd" d="M32.44 4.01L28.42-.01-.01 28.42l4.02 4.02L32.44 4.01z"/>
+                      </svg>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <ul class="nav nav-tabs modal__tabs" role="tablist">
+                      <li class="active modal__tab"><a href="#Personal" data-toggle="tab">Personal</a></li>
+                      <li class="modal__tab" ><a href="#coorp" data-toggle="tab">Corporate</a></li>
+                    </ul>
+                    <div class="tab-content">
+                      <form method="get" class="tab-pane active" id="Personal">
+                          <input type="e-mail" placeholder="Confirm E-mail" class="input form-control">
+                          <input type="text" placeholder="First Name" class="input form-control">
+                          <input type="text" placeholder="Last Name" class="input form-control">
+                          <button type="button" class="btn btn-modal">Register</button>
+                      </form>
+                      <form method="get" class="tab-pane" id="coorp">
+                          <input type="email" placeholder="E-mail" class="form-control input">
+                          <input type="text" placeholder="Company Name" class="form-control input">
+                          <input type="text" placeholder="Company Position" class="form-control input">
+                          <input type="text" placeholder="FirstName" class="form-control input">
+                          <input type="text" placeholder="LastName" class="form-control input">
+                          <button type="button" class="btn btn-modal">Register</button>
+                      </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal-location modal fade " tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                        <path fill="#fff" fill-rule="evenodd" d="M.83 4.81L4.81.83l28.2 28.19-3.99 3.99L.83 4.81z"/>
+                        <path fill="#fff" fill-rule="evenodd" d="M32.44 4.01L28.42-.01-.01 28.42l4.02 4.02L32.44 4.01z"/>
+                      </svg>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <div class="tab-content">
+                      <div class="tab-pane match-height active" id="map">
+                          <div id="modal__map " class="modal__map print"></div>
+                      </div>
+                      <div class="tab-pane match-height print" id="instruction">
+                          <h3 class="modal__location-title">MoneyPolo agents in Czech Republic</h3>
+                          <p class="modal__location-text">Agreement between InterMoney Exchange (247exchange operator) and MoneyPolo makes it possible for our customers to pay in cash for Bitcoin, Litecoin and others using more than 24 MoneyPolo agents in Czech Republic. You can find the most convenient location in the form. Members of MoneyPolo network in Czech Republic:</p>
+                          <ul class="modal__location-list">
+                              <li class="modal__location-item">
+                                  <strong>MoneyPolo</strong> &nbsp;- It’s obviously that the cheapest way to use MoneyPolo system is to send the payment transfer from MoneyPolo branch. Check the list of branches in the form below. Also you can explore MoneyPolo branches with location lists of partners.
+                              </li>
+                              <li class="modal__location-item">
+                                  Agent’s branches of <a href="https://www.contact-sys.com/en/where/list/" target="_blank">Contact payment system</a> and <a href="http://www.anelik.ru/index.php/en/individuals/index.php?option=com_servicestations&amp;view=servicestations&amp;Itemid=356" target="_blank">Anelik money transfer</a> can be used to send the payment with cash as well. Please refer to the relevant websites for more information about these networks.
+                              </li>
+                          </ul>
+                          <p class="modal__location-text">
+                              <em>24/7 multilingual Support Team would be happy to find the most convenient payment location for you.</em>
+                          </p>
+                          <p class="modal__location-text">
+                              <strong id="docs-internal-guid-b9b0a9f5-54ac-8e4a-5e3a-13714b5a7a75">Agents locator is in beta-phase, unfortunately it shows less locations than are actually available in Czech Republic. For most complete lists, please check the links above («full lists» of every money transmitter’s agents).</strong>
+                          </p>
+                      </div>
+                    </div>
+                    <ul class="nav nav-tabs modal__tabs" role="tablist">
+                      <li class="active modal__tab"><a href="#map" data-toggle="tab">map</a></li>
+                      <li class="modal__tab" ><a href="#instruction" data-toggle="tab">instruction</a></li>
+                      <li class="modal__tab" ><a href="javascript:window.print()">print</a></li>
+                    </ul>
+                    <div class="form-exchange__select modal__select print" id="cites"></div>
+                    <div class="form-exchange__select modal__select print" id="points"></div>
+                    <ul class="nav nav-tabs modal__tabs" role="tablist">
+                      <li class="modal__tab"><a href="#" >copy all</a></li>
+                      <li class="modal__tab"><a href="#" data-clipboard-target="#poi">copy current</a></li>
+                    </ul>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end.modals -->
+
+    <!-- start.header -->
+    <div class="header">
+        <div class="container header__dollar">
+            <div class="row">
+                <div class="col-md-6 col-sm-5 col-xs-7 header__col">
+                    <a class="header__logo" href="#"></a>
+                </div>
+                <div class="col-sm-7 col-xs-5 header__bar">
+                    <div id="jelectTool1" role="combobox" class="jelect js-jelect choose-lang-mob">
+                        <input id="jelectToolInput" value="en" data-text="EN" type="text" class="jelect-input js-jelect-input">
+                        <div tabindex="1" role="button" class="choose-lang-mob__current js-jelect-current choose-lang-mob__current-en">en</div>
+                        <div role="list-box" class="jelect-options js-jelect-options">
+                            <div class="jelect-scroller js-jelect-scroller">
+                                <div data-val="en" tabindex="1" role="option" class="jelect-option js-jelect-option  choose-lang-mob__en jelect-option_state_active"><div class="jelect-option__value js-jelect-option-value">EN</div></div>
+                                <div data-val="es" tabindex="1" role="option" class="jelect-option js-jelect-option choose-lang-mob__es "><div class="jelect-option__value js-jelect-option-value">ES</div></div>
+                                <div data-val="ru" tabindex="1" role="option" class="jelect-option js-jelect-option choose-lang-mob__ru "><div class="jelect-option__value js-jelect-option-value">RU</div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-mobile">
+                        <a href='#' class="form-mobile__name">
+                            <svg height="19" width="22" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 40">
+                                <path stroke-width="5" stroke="#769D00" fill="none" fill-rule="evenodd" d="M 32 29.84 C 32 29.84 31.89 29.98 31.89 29.98 C 28.05 34.51 22.94 37 17.5 37 C 12.06 37 6.95 34.51 3.12 29.98 C 3.12 29.98 3 29.84 3 29.84 C 3 29.84 3.03 29.67 3.03 29.67 C 3.77 24.92 6.83 19.63 10.68 17.45 C 10.68 17.45 12.92 20.85 17.5 20.85 C 21.14 20.85 24.32 17.45 24.32 17.45 C 28.17 19.63 31.23 24.92 31.98 29.67 C 31.98 29.67 32 29.84 32 29.84 Z M 17.5 19.98 C 22.26 19.98 26.13 16.17 26.13 11.49 C 26.13 6.81 22.26 3 17.5 3 C 12.74 3 8.87 6.81 8.87 11.49 C 8.87 16.17 12.74 19.98 17.5 19.98 Z" />
+                            </svg>
+                            <span class="form-mobile__name-val">Владимир Путин</span>
+                        </a>
+                    </div>
+                    <div class="header__navbar">
+                        <nav class="navbar navbar-default">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+    
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                              </button>
+                            </div>
+    
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <div class="header__navbar-padding">
+                                    <img src="./images/logo-menu.png" class="navbar-collapse__logo img-responsive"/>
+                                    <div class="navbar-collapse__close">
+                                        <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                                          <path fill="#fff" fill-rule="evenodd" d="M.83 4.81L4.81.83l28.2 28.19-3.99 3.99L.83 4.81z"/>
+                                          <path fill="#fff" fill-rule="evenodd" d="M32.44 4.01L28.42-.01-.01 28.42l4.02 4.02L32.44 4.01z"/>
+                                        </svg>
+                                    </div>
+                                    <ul class="nav navbar-nav">
+                                        <li><a href="#">Services</li></a>
+                                        <li><a href="#">Rates & Fees</li></a>
+                                        <li><a href="#">Affiliate Program</li></a>
+                                        <li><a href="#">Payment Methods</li></a>
+                                        <li><a href="#">Digital Currencies</li></a>
+                                        <li><a href="#">About</li></a>
+                                        <li><a href="#">Help</li></a>
+                                    </ul>
+                                </div>
+                            </div><!-- /.navbar-collapse -->
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-sm-7 col-md-6 clear header__btns">
+                    <div class="hide-tab">
+                        <div class="choose-lang">
+                            <div class="choose-lang__title">choose language:</div>
+                            <div class="choose-lang__list">
+                                <a href="#" class="choose-lang__item choose-lang__item_en">english</a>
+                                <a href="#" class="choose-lang__item choose-lang__item_ru choose-lang__item_active">russian</a>
+                                <a href="#" class="choose-lang__item choose-lang__item_sp">spanish</a>
+                            </div>
+                        </div>
+                        <form class="form" action="get">
+                            <div class="form__justify">
+                                <a href="#" class="form__name">Владимир Путин</a>
+                                &nbsp;
+                                <a href="#" class="form__exit">Выход</a>
+                            </div>
+                            <p class="form__email">email: <span class="form__email-val">vladimir_putin@yandex.ru</span></p>
+                            <div class="form__justify">
+                                <a href="#" class="form__link">Настройки</a>
+                                &nbsp;
+                                <a href="#" class="form__link">Партнерская программа</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="header__actions">
+                        <div class="header__action">
+                            <a href="/buy.html" class="btn-action">Buy</a>
+                            <p class="header__action-text">Purchase <a href="#">Bitcoin</a>, Litecoin, others using fiat currency</p>
+                        </div>
+                        <div class="header__action header__action_color_green">
+                            <a href="/sell.html" class="btn-action btn-action_color_green">Sell</a>
+                            <p class="header__action-text">Withdraw Bitcoin, <a href="#">Litecoin</a> and others to fiat money</p>
+                        </div>
+                        <div class="header__action header__action_color_orange">
+                            <a href="/exchange.html" class="btn-action btn-action_color_orange">Exchange</a>
+                            <p class="header__action-text">Convert one electronic currency to another</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end.header -->
+    <div class="container">
+        <div class="main">
+            <div class="row">
+                <div class="col-md-3">
+                    <!-- start.sidebar -->
+                    <div class="sidebar">
+                        <ul class="menu">
+                            <li class="menu__item"><a class="menu__link" href="#">SERVICES</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">RATES & FEES</a></li>
+                            <li class="menu__item dropdown">
+                                <a class="menu__link menu__toggle dropdown-toggle"
+                                     >Affiliate program</a>
+                                    <ul class="menu__dropdown" aria-labelledby="dLabel">
+                                        <li class="menu__dropdown-item"><a class="menu__dropdown-link" href="#">Main page</a></li>
+                                        <li class="menu__dropdown-item"><a class="menu__dropdown-link" href="#">About our company</a></li>
+                                        <li class="menu__dropdown-item"><a class="menu__dropdown-link" href="#">Services</a></li>
+                                    </ul>
+                            </li>
+                            <li class="menu__item"><a class="menu__link" href="#">PAYMENT METHODS</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">DIGITAL CURRENCIES</a></li>
+                            <li class="menu__item dropdown">
+                                <a class="menu__link menu__toggle dropdown-toggle"
+                                      >About</a>
+                                    <ul class="menu__dropdown">
+                                        <li class="menu__dropdown-item menu__dropdown-submenu">
+                                            <a class="menu__dropdown-link menu__toggle trigger"
+                                                    id="test"
+                                                  >Legal Info</a>
+                                                <ul class="menu__dropdown sub-menu" aria-labelledby="test">
+                                                    <li class="menu__dropdown-item"><a class="menu__dropdown-link" href="#">Out Company</a></li>
+                                                    <li class="menu__dropdown-item"><a class="menu__dropdown-link" href="#">Out Company</a></li>
+                                                    <li class="menu__dropdown-item"><a class="menu__dropdown-link" href="#">Out Company</a></li>
+                                                    <li class="menu__dropdown-item"><a class="menu__dropdown-link" href="#">Out Company</a></li>
+                                                    <li class="menu__dropdown-item"><a class="menu__dropdown-link" href="#">Out Company</a></li>
+                                                    <li class="menu__dropdown-item"><a class="menu__dropdown-link" href="#">Out Company</a></li>
+                                                </ul>
+                                        </li>
+                                        <li class="menu__dropdown-item"><a class="menu__dropdown-link" href="#">Legal Info</a></li>
+                                        <li class="menu__dropdown-item"><a class="menu__dropdown-link" href="#">Newst</a></li>
+                                    </ul>
+                            </li>
+                            <li class="menu__item"><a class="menu__link" href="#">Help</a></li>
+                        </ul>
+                        <div class="latest-news">
+                            <h4 class="heading heading_orange">Latest news</h4>
+                            <ul class="latest-news__list">
+                                <li class="latest-news__item">
+                                    <p class="latest-news__date">07 Mar, 2016</p>
+                                    <a href="#" class="latest-news__link">Scheduled maintenance at the card payment processor on March, 9 and 11</a>
+                                </li>
+                                <li class="latest-news__item">
+                                    <p class="latest-news__date">29 Feb, 2016</p>
+                                    <a href="#" class="latest-news__link">247exchange.com covers Canada with instant ways of buying Bitcoin</a>
+                                </li>
+                                <li class="latest-news__item">
+                                    <p class="latest-news__date">19 Feb, 2016</p>
+                                    <a href="#" class="latest-news__link">More than 50 000 users now!</a>
+                                </li>
+                                <li class="latest-news__item">
+                                    <p class="latest-news__date">09 Feb, 2016</p>
+                                    <a href="#" class="latest-news__link">Approaching 50,000 users! Discounts are coming!</a>
+                                </li>
+                                <li class="latest-news__item">
+                                    <p class="latest-news__date">14 Jan, 2016</p>
+                                    <a href="#" class="latest-news__link">Buying and selling limits for bank transfers increased</a>
+                                </li>
+                            </ul>
+                            <div class="more"><a href="#" class="more__btn">view all</a></div>
+                        </div>
+                        <a href="#" class="ask">
+                            <p class="ask__text">вы можете <br> Задать вопрос <br> консультанту</p>
+                        </a>
+                        <div class="follow">
+                            <h3 class="heading heading_green">Follow us</h3>
+                            <a href="#" class="follow__link follow__link_fb"></a>
+                            <a href="#" class="follow__link follow__link_tw"></a>
+                            <a href="#" class="follow__link follow__link_gp"></a>
+                        </div>
+                    </div>
+                    <!-- end.sidebar -->
+                </div>
+                <!-- start.main -->
+                <div class="col-md-9">
+                    <div class="wrap">
+                        <!-- start.about -->
+                        <div class="about">
+                            <div class="heading">Easy, safe & instant way to buy/sell Bitcoins:</div>
+                            <p>InterMoney Exchange (the owner of the service) is
+                                creating the new standard of digital currencies exchange
+                                - easy, safe, affordable and available for everyone!
+                                We have a number of advantages that distinguish us from the competition:</p>
+                            <div class="about-collapse collapse">
+                                <ul class="mark-list about__list">
+                                    <li class="mark-list__item">Licensed financial activity (details) by reputable compliant company;</li>
+                                    <li class="mark-list__item">Risk-free service without holding clients’ funds, instant delivery;</li>
+                                    <li class="mark-list__item">Lowest fees, regular promotions and special offers;</li>
+                                    <li class="mark-list__item">Local payment options in 110+ countries!</li>
+                                </ul>
+                                <p><b>Accepting all credit/debit cards; 400,000 locations to buy/sell bitcoins with cash worldwide!</b></p>
+                                <div class="more"><a href="#" class="more__btn">read more</a></div>
+                            </div>
+                            <button class="btn btn-collapse" type="button" data-toggle="collapse" data-target=".about-collapse" aria-expanded="false" aria-controls="collapseExample">
+                                <i class="fa fa-chevron-down"></i><span class="btn-collapse__text">show me more</span><i class="fa fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <!-- end.about -->
+                        <div class="row block_sm">
+                            <!-- start.latest-news -->
+                            <div class="col-sm-5 hidden-xs">
+                                <div class="latest-news">
+                                    <h4 class="heading heading_orange">Latest news</h4>
+                                    <ul class="latest-news__list">
+                                        <li class="latest-news__item">
+                                            <p class="latest-news__date">07 Mar, 2016</p>
+                                            <a href="#" class="latest-news__link">Scheduled maintenance at the card payment processor on March, 9 and 11</a>
+                                        </li>
+                                        <li class="latest-news__item">
+                                            <p class="latest-news__date">29 Feb, 2016</p>
+                                            <a href="#" class="latest-news__link">247exchange.com covers Canada with instant ways of buying Bitcoin</a>
+                                        </li>
+                                        <li class="latest-news__item">
+                                            <p class="latest-news__date">19 Feb, 2016</p>
+                                            <a href="#" class="latest-news__link">More than 50 000 users now!</a>
+                                        </li>
+                                        <li class="latest-news__item">
+                                            <p class="latest-news__date">09 Feb, 2016</p>
+                                            <a href="#" class="latest-news__link">Approaching 50,000 users! Discounts are coming!</a>
+                                        </li>
+                                        <li class="latest-news__item">
+                                            <p class="latest-news__date">14 Jan, 2016</p>
+                                            <a href="#" class="latest-news__link">Buying and selling limits for bank transfers increased</a>
+                                        </li>
+                                    </ul>
+                                    <div class="more"><a href="#" data-text='All news' class="more__btn">All news</a></div>
+                                </div>
+                            </div>
+                            <!-- end.latest-news -->
+                            <div class="col-sm-7">
+                                <!-- start.testimonials -->
+                                <div class="block block_testimonials">
+                                    <div class="testimonials">
+                                        <h3 class="heading heading_green">Testimonials</h3>
+                                        <ul class="testimonials__list">
+                                            <li class="testimonials__item">
+                                                <p class="testimonials__name">Bogdan, <span class="testimonials__name_type">Bitcoin > USD (Western Union)</span></p>
+                                                <p class="testimonials__date">April 5, 2012</p>
+                                                <p class="testimonials__text">Excellent service! In just few hours i had money out! I recomend their services and ill be back !</p>
+                                            </li>
+                                        </ul>
+                                        <div class="more"><a href="#" data-text='All testimonials' class="more__btn more__btn_green">All testimonials</a></div>
+                                    </div>
+                                </div>
+                                <!-- end.testmonials -->
+                                <!-- start.latest-news-mobile -->
+                                <div class="latest-news visible-xs">
+                                    <h4 class="heading heading_orange">Latest news</h4>
+                                    <ul class="latest-news__list">
+                                        <li class="latest-news__item">
+                                            <p class="latest-news__date">07 Mar, 2016</p>
+                                            <a href="#" class="latest-news__link">Scheduled maintenance at the card payment processor on March, 9 and 11</a>
+                                        </li>
+                                        <li class="latest-news__item">
+                                            <p class="latest-news__date">29 Feb, 2016</p>
+                                            <a href="#" class="latest-news__link">247exchange.com covers Canada with instant ways of buying Bitcoin</a>
+                                        </li>
+                                        <li class="latest-news__item">
+                                            <p class="latest-news__date">19 Feb, 2016</p>
+                                            <a href="#" class="latest-news__link">More than 50 000 users now!</a>
+                                        </li>
+                                        <li class="latest-news__item">
+                                            <p class="latest-news__date">09 Feb, 2016</p>
+                                            <a href="#" class="latest-news__link">Approaching 50,000 users! Discounts are coming!</a>
+                                        </li>
+                                        <li class="latest-news__item">
+                                            <p class="latest-news__date">14 Jan, 2016</p>
+                                            <a href="#" class="latest-news__link">Buying and selling limits for bank transfers increased</a>
+                                        </li>
+                                    </ul>
+                                    <div class="more"><a href="#" class="more__btn">All newst</a></div>
+                                </div>
+                                <!-- end.latest-news-mobile -->
+
+                                <div class="block">
+                                    <!-- start.hot -->
+                                    <div class="hot">
+                                        <h3 class="heading heading_orange">What's hot</h3>
+                                        <ul class="hot__list">
+                                            <li class="hot__item">
+                                                <a href="#" class="hot__title">Bank withdrawals are cheaper now</a>
+                                                <p class="hot__text">Our fee for withdrawing Bitcoin and altcoins with a bank wire (SWIFT) transfer (USD, EUR) and SEPA transfer is only 0.25% now! You can submit your orders here.</p>
+                                            </li>
+                                        </ul>
+                                        <div class="more"><a href="#" data-text='All offers' class="more__btn">All offers</a></div>
+                                    </div>
+                                    <!-- end.hot -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block block_lg">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <div class="testimonials">
+                                        <h3 class="heading heading_green">Testimonials</h3>
+                                        <ul class="testimonials__list">
+                                            <li class="testimonials__item">
+                                                <p class="testimonials__name">Bogdan, <span class="testimonials__name_type">Bitcoin > USD (Western Union)</span></p>
+                                                <p class="testimonials__date">April 5, 2012</p>
+                                                <p class="testimonials__text">Excellent service! In just few hours i had money out! I recomend their services and ill be back !</p>
+                                            </li>
+                                        </ul>
+                                        <div class="more"><a href="#" data-text='All testimonials' class="more__btn more__btn_green">All testimonials</a></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="hot">
+                                        <h3 class="heading heading_orange">What's hot</h3>
+                                        <ul class="hot__list">
+                                            <li class="hot__item">
+                                                <a href="#" class="hot__title">Bank withdrawals are cheaper now</a>
+                                                <p class="hot__text">Our fee for withdrawing Bitcoin and altcoins with a bank wire (SWIFT) transfer (USD, EUR) and SEPA transfer is only 0.25% now! You can submit your orders here.</p>
+                                            </li>
+                                        </ul>
+                                        <div class="more"><a href="#" data-text='All offers' class="more__btn">All offers</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video">
+                            <h3 class="heading">Video tutorial</h3>
+                            <div class="video__wrap">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/anvd0qY3FFE"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="press">
+                                <h3 class="heading heading_green">Press about us</h3>
+                                <div class="press__item">
+                                    <p class="press__date">April 5, 2012</p>
+                                    <a href="#" class="press__text">Excellent service! In just few hours i had money out! I recomend their services and ill</a>
+                                </div>
+                                <div class="press__item">
+                                    <p class="press__date">April 5, 2012</p>
+                                    <a href="#" class="press__text">Excellent service! In just few hours i had money out! I recomend their services and ill</a>
+                                </div>
+                                <div class="press__item">
+                                    <p class="press__date">April 5, 2012</p>
+                                    <a href="#" class="press__text">Excellent service! In just few hours i had money out! I recomend their services and ill</a>
+                                </div>
+                                <div class="press__item">
+                                    <p class="press__date">April 5, 2012</p>
+                                    <a href="#" class="press__text">Excellent service! In just few hours i had money out! I recomend their services and ill</a>
+                                </div>
+                                <div class="more"><a href="#" class="more__btn more__btn_green">view all</a></div>
+                            </div>
+                        </div>
+                        <div class="follow-mob">
+                            <h3 class="heading">
+                                <span class="follow-mob__heading">Follow Us</span>
+                                <div class="follow-mob__list">
+                                    <a href="#" class="follow-mob__item follow-mob__item_fb"></a>
+                                    <a href="#" class="follow-mob__item follow-mob__item_tw"></a>
+                                    <a href="#" class="follow-mob__item follow-mob__item_gp"></a>
+                                    <a href="#" class="follow-mob__item follow-mob__item_vk"></a>
+                                </div>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- end.main -->
+            </div>
+        </div>
+        <!-- start.accept -->
+        <div class="accept">
+            <div class="accept__title">We accept:</div>
+            <div class="accept__list">
+                <a href="#" class="accept__item">
+                    <img src="./images/visa.png" alt="visa">
+                </a>
+                <a href="#" class="accept__item">
+                    <img src="./images/mastercard.png" alt="mastercard">
+                </a>
+                <a href="#" class="accept__item">
+                    <img src="./images/visa_electron.png" alt="visa-e">
+                </a>
+                <a href="#" class="accept__item">
+                    <img src="./images/maestro.png" alt="maestro">
+                </a>
+                <a href="#" class="accept__item">
+                    <img src="./images/interac.jpg" alt="interac">
+                </a>
+                <a href="#" class="accept__item">
+                    <img src="./images/sepa.jpg" alt="sepa">
+                </a>
+                <a href="#" class="accept__item">
+                    <img src="./images/swift.jpg" alt="swift">
+                </a>
+                <a href="#" class="accept__item">
+                    <img src="./images/echeck.jpg" alt="echeck">
+                </a>
+                <a href="#" class="accept__item">
+                    <img src="./images/cash-deposit.png" alt="cash-deposit">
+                </a>
+                <a href="#" class="accept__item">
+                    <img src="./images/local.png" alt="local-transfer">
+                </a>
+                <a href="#" class="accept__item">
+                    <img src="./images/money.png" alt="money-transfer">
+                </a>
+                <a href="#" class="accept__item">
+                    <img src="./images/bitcoin.png" alt="bitcoin">
+                </a>
+                <a href="#" class="accept__item">
+                    <img src="./images/litecoin.jpg" alt="litercoin">
+                </a>
+                <a href="#" class="accept__item">
+                    <img src="./images/namecoin.png" alt="namecoin">
+                </a>
+                <a href="#" class="accept__item">
+                    <img src="./images/peercoin.png" alt="peercoin">
+                </a>
+                <a href="#" class="accept__item">
+                    <img src="./images/okpay.png" alt="okpay">
+                </a>
+                <a href="#" class="accept__item">
+                    <img src="./images/moneypolo.png" alt="moneypolo">
+                </a>
+            </div>
+        </div>
+        <!-- end.accept -->
+
+        <!-- start.footer -->
+        <div class="footer">
+            <div class="row">
+                <div class="col-sm-7 col-md-8 col-md-push-4 col-sm-push-5">
+                    <div class="col-sm-6  col-md-5 col-md-offset-2 ">
+                        <ul class="footer__list">
+                            <li class="footer__item footer__item_full-view"><a href="#" id="full-view" class="footer__link">Desktop view</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">User Agreement</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Information Security Statement</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">AML Policy</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Consent to Receive Electronic Communication</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-5">
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#" class="footer__link">Privacy Statement</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Risk Disclosure Statement</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Refund Policy</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Delivery Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-4 col-md-pull-8 col-sm-pull-7">
+                    <p class="footer__copy">© 2014-2015, InterMoney Exchange™, Group of Companies. All rights reserved.</p>
+                    <div class="footer__banners">
+                        <img src="./images/verify-visa.png" alt="" class="footer__banner">
+                        <img src="./images/mc-security.png" alt="" class="footer__banner">
+                        <img src="./images/dss.png" alt="" class="footer__banner">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end.footer -->
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $('.navbar-collapse__close').on('click', function() {
+                $('.navbar-collapse').removeClass('in');
+            })
+            $('.choose-lang-mob__current').on('click', function() {
+                $('.choose-lang-mob__list').toggle();
+            })
+          $('.accept__list').slick({
+              infinite: true,
+              speed: 300,
+              slidesToShow: 9,
+              slidesToScroll: 1,
+              centerMode: true,
+              variableWidth: true,
+              nextArrow: '<div class="accept__arrow"><i class="fa fa-chevron-right"></i></div>',
+              prevArrow: '<div class="accept__arrow accept__arrow_prev"><i class="fa fa-chevron-left"></i></div>',
+              responsive: [
+                {
+                  breakpoint: 950,
+                  settings: {
+                    slidesToShow: 6,
+                    slidesToScroll: 1,
+                    infinite: true,
+                  }
+                },
+                {
+                  breakpoint: 768,
+                  settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 2
+                  }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+              ]
+            });
+        });
+    </script>
+</body>
+</html>
