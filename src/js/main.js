@@ -68,10 +68,8 @@ $(function(){
 	});
 });
 
-    $btns = $('.more__btn');
 
     $(window).on('resize', function() {
-        checkResolution();
         fixCollapse();
     });
 
@@ -80,46 +78,6 @@ $(function(){
     function fixCollapse() {
         if($(window).width() > 766)
             $('.about-collapse').height('auto');
-    }
-    function checkResolution() {
-        var $window = $(window);
-        if($window.width() >= 766) {
-            setName(true);
-            resetName();
-        }else {
-            setName(false);
-            changeName();
-        }
-    }
-
-    var fullName;
-
-    function changeName() {
-        if(!fullName) {
-            fullName = $('.form-mobile__name-val').text();
-        }
-        var arr = fullName.split(' ');
-        for(var i = 0; i < arr.length; i++) {
-            arr[i] = arr[i].charAt(0).toUpperCase();
-        }
-        $('.form-mobile__name-val').text(arr.join(''));
-    }
-
-    function resetName() {
-        var currentVal = $('.form-mobile__name-val').text();
-        if(currentVal.length < 4) {
-            $('.form-mobile__name-val').text(fullName);
-        }
-    }
-
-    function setName(flag) {
-        $btns.map(function(i, btn) {
-            if(!flag) {
-                $(btn).html('View All')
-            }else {
-                $(btn).text($(this).data('text'))
-            }
-        })
     }
     // ADD SLIDEDOWN ANIMATION TO DROPDOWN //
     $('.dropdown').on('click', function(e){
