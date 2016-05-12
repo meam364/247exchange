@@ -10,6 +10,30 @@
 </head>
 <body>
     <!-- start.modals -->
+    <div style="display:none">
+        <div class="modal-sm" id="fancy-box-test">
+            <ul class="nav nav-tabs modal__tabs" role="tablist">
+              <li class="active modal__tab"><a href="#Test1" data-toggle="tab">Test1</a></li>
+              <li class="modal__tab" ><a href="#Test2" data-toggle="tab">Test2</a></li>
+            </ul>
+            <div class="tab-content">
+              <form method="get" class="tab-pane active" id="Test1">
+                  <input type="e-mail" placeholder="Confirm E-mail" class="input form-control">
+                  <input type="text" placeholder="First Name" class="input form-control">
+                  <input type="text" placeholder="Last Name" class="input form-control">
+                  <button type="button" class="btn btn-modal">Register</button>
+              </form>
+              <form method="get" class="tab-pane" id="Test2">
+                  <input type="email" placeholder="E-mail" class="form-control input">
+                  <input type="text" placeholder="Company Name" class="form-control input">
+                  <input type="text" placeholder="Company Position" class="form-control input">
+                  <input type="text" placeholder="FirstName" class="form-control input">
+                  <input type="text" placeholder="LastName" class="form-control input">
+                  <button type="button" class="btn btn-modal">Register</button>
+              </form>
+            </div>
+        </div>
+    </div>
     <div class="modal-login-mob modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -294,8 +318,12 @@
         </div>
     </div>
     <!-- end.header -->
+
     <div class="container">
         <div class="main">
+            <a  href="#fancy-box-test" class="fancybox">FANCY BOX</a>
+            <br>
+            <a href="#" data-toggle="modal" data-target=".modal-register">BOOTSTRAP MODAL</a>
             <div class="row">
                 <div class="col-md-3">
                     <!-- start.sidebar -->
