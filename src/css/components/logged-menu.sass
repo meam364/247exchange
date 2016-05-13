@@ -1,0 +1,73 @@
+.logged-menu-col
+    padding: 0
+    @media(max-width: 955px)
+        clear: both
+.logged-menu
+    background-image: linear-gradient(to top, #CDCBCB 0%, #EFEFEF 100%)
+    border-radius: 6px
+    height: 54px
+    list-style: none
+    padding: 0
+    margin: 0
+    margin-top: 16px
+    margin-right: 20px
+    display: flex
+    justify-content: center
+    flex-wrap: nowrap
+    position: relative
+    z-index: 1
+    overflow: hidden
+    @media(max-width: 955px)
+        margin-right: 10px
+        margin-left: 15px
+    @media(max-width: 766px)
+        margin-left: 0
+        margin-right: 0
+        border-radius: 0
+
+    &__item
+        flex-grow: 1
+        flex-shrink: 1
+        flex-basis: auto
+        flex: 1 1 auto
+
+        &_active
+            .logged-menu__link
+                box-shadow: 0.5px 0.9px 0 rgba(255, 255, 255, 0.75), inset 0.5px 0.9px 0 rgba(0, 0, 0, 0.31)
+                background: #D2D2D2
+                &:before
+                    display: none
+                &:hover
+                    background: #D2D2D2
+
+    &__link
+        height: 54px
+        display: flex
+        justify-content: center
+        align-items: center
+        text-transform: uppercase
+        text-shadow: 0.5px 0.9px 0 rgba(255, 255, 255, 0.67)
+        font-size: 14px
+        color: #232323
+        position: relative
+        @media (max-width: 766px)
+            font-size: 11px
+        &::before
+            position: absolute
+            z-index: -1
+            background: rgba(255,255,255,.35)
+            top: 0
+            left: 0
+            right: 0
+            height: 27px
+            display: block
+            content: ''
+
+        &:hover
+            background-color: rgba(255,255,255, .4)
+            color: #232323
+            text-decoration: none
+        &_danger
+            color: #C12000
+            &:hover
+                color: #C12000

@@ -28,7 +28,9 @@
             @media (max-width: 950px)
                 display: none
 
-
+    &_logged
+        .header__action-text
+            display: none
     &__btns
         padding: 0
     &__col
@@ -38,6 +40,7 @@
             padding-right: 0
         @media(max-width: 766px)
             padding: 0 15px!important
+            padding-right: 0!important
     &__group
         display: inline-block
         vertical-align: middle
@@ -47,7 +50,8 @@
         @media (max-width: 766px)
             position: static
             margin-top: 0
-            margin-bottom: 0px
+            margin-bottom: 0
+            padding-left: 0
 
         &:after
             width: 100%
@@ -189,23 +193,25 @@
     &__actions
         font-size: 0
         margin-top: 18px
+        display: flex
+        padding-right: 20px
+        justify-content: space-between
         @media (max-width: 950px)
-            margin-left: 10px
+            margin-left: 14px
+            margin-right: 9px
+            padding: 0
         @media (max-width: 766px)
             text-align: center
             margin-left: 0
+            margin-right: 0
 
     &__action
         display: inline-block
-        margin-right: 6px
         max-width: 150px
-        &:last-of-type
-            margin-right: 0
+        width: 100%
         @media (max-width: 950px)
             width: 135px
-            margin-right: 5px
         @media (max-width: 766px)
-            margin-right: 0
             width: 33.3%
             max-width: none
         &-text
