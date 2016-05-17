@@ -9,6 +9,16 @@
         background-color: #fff
         padding-top: 18px
         margin-bottom: 30px
+
+    &-mobile
+        display: none
+        @media(max-width: 766px)
+            display: flex
+            justify-content: space-between
+            align-items: center
+            margin-bottom: 26px
+        
+
     &__dollar
         position: relative
         z-index: 1
@@ -58,6 +68,8 @@
             height: 0
             content: ''
             display: inline-block
+            @media (max-width: 766px)
+                display: none
         @media (min-width: $screen-sm-min)
             text-align: justify
 
@@ -184,9 +196,9 @@
             width: 278px
             height: 153px
         @media (max-width: 766px)
-            width: 100%
+            width: 192px
             height: 30px
-            margin-top: 4px
+            margin-top: 0
             margin-left: 0
             background-image: url(../images/logo-mob.png)
 

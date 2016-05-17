@@ -26,6 +26,9 @@ $(".fancybox").fancybox({
     }
 });
 
+$('.alert__close').on('click', function() {
+    $(this).parent().fadeOut(300);
+})
 
 var more = 'Show me more',
     less = 'Show me less'
