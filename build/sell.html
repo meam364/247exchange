@@ -215,10 +215,54 @@
     <div class="header">
         <div class="container header__dollar">
             <div class="row">
-                <div class="col-md-6 col-sm-5 col-xs-7 header__col">
+                <div class="col-xs-12 header-mobile">
+                    <a class="header__logo" href="#"></a>
+                    <a href="#" href="#" data-toggle="modal" data-target=".modal-login-mob" class="header__login" >
+                        <svg height="40" width="35" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 40">
+                            <path stroke-width="5" stroke="#272c31" fill="none" fill-rule="evenodd" d="M 32 29.84 C 32 29.84 31.89 29.98 31.89 29.98 C 28.05 34.51 22.94 37 17.5 37 C 12.06 37 6.95 34.51 3.12 29.98 C 3.12 29.98 3 29.84 3 29.84 C 3 29.84 3.03 29.67 3.03 29.67 C 3.77 24.92 6.83 19.63 10.68 17.45 C 10.68 17.45 12.92 20.85 17.5 20.85 C 21.14 20.85 24.32 17.45 24.32 17.45 C 28.17 19.63 31.23 24.92 31.98 29.67 C 31.98 29.67 32 29.84 32 29.84 Z M 17.5 19.98 C 22.26 19.98 26.13 16.17 26.13 11.49 C 26.13 6.81 22.26 3 17.5 3 C 12.74 3 8.87 6.81 8.87 11.49 C 8.87 16.17 12.74 19.98 17.5 19.98 Z" />
+                        </svg>
+                    </a>
+                    <div class="header__navbar header__bar">
+                        <nav class="navbar navbar-default">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+    
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                              </button>
+                            </div>
+    
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <div class="header__navbar-padding">
+                                    <img src="./images/logo-menu.png" class="navbar-collapse__logo img-responsive"/>
+                                    <div class="navbar-collapse__close">
+                                        <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33">
+                                          <path fill="#fff" fill-rule="evenodd" d="M.83 4.81L4.81.83l28.2 28.19-3.99 3.99L.83 4.81z"/>
+                                          <path fill="#fff" fill-rule="evenodd" d="M32.44 4.01L28.42-.01-.01 28.42l4.02 4.02L32.44 4.01z"/>
+                                        </svg>
+                                    </div>
+                                    <ul class="nav navbar-nav">
+                                        <li><a href="#">Services</li></a>
+                                        <li><a href="#">Rates & Fees</li></a>
+                                        <li><a href="#">Affiliate Program</li></a>
+                                        <li><a href="#">Payment Methods</li></a>
+                                        <li><a href="#">Digital Currencies</li></a>
+                                        <li><a href="#">About</li></a>
+                                        <li><a href="#">Help</li></a>
+                                    </ul>
+                                </div>
+                            </div><!-- /.navbar-collapse -->
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-5 col-xs-7 header__col hidden-xs">
                     <a class="header__logo" href="#"></a>
                 </div>
-                <div class="col-sm-7 col-xs-5 header__bar">
+                <div class="col-sm-7 col-xs-5 header__bar hidden-xs">
                     <div id="jelectTool1" role="combobox" class="jelect js-jelect choose-lang-mob">
                         <input id="jelectToolInput" value="en" data-text="EN" type="text" class="jelect-input js-jelect-input">
                         <div tabindex="1" role="button" class="choose-lang-mob__current js-jelect-current choose-lang-mob__current-en">en</div>
@@ -232,11 +276,6 @@
                     </div>
                     <a href="#" data-toggle="modal" data-target=".modal-register" class="btn-simple">Register</a>
                     <a href="#" data-toggle="modal" data-target=".modal-login" class="btn-simple">Login</a>
-                    <a href="#" href="#" data-toggle="modal" data-target=".modal-login-mob" class="header__login" >
-                        <svg height="40" width="35" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 40">
-                            <path stroke-width="5" stroke="#272c31" fill="none" fill-rule="evenodd" d="M 32 29.84 C 32 29.84 31.89 29.98 31.89 29.98 C 28.05 34.51 22.94 37 17.5 37 C 12.06 37 6.95 34.51 3.12 29.98 C 3.12 29.98 3 29.84 3 29.84 C 3 29.84 3.03 29.67 3.03 29.67 C 3.77 24.92 6.83 19.63 10.68 17.45 C 10.68 17.45 12.92 20.85 17.5 20.85 C 21.14 20.85 24.32 17.45 24.32 17.45 C 28.17 19.63 31.23 24.92 31.98 29.67 C 31.98 29.67 32 29.84 32 29.84 Z M 17.5 19.98 C 22.26 19.98 26.13 16.17 26.13 11.49 C 26.13 6.81 22.26 3 17.5 3 C 12.74 3 8.87 6.81 8.87 11.49 C 8.87 16.17 12.74 19.98 17.5 19.98 Z" />
-                        </svg>
-                    </a>
                     <div class="header__navbar">
                         <nav class="navbar navbar-default">
                             <!-- Brand and toggle get grouped for better mobile display -->
