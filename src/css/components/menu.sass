@@ -59,10 +59,12 @@
         &:hover
             color: #fff
             text-decoration: none
-    .open
+    .open,
+    .active
         background-image: linear-gradient(to top, #f5881f 0%, #ffbf10 100%)
 
-    &__dropdown-submenu.open
+    &__dropdown-submenu.open,
+    &__dropdown-submenu.active
         background: linear-gradient(to bottom, rgba(255,94,38,1) 0%,rgba(227,70,39,1) 100%)
         border-top: 1px solid #ffefc1!important
         box-shadow: 0 -1px 0 #e97200!important
@@ -75,7 +77,8 @@
             transform: rotate(90deg)
     .sub-menu
         display: none
-    .open
+    .open,
+    .active
         > .menu__link
             color: #fff
             &:before

@@ -64,7 +64,10 @@ $('#full-view').on('click', function(e) {
 })
 $(function(){
 	$(".trigger").on("click",function(e){
-		var current=$('.sub-menu');
+        if($(this).parent().hasClass('active')) {
+            return;
+        }
+		var current = $(this).next();
 		current.stop(true, true).slideToggle(250);
         current.parent().toggleClass('open');
 		e.stopPropagation();
@@ -76,14 +79,15 @@ $(function(){
         fixCollapse();
     });
 
-    $(window).on('load', checkResolution);
-
     function fixCollapse() {
         if($(window).width() > 766)
             $('.about-collapse').height('auto');
     }
     // ADD SLIDEDOWN ANIMATION TO DROPDOWN //
     $('.dropdown').on('click', function(e){
+        if($(this).hasClass('active')) {
+            return;
+        }
       $(this).find('.menu__dropdown').first().stop(true, true).slideToggle(250);
       $(this).toggleClass('open');
     });
