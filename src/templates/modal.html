@@ -1,26 +1,101 @@
 <!-- start.modals -->
 <div style="display:none">
-    <div class="modal-sm" id="fancy-box-test">
-        <ul class="nav nav-tabs modal__tabs" role="tablist">
-          <li class="active modal__tab"><a href="#Test1" data-toggle="tab">Test1</a></li>
-          <li class="modal__tab" ><a href="#Test2" data-toggle="tab">Test2</a></li>
-        </ul>
-        <div class="tab-content">
-          <form method="get" class="tab-pane active" id="Test1">
-              <input type="e-mail" placeholder="Confirm E-mail" class="input form-control">
-              <input type="text" placeholder="First Name" class="input form-control">
-              <input type="text" placeholder="Last Name" class="input form-control">
-              <button type="button" class="btn btn-modal">Register</button>
-          </form>
-          <form method="get" class="tab-pane" id="Test2">
-              <input type="email" placeholder="E-mail" class="form-control input">
-              <input type="text" placeholder="Company Name" class="form-control input">
-              <input type="text" placeholder="Company Position" class="form-control input">
-              <input type="text" placeholder="FirstName" class="form-control input">
-              <input type="text" placeholder="LastName" class="form-control input">
-              <button type="button" class="btn btn-modal">Register</button>
-          </form>
+    <div style="clear: left; float: left;" id="test" class="popup modal-test">
+
+
+    <div class="popup-form span-8">
+
+        <div class="fright tabs">
+
+
+                <a href="#" class="active" id="showPersonal">Personal</a>
+                <a href="#" id="showCorporate">Corporate</a>
+
+
         </div>
+
+        <form id="popupRegistrationForm" class="ajax" action="/popupRegistration" method="POST"><div style="visibility:hidden"><input type="hidden" value="1" name="yform_popupRegistrationForm" id="yform_popupRegistrationForm"></div>
+        <div style="visibility:hidden">
+        <input id="corporate" name="MemberRegistration[corporate]" type="hidden" value="0"></div>
+        <div class="row field_email">
+
+        <input class="span-8" placeholder="E-mail" name="MemberRegistration[email]" id="MemberRegistration_email" type="text" maxlength="255" style="cursor: auto; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; background-repeat: no-repeat;">
+
+        </div>
+        <div class="popup_registration_corporate" style="display: none;"><div class="row field_companyName">
+
+        <input class="span-8" placeholder="Company Name" name="MemberRegistration[companyName]" id="MemberRegistration_companyName" type="text" maxlength="255">
+
+        </div>
+        </div><div class="popup_registration_corporate" style="display: none;"><div class="row field_companyPosition">
+
+        <input class="span-8" placeholder="Your Position in Company" name="MemberRegistration[companyPosition]" id="MemberRegistration_companyPosition" type="text" maxlength="255">
+
+        </div>
+        </div><div class="row field_firstname">
+
+        <input class="span-8" placeholder="Firstname" name="MemberRegistration[firstname]" id="MemberRegistration_firstname" type="text" maxlength="255">
+
+        </div>
+        <div class="row field_lastname">
+
+        <input class="span-8" placeholder="Lastname" name="MemberRegistration[lastname]" id="MemberRegistration_lastname" type="text" maxlength="255">
+
+        </div>
+        <div class="row row_agreement" style="text-align: center; display: block;"><label style="display: inline;">
+                        <input id="ytMemberRegistration_agreement" type="hidden" value="0" name="MemberRegistration[agreement]"><input name="MemberRegistration[agreement]" id="MemberRegistration_agreement" value="1" type="checkbox">
+
+                        I accept <a target="_blank" href="/legal_info">the service"s rules and polices</a>
+                    </label></div>
+        <div class="row buttons"><input class="btn-orange-middle" type="submit" value="Register">
+        </div>
+
+    </form>
+    </div>
+
+    </div>
+    <div style="clear: left; float: left;" id="test2" class="popup modal-test2">
+
+        <h1></h1>
+
+        <div></div>
+
+
+        <div class="popup-form span-8">
+
+            <form id="autoLogin" action="/popupLogin?error_id=68392" method="POST"><div style="visibility:hidden"><input type="hidden" value="1" name="yform_autoLogin" id="yform_autoLogin"></div>
+        
+        <div style="visibility:hidden">
+        <input enabled="1" id="device_id" name="MemberLogin[device_id]" type="hidden"></div>
+        <div class="row field_email">
+
+        <input class="text span-8" id="login_user_email" placeholder="E-mail" name="MemberLogin[email]" type="text" maxlength="255" value="" style="cursor: auto; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAALZJREFUOBFjYKAANDQ0rGWiQD9IqzgL0BQ3IKMXiB8AcSKQ/waIrYDsKUD8Fir2pKmpSf/fv3+zgPxfzMzMSbW1tbeBbAaQC+b+//9fB4h9gOwikCAQTAPyDYHYBciuBQkANfcB+WZAbPP37992kBgIUOoFBiZGRsYkIL4ExJvZ2NhAXmFgYmLKBPLPAfFuFhaWJpAYEBQC+SeA+BDQC5UQIQpJYFgdodQLLyh0w6j20RCgUggAAEREPpKMfaEsAAAAAElFTkSuQmCC&quot;); background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; background-repeat: no-repeat;" autocomplete="off">
+
+        </div>
+        <div class="row field_password">
+
+        <input class="text span-8" placeholder="Password" name="MemberLogin[password]" id="MemberLogin_password" type="password" maxlength="255" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAALZJREFUOBFjYKAANDQ0rGWiQD9IqzgL0BQ3IKMXiB8AcSKQ/waIrYDsKUD8Fir2pKmpSf/fv3+zgPxfzMzMSbW1tbeBbAaQC+b+//9fB4h9gOwikCAQTAPyDYHYBciuBQkANfcB+WZAbPP37992kBgIUOoFBiZGRsYkIL4ExJvZ2NhAXmFgYmLKBPLPAfFuFhaWJpAYEBQC+SeA+BDQC5UQIQpJYFgdodQLLyh0w6j20RCgUggAAEREPpKMfaEsAAAAAElFTkSuQmCC&quot;); background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; background-repeat: no-repeat;" autocomplete="off">
+
+        </div>
+        <div id="new_password_container" style="display: none;"><div class="row field_new_password">
+
+        <input class="text span-8" placeholder="New Password" name="MemberLogin[new_password]" id="MemberLogin_new_password" type="password" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAALZJREFUOBFjYKAANDQ0rGWiQD9IqzgL0BQ3IKMXiB8AcSKQ/waIrYDsKUD8Fir2pKmpSf/fv3+zgPxfzMzMSbW1tbeBbAaQC+b+//9fB4h9gOwikCAQTAPyDYHYBciuBQkANfcB+WZAbPP37992kBgIUOoFBiZGRsYkIL4ExJvZ2NhAXmFgYmLKBPLPAfFuFhaWJpAYEBQC+SeA+BDQC5UQIQpJYFgdodQLLyh0w6j20RCgUggAAEREPpKMfaEsAAAAAElFTkSuQmCC&quot;); background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; background-repeat: no-repeat;" autocomplete="off">
+
+        </div>
+        <div class="row field_new_password_again">
+
+        <input class="text span-8" placeholder="New Password Again" name="MemberLogin[new_password_again]" id="MemberLogin_new_password_again" type="password" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAALZJREFUOBFjYKAANDQ0rGWiQD9IqzgL0BQ3IKMXiB8AcSKQ/waIrYDsKUD8Fir2pKmpSf/fv3+zgPxfzMzMSbW1tbeBbAaQC+b+//9fB4h9gOwikCAQTAPyDYHYBciuBQkANfcB+WZAbPP37992kBgIUOoFBiZGRsYkIL4ExJvZ2NhAXmFgYmLKBPLPAfFuFhaWJpAYEBQC+SeA+BDQC5UQIQpJYFgdodQLLyh0w6j20RCgUggAAEREPpKMfaEsAAAAAElFTkSuQmCC&quot;); background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; background-repeat: no-repeat;" autocomplete="off">
+
+        </div>
+        </div><a href="/resetPassword" target="_blank" class="fright">Forgot Password?</a>
+        <div class="row buttons"><input class="btn-orange-middle" type="submit" value="Login">
+        </div>
+
+        </form>
+
+
+        </div>
+
     </div>
 </div>
 <div class="modal-login-mob modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
