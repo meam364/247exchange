@@ -11,17 +11,6 @@ $('.jelect').jelect();
 
 $('.match-height').matchHeight(false);
 
-$(".fancybox").fancybox({
-    fitToView	: false,
-    closeBtn: true,
-    closeClick	: false,
-    autoHeight: true,
-    scrolling: 'no',
-    tpl: {
-        closeBtn: ' <button type="button" class="modal-close"><svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33"><path fill="#fff" fill-rule="evenodd" d="M.83 4.81L4.81.83l28.2 28.19-3.99 3.99L.83 4.81z"/><path fill="#fff" fill-rule="evenodd" d="M32.44 4.01L28.42-.01-.01 28.42l4.02 4.02L32.44 4.01z"/></svg></button>'
-    }
-});
-
 $('.alert__close').on('click', function() {
     $(this).parent().fadeOut(300);
 })
@@ -224,5 +213,3 @@ $(function(){
         zoom: 8
       });
     }
-
-    
