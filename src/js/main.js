@@ -6,14 +6,10 @@
 
 //= ./clipboard.js
 
-//= ./fancybox.js
-
 
 $('.jelect').jelect();
 
-
 $('.match-height').matchHeight(false);
-
 
 $(".fancybox").fancybox({
     fitToView	: false,
@@ -33,6 +29,7 @@ $('.alert__close').on('click', function() {
 var more = 'Show me more',
     less = 'Show me less'
 var isMore = true;
+
 $('.btn-collapse').on('click', function() {
     $(this).toggleClass('btn-collapse_in')
         .find('.btn-collapse__text')
@@ -228,52 +225,4 @@ $(function(){
       });
     }
 
-    // legacy code
-
-	$(document).ready(function()
-	{
-		$('#showCorporate').bind('click', function()
-		{
-			$('#corporate').val('1');
-
-			$('.popup_registration_corporate').show();
-
-			$('#showPersonal').removeClass('active');
-
-			$('#showCorporate').addClass('active');
-
-			return false;
-		});
-
-		$('#showPersonal').bind('click', function()
-		{
-			$('#corporate').val('');
-
-			$('.popup_registration_corporate').hide();
-
-			$('#showPersonal').addClass('active');
-
-			$('#showCorporate').removeClass('active');
-
-			return false;
-		});
-
-		$('#popupRegistrationForm').bind('submit', function()
-		{
-			$.ajax(
-			{
-				url: '/popupRegistration',
-				type: 'POST',
-				data: $(this).serializeArray(),
-				success: function(data)
-				{
-					$('div.popup').parent().html(data);
-
-					return false;
-				}
-			});
-
-			return false;
-		});
-
-	});
+    

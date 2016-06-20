@@ -261,6 +261,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
     <script src="js/main.js"></script>
     <script>
         $(document).ready(function(){
@@ -302,6 +303,57 @@
               ]
             });
         });
+
+        // legacy code
+
+    	$(document).ready(function()
+    	{
+    		$('#showCorporate').bind('click', function()
+    		{
+    			$('#corporate').val('1');
+
+    			$('.popup_registration_corporate').show();
+
+    			$('#showPersonal').removeClass('active');
+
+    			$('#showCorporate').addClass('active');
+
+    			return false;
+    		});
+
+    		$('#showPersonal').bind('click', function()
+    		{
+    			$('#corporate').val('');
+
+    			$('.popup_registration_corporate').hide();
+
+    			$('#showPersonal').addClass('active');
+
+    			$('#showCorporate').removeClass('active');
+
+    			return false;
+    		});
+
+    		$('#popupRegistrationForm').bind('submit', function()
+    		{
+    			$.ajax(
+    			{
+    				url: '/popupRegistration',
+    				type: 'POST',
+    				data: $(this).serializeArray(),
+    				success: function(data)
+    				{
+    					$('div.popup').parent().html(data);
+
+    					return false;
+    				}
+    			});
+
+    			return false;
+    		});
+
+    	});
+
     </script>
 </body>
 </html>
