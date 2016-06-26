@@ -12,12 +12,13 @@
 
     &-mobile
         display: none
+        position: static
         @media(max-width: 766px)
             display: flex
             justify-content: space-between
             align-items: center
             margin-bottom: 26px
-        
+
 
     &__dollar
         position: relative
@@ -41,8 +42,6 @@
     &_logged
         .header__action-text
             display: none
-    &__btns
-        padding: 0
     &__col
         padding: 0
         padding-right: 10px
@@ -206,16 +205,9 @@
         font-size: 0
         margin-top: 18px
         display: flex
-        padding-right: 20px
         justify-content: space-between
-        @media (max-width: 950px)
-            margin-left: 14px
-            margin-right: 9px
-            padding: 0
         @media (max-width: 766px)
             text-align: center
-            margin-left: 0
-            margin-right: 0
 
     &__action
         display: inline-block
