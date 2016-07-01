@@ -48,9 +48,16 @@ $('#full-view').on('click', function(e) {
     $("meta[name=viewport]").attr('content', viewport);
 
 })
+
+$('.dropdown-toggle').on('click', function(e) {
+    e.preventDefault();
+})
+
+$('.trigger').on('click', function(e) {
+    e.preventDefault();
+})
 $(function(){
 	$(".trigger").on("click",function(e){
-        e.preventDefault();
 
         if($(this).parent().hasClass('active')) {
             return;
@@ -73,7 +80,6 @@ $(function(){
     }
     // ADD SLIDEDOWN ANIMATION TO DROPDOWN //
     $('.dropdown').on('click', function(e){
-        e.preventDefault();
 
         if($(this).hasClass('active')) {
             return;
