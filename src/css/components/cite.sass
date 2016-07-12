@@ -1,0 +1,41 @@
+.cite
+  position: relative
+  padding: 18px 46px
+  margin-bottom: 18px
+  background: #ffbf10
+  text-align: center
+  color: #333333
+  font-size: 14px
+  line-height: 18px
+  font-style: italic
+
+  &::before
+    left: 0
+    content: "“"
+    text-align: center
+
+  &::after
+    right: 0
+    content: "”"
+    text-align: left
+
+  &::before,
+  &::after
+    position: absolute
+    top: 12px
+    width: 54px
+    color: rgba(255, 255, 255, .5)
+    font-size: 86px
+    line-height: 80px
+    opacity: 0.5
+
+.cite-green
+    position: relative;
+    padding: 12px 10px;
+    margin-bottom: 18px;
+    border-top: #8cb60e 1px solid;
+    border-bottom: #8cb60e 1px solid;
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+    color: #8cb60e;

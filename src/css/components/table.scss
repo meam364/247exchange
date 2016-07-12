@@ -1,0 +1,116 @@
+table {
+    margin-bottom: 1.4em;
+    width: 100%;
+}
+th {
+    font-weight: bold;
+}
+thead th {
+    background: #c3d9ff;
+}
+caption,
+td,
+th {
+    padding: 4px 10px 4px 5px;
+}
+tbody tr.even td,
+tbody tr:nth-child(even) td {
+    background: #e5ecf9;
+}
+tfoot {
+    font-style: italic;
+}
+.tbl-def {
+    width: 100%;
+    border: none;
+    margin-bottom: 40px;
+    border-collapse: separate;
+    border-spacing: 1px;
+}
+.tbl-def tbody tr:first-child th:first-child,
+.tbl-def thead th.th-first,
+.tbl-def thead th:first-child,
+.tbl-def tr.tr-first th.th-first {
+    border-top-left-radius: 6px;
+}
+.tbl-def tbody tr:first-child th:last-child,
+.tbl-def thead th.th-last,
+.tbl-def thead th:last-child,
+.tbl-def tr.tr-first th.th-last {
+    border-top-right-radius: 6px;
+}
+.tbl-def tr.tr-last td.td-first,
+.tbl-def tr.tr-last th.th-first,
+.tbl-def tr:last-child td.td-first,
+.tbl-def tr:last-child td:first-child {
+    border-bottom-left-radius: 6px;
+}
+.tbl-def tr.tr-last td.td-last,
+.tbl-def tr.tr-last th.th-last,
+.tbl-def tr:last-child td.td-last,
+.tbl-def tr:last-child td:last-child {
+    border-bottom-right-radius: 6px;
+}
+.tbl-def tr {
+    background: none;
+}
+.tbl-def th {
+    height: 44px;
+    padding: 5px 23px;
+    background: url("../images/tpl/th-orange.png") repeat-x 0 bottom #ffbf10;
+    color: #ffffff;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    vertical-align: middle;
+}
+.tbl-def td {
+    background: #f9f9f9;
+    height: 44px;
+    padding: 5px 23px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #8e8e8e;
+    vertical-align: middle;
+}
+.tbl-def tr.even td,
+.tbl-def tr:nth-child(even) td {
+    background: #eeeeee;
+}
+.tbl-def td.td-price {
+    color: #1a1a1a;
+}
+.tbl-two-columns-price table tr td:first-child+*,
+table.tbl-two-columns-price tr td:first-child+* {
+    color: #1a1a1a;
+}
+table.tbl-simple {
+    width: 100%;
+    border: none;
+    margin-bottom: 40px;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+table.tbl-simple th {
+    height: 40px;
+    padding: 5px 25px;
+    color: #0e0e0e;
+    font-size: 16px;
+    line-height: 22px;
+    vertical-align: middle;
+    font-weight: 700;
+}
+table.tbl-simple td {
+    height: 25px;
+    padding: 5px 24px;
+    vertical-align: middle;
+    border: #ebebeb 1px solid;
+    color: #8e8e8e;
+    font-size: 14px;
+    line-height: 20px;
+}
+table.tbl-simple tr.even td,
+table.tbl-simple tr:nth-child(even) td {
+    background: none;
+}
