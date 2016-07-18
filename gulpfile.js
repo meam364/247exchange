@@ -31,7 +31,7 @@ var path = {
         html: 'src/**/*.html',
         js: 'src/js/**/*.js',
         style: 'src/css/**/*.sass',
-        img: 'src/images/**/*.*',
+        img: './src/images/**/*.*',
         fonts: 'src/fonts/**/*.*'
     },
     clean: './build'
@@ -55,14 +55,14 @@ gulp.task('clean', function (cb) {
 });
 
 gulp.task('html:build', function () {
-    gulp.src(path.src.html)
+    return gulp.src(path.src.html)
         .pipe(rigger())
         .pipe(gulp.dest(path.build.html))
         .pipe(reload({stream: true}));
 });
 
 gulp.task('js:build', function () {
-    gulp.src(path.src.js)
+    return gulp.src(path.src.js)
         .pipe(rigger())
         .pipe(sourcemaps.init())
         .pipe(uglify())
@@ -72,7 +72,7 @@ gulp.task('js:build', function () {
 });
 
 gulp.task('style:build', function () {
-    gulp.src(path.src.style)
+    return gulp.src(path.src.style)
         .pipe(sourcemaps.init())
         .pipe(sass({
             sourceMap: true,
@@ -86,13 +86,13 @@ gulp.task('style:build', function () {
 });
 
 gulp.task('image:build', function () {
-    gulp.src(path.src.img)
+    return gulp.src(path.src.img)
         .pipe(gulp.dest(path.build.img))
         .pipe(reload({stream: true}));
 });
 
 gulp.task('fonts:build', function() {
-    gulp.src(path.src.fonts)
+    return gulp.src(path.src.fonts)
         .pipe(gulp.dest(path.build.fonts))
 });
 
