@@ -114,3 +114,84 @@ table.tbl-simple tr.even td,
 table.tbl-simple tr:nth-child(even) td {
     background: none;
 }
+.tbl-order-details {
+    margin-bottom: 37px;
+    border-collapse: collapse;
+    border: none;
+    border-spacing: 0;
+}
+.tbl-order-details th {
+    padding: 5px;
+    height: 44px;
+    background: url("../images/th-orange.png") repeat-x 0 0 #f68b1e;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    border-left: #fff 2px solid;
+}
+.tbl-order-details th.th-empty,
+.tbl-order-details th:first-child {
+    background: none;
+    border: none;
+}
+.tbl-order-details th:first-child+* {
+    border: none;
+    border-top-left-radius: 6px;
+}
+.tbl-order-details tr td {
+    border-right: #fff 2px solid;
+    background: #f2f2f2;
+    text-align: center;
+    color: #000;
+}
+.tbl-order-details tr td.td-last {
+    border-right: none;
+}
+.tbl-def tr.even td,
+.tbl-order-details tr:nth-child(even) td {
+    background: #ffffff;
+}
+.tbl-order-details tbody tr td:first-child,
+.tbl-order-details tr td.td-first {
+    background: #9cb702;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    padding-right: 16px;
+    text-align: right;
+    border: none;
+}
+.tbl-def tr.even td.td-first,
+.tbl-order-details tbody tr:nth-child(even) td:first-child,
+.tbl-order-details tr:nth-child(even) td.td-first {
+    background: #b1d002;
+}
+.tbl-order-details tbody tr:first-child td:first-child,
+.tbl-order-details tr.tbody-tr-first td.td-first {
+    border-top-left-radius: 6px;
+}
+.promo-block .heading {
+    font-size: 24px;
+}
+.promo-block table.tbl-simple th {
+    font-size: 12px;
+    padding: 0 10px;
+}
+.promo-block table.tbl-simple td {
+    padding: 14px 10px;
+    height: auto;
+}
+.approve-order {
+    text-align: right;
+}
+.approve-order label {
+    position: relative;
+    display: inline-block; //zoom:1; //display:inline; vertical-align:middle;
+    width: 230px;
+    padding-right: 25px;
+    font-weight: 400;
+}
+.approve-order label input[type=checkbox] {
+    position: absolute;
+    right: 0;
+}
