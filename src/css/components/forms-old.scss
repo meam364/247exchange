@@ -74,6 +74,55 @@
         border: #fff 1px dashed;
         border-radius: 5px;
         color: #fff;
+        font-size: 0;
+        box-sizing: border-box;
+        text-align: center;
+
+        .span-7,
+        .span-1 {
+          display: inline-block;
+          width: auto;
+          text-align: center !important;
+          vertical-align: middle;
+          margin: 0 !important;
+          padding: 0 15px !important;
+          font-size: 12px;
+          box-sizing: border-box;
+          float: none !important;
+        }
+
+        .span-1 {
+          font-size: 0;
+          @media (max-width: 766px) {
+            padding: 0 !important;
+            transform: rotate(90deg);
+          }
+
+          img {
+            @media (max-width: 766px) {
+              width: 12px;
+              height: 6px;
+            }
+          }
+        }
+
+        .span-7.last {
+           @media (max-width: 766px) {
+             display: block;
+             clear: both;
+             width: 100%;
+           }
+
+        }
+
+        > .center {
+          clear: both;
+          display: block;
+          padding: 0 15px !important;
+          text-align: center;
+          font-size: 12px;
+          box-sizing: border-box;
+        }
     }
     .row {
         margin-bottom: 12px;
