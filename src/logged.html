@@ -13,9 +13,50 @@
 <body>
     //=./templates/modal.html
     //=./templates/header-logged.html
-
     <div class="container">
         <div class="main">
+            <div class="greybg-greenborder-block">
+                <h3 class="heading">Messages History:</h3>
+                <div id="memberVerificationMessages">
+                    <div class="span-11 left-space">
+                        <div class="message-items scroll-pane" style="overflow: hidden; padding: 0px; width: 440px;">
+                            <div class="jspContainer" style="width: 440px; height: 108px;">
+                                <div class="jspPane" style="padding: 0px; top: 0px; left: 0px; width: 440px;">
+                                    <div class="mess-item">
+                                        <div class="mess-date">2016-01-25 17:01:59, Antonio V</div>
+                                        <div style="margin-bottom: 10px;">
+                                            WAT?
+                                        </div>
+                                    </div>
+                                    <div class="mess-item">
+                                        <div class="mess-date">2016-01-25 17:00:18, Anton Vereshchagin</div>
+                                        <div style="margin-bottom: 10px;">
+                                            sup
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span-11 left-space last">
+                        <div class="change-form send-mess grey-form">
+                            <form class="ajax" id="memberVerificationMessagesForm" action="/member/verification/message?id=1498" method="post">
+                                <div style="visibility:hidden">
+                                    <input type="hidden" value="1" name="yform_memberVerificationMessagesForm" id="yform_memberVerificationMessagesForm">
+                                </div>
+                                <div class="row field_content">
+                                    <label for="VerificationMessage_content" class="required">Your Message: <span class="required">*</span></label>
+                                    <textarea class="span-10" rows="5" cols="30" name="VerificationMessage[content]" id="VerificationMessage_content"></textarea>
+                                </div>
+                                <div class="row buttons">
+                                    <input type="submit" value="Submit">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
             <table class="tbl-def tbl-order-details">
                 <tbody>
                     <tr>

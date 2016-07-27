@@ -1,7 +1,5 @@
 //= ./jelect.js
 
-//= ./selectivity-full.min.js
-
 //= ./matchHeight.js
 
 //= ./clipboard.js
@@ -94,5 +92,3 @@ $(function(){
         $(".js-modal-tab-register").removeClass('active');
         $(".js-modal-tab-login").addClass('active');
     });
-
-  
