@@ -459,8 +459,46 @@
         </div>
     </div>
     <!-- end.header -->
+    <div class="popup-block">
+      <div class="container">
+        <div class="popup-block__inner">Используя веб-сайт PayPal.com вы соглашаетесь на использование файлов cookies для повышения уровня сервиса.
+          <a href="#" class="popup-block__close"></a>
+        </div>
+      </div>
+    </div>
     <div class="container">
         <div class="main">
+            <div class="promo-block">
+                <div class="promo-block-inner">
+                    <p>Dear Anton! Please note that the time for paying is limited: it's indicated in the upper right corner of your order page («<b>Time to pay</b>»). If you don't see the timer, then the time has already expired. If you pay the order after
+                        it has expired, you will have to accept the current rate and the amount you’ll receive might be different from the one you originally ordered. If you wish, you can wait for the better rate and accept it when the rate will be convenient
+                        for you.</p>
+                </div>
+            </div>
+            <div class="approve-order-buttons">
+                <label>
+                    <input type="checkbox" value="1" id="Order_agreement"> I accept <a target="_blank" href="/legal_info">the service's rules and polices</a>
+                </label>
+                <div>
+                    <div class="disp-inline-block">
+                        <form class="popup" action="/service/neosurf/ipn/resp" method="GET">
+                            <input type="hidden" value="https://www.neosurf.info/public/en/purchase.php?sid=5%3D59555%3A55655%3A56%3A5%3B95%3A955896fg%3Ag7k%3E75%3Bji%3Ei%3B98678%3Bg9%3Aii9gj%3D%3B%3Ei66%3E587567%3B6%3D858%3A6%40hzwwjsh%7EBWTS%40myyu%3F44%7C%7C%7C3sjtxzwk3nskt4yjxyfun47567%3B4SjtxzwkRjwhmfsyWjhjn%7Bj3umumyyux%3F44%7C%7C%7C379%3Cj%7Dhmfslj3htr4rjrgjw4twijw4%7Bnj%7CDniB%3D858%3A655&amp;IDMerchant=20126"
+                                name="url" id="url">
+                            <input disabled="disabled" class="checkAgreement btn-green-large" type="submit" name="yt0" value="Pay Order">
+                        </form>
+                    </div>
+                    <div class="disp-inline-block">
+                        <form id="yw0" action="/member/order/operation?id=83035" method="post">
+                            <div style="visibility:hidden">
+                                <input type="hidden" value="1" name="yform_a253e820" id="yform_a253e820">
+                            </div>
+                            <div class="row buttons">
+                                <input class="btn-grey-large" name="close" type="submit" value="Cancel order">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
             <div class="greybg-greenborder-block">
                 <h3 class="heading">Messages History:</h3>
                 <div id="memberVerificationMessages">

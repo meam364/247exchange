@@ -6,20 +6,37 @@
     height: 54px;
     border: none;
     cursor: pointer;
-    background: linear-gradient(to bottom, #bbe61a 0%,#bbe61a 21%,#b1de22 42%,#9fd42d 62%,#95ce32 79%,#94cd32 100%);
+    background: url("../images/large-btn.png") repeat-x 0 0 #b7d65a;
     border-radius: 5px;
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
     text-transform: uppercase;
     color: #fff;
+    z-index: 1;
 }
 .btn-orange-small {
+    display: inline-block;
     height: 28px;
     line-height: 28px;
     background-color: #f5881f;
-    background-image:linear-gradient(to top, #f5881f 0%, #ffbf10 99%, #ffbf10 100%);
+    background-image: linear-gradient(to top, #f5881f 0%, #ffbf10 99%, #ffbf10 100%);
     color: #fff;
+    z-index: 1;
+}
+.btn-grey,
+.btn-orange-small,
+.btn-red-small {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    padding: 0 11px;
+    border-radius: 3px;
+    text-decoration: none;
+    line-height: 24px;
+    font-size: 12px;
+    text-transform: none;
+    font-weight: 400;
 }
 a.btn-green-large,
 a.btn-grey-large {
@@ -29,6 +46,7 @@ a.btn-grey-large {
 .btn-grey-large,
 .btn-orange-small {
     position: relative;
+    color: #fff;
     &:hover {
         &:after {
             content: '';
@@ -36,10 +54,16 @@ a.btn-grey-large {
             top: 0;
             bottom: 0;
             right: 0;
-            z-index: 10;
             left: 0;
             z-index: -1;
-            background: rgba(255,255,255, .1);
+            background: rgba(255,255,255, .2);
         }
     }
+}
+.btn-green-large.disabled,
+.btn-green-large:disabled,
+.btn-grey-large {
+    background-position: 0 -162px;
+    border: none;
+    padding: 15px 24px;
 }
