@@ -195,3 +195,81 @@ table.tbl-simple tr:nth-child(even) td {
     position: absolute;
     right: 0;
 }
+.tbl-orders,
+.tbl-orders2 {
+    margin-top: 26px;
+}
+.tbl-orders tr {}
+.tbl-orders tr th,
+.tbl-orders2 tr th {
+    padding: 7px 0;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+}
+.tbl-orders tr td,
+.tbl-orders2 tr td {
+    padding: 7px 0;
+    height: 40px;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+}
+.tbl-orders tr td.td-operation {
+    color: #000000;
+    text-align: left;
+    padding-left: 22px;
+    font-weight: 700;
+}
+.tbl-orders tr td.td-operation strong {
+    color: #6f8f00;
+}
+.tbl-verification tr td:first-child+*+*+* {
+    color: #000000;
+    text-align: left;
+    padding-left: 22px;
+}
+.tbl-verification tr td:first-child+*+*+* strong {
+    color: #6f8f00;
+}
+.tbl-orders2 tr td:first-child+*+* {
+    color: #000000;
+    text-align: left;
+    padding-left: 22px;
+    font-weight: 700;
+}
+.tbl-orders2 tr td:first-child+*+* strong {
+    color: #6f8f00;
+}
+.tbl-states-over {
+    margin: 0 -22px;
+}
+.tbl-def.tbl-states {
+    border-collapse: collapse;
+}
+.tbl-def.green-header tr th {
+    background: url("../images/green-th.png") repeat-x 0 bottom #b9d500;
+}
+.tbl-def.tbl-states tr th {
+    padding: 2px 20px;
+    height: 50px;
+    border-bottom: #fff 2px solid;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.tbl-def.tbl-states tr td {
+    padding: 2px 20px;
+    height: 30px;
+    font-size: 14px;
+    font-style: italic;
+    color: #000;
+    border-top: #fff 1px solid;
+}
+.tbl-def.tbl-states tr.tr-first td {
+    border-top: none;
+}
+.ml60 {
+    margin-left: 60px;
+}

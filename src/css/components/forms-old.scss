@@ -22,6 +22,9 @@
     * {
         box-sizing: content-box;
     }
+    a {
+      text-decoration: underline;
+    }
     .intro-select-link {
         width: 100% !important;
         margin-right: 0;
@@ -358,7 +361,7 @@
         float: none;
     }
     .errorMessage {
-        position: relative;
+        position: absolute;
         display: inline-block; //zoom:1; //display:inline; vertical-align:top;
         padding: 5px 10px;
         margin: 0 0 0 7px;

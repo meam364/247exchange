@@ -1,0 +1,56 @@
+.fileform {
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    display: inline-block; //zoom:1; //display:inline;
+    vertical-align: middle;
+    height: 30px;
+    width: 280px;
+    text-align: left;
+}
+.fileform .selectbutton {
+    float: left;
+    padding: 5px 11px;
+    height: 20px;
+    background: url("../images/select-file.png") repeat-x 0 0;
+    border-radius: 3px;
+    color: #121111;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer !important;
+}
+.fileform:hover .selectbutton {
+    background-position: 0 -30px;
+}
+.fileform:active .selectbutton {
+    background-position: 0 -61px;
+    border-left: #ca8800 1px solid;
+    border-top: #ca8800 1px solid;
+    padding-left: 8px;
+    padding-top: 4px;
+}
+.fileform input[type=file] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -moz-opacity: 0;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    font-size: 150px;
+    height: 30px;
+    z-index: 20;
+    cursor: pointer !important;
+}
+.fileform .fileformlabel {
+    float: right;
+    overflow: hidden;
+    height: 20px;
+    line-height: 20px;
+    padding: 5px 0;
+    width: 152px;
+    text-overflow: eillipsis;
+    color: #fff;
+}
