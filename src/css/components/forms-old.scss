@@ -23,7 +23,7 @@
         box-sizing: content-box;
     }
     a {
-      text-decoration: underline;
+        text-decoration: underline;
     }
     .intro-select-link {
         width: 100% !important;
@@ -67,7 +67,7 @@
         background: url("../images/arrows.png") no-repeat center 57px;
         display: inline-block;
         @media (max-width: 766px) {
-          display: none;
+            display: none;
         }
     }
     .dashed-block {
@@ -80,51 +80,45 @@
         font-size: 0;
         box-sizing: border-box;
         text-align: center;
-
-        .span-7,
-        .span-1 {
-          display: inline-block;
-          width: auto;
-          text-align: center !important;
-          vertical-align: middle;
-          margin: 0 !important;
-          padding: 0 15px !important;
-          font-size: 12px;
-          box-sizing: border-box;
-          float: none !important;
+        .span-1,
+        .span-7 {
+            display: inline-block;
+            width: auto;
+            text-align: center !important;
+            vertical-align: middle;
+            margin: 0 !important;
+            padding: 0 15px !important;
+            font-size: 12px;
+            box-sizing: border-box;
+            float: none !important;
         }
-
         .span-1 {
-          font-size: 0;
-          @media (max-width: 766px) {
-            padding: 0 !important;
-            transform: rotate(90deg);
-          }
-
-          img {
+            font-size: 0;
             @media (max-width: 766px) {
-              width: 12px;
-              height: 6px;
+                padding: 0 !important;
+                transform: rotate(90deg);
             }
-          }
+            img {
+                @media (max-width: 766px) {
+                    width: 12px;
+                    height: 6px;
+                }
+            }
         }
-
         .span-7.last {
-           @media (max-width: 766px) {
-             display: block;
-             clear: both;
-             width: 100%;
-           }
-
+            @media (max-width: 766px) {
+                display: block;
+                clear: both;
+                width: 100%;
+            }
         }
-
         > .center {
-          clear: both;
-          display: block;
-          padding: 0 15px !important;
-          text-align: center;
-          font-size: 12px;
-          box-sizing: border-box;
+            clear: both;
+            display: block;
+            padding: 0 15px !important;
+            text-align: center;
+            font-size: 12px;
+            box-sizing: border-box;
         }
     }
     .row {
@@ -143,26 +137,23 @@
         box-shadow: 0 5px 5px 0 rgba(0,0,0,.2);
         vertical-align: top;
         @media (max-width: 950px) {
-          width: 41%;
+            width: 41%;
         }
         @media (max-width: 766px) {
-          width: 100%;
-          box-sizing: border-box;
+            width: 100%;
+            box-sizing: border-box;
         }
-
         .span-6 {
-          width: 100%;
-          margin-right: 0;
+            width: 100%;
+            margin-right: 0;
         }
-
         .span-14 {
-          width: 100%;
-          margin-right: 0;
+            width: 100%;
+            margin-right: 0;
         }
-
         &.selectCity {
-          width: 100%;
-          box-sizing: border-box;
+            width: 100%;
+            box-sizing: border-box;
         }
     }
     h3 {
@@ -193,13 +184,12 @@
     }
     .span-4,
     .span-7 {
-      @media (max-width: 766px) {
-        width: 100%;
-        margin-right: 0 !important;
-        text-align: left !important;
-      }
+        @media (max-width: 766px) {
+            width: 100%;
+            margin-right: 0 !important;
+            text-align: left !important;
+        }
     }
-
     a.white-dash-link {
         color: #fff;
         text-decoration: none;
@@ -225,7 +215,7 @@
         min-width: 100px;
         padding: 12px 12px 6px;
         margin-top: -2px;
-        background: url("../images/tpl/sub-list-bg.png") repeat-x 0 0 #c9c9c9;
+        background: url("../images/sub-list-bg.png") repeat-x 0 0 #c9c9c9;
         box-shadow: 0 5px 5px 0 rgba(0,0,0,.3);
         border-radius: 5px;
         color: #000;
@@ -245,7 +235,7 @@
         bottom: 100%;
         width: 13px;
         height: 6px;
-        background: url("../images/tpl/arrow-top.png") no-repeat 0 0;
+        background: url("../images/arrow-top.png") no-repeat 0 0;
     }
     .row label {
         display: inline-block;
@@ -313,7 +303,7 @@
         line-height: 42px;
     }
     &.orange-form .buttons input {
-        background-image: url("../images/tpl/submit-red.png");
+        background-image: url("../images/submit-red.png");
     }
     .buttons input:hover {
         background-position: 0 -42px;
@@ -395,4 +385,73 @@
     &.orange-form .errorMessage:before {
         border-color: transparent #8CB60E transparent transparent;
     }
+}
+.remind-password-form {
+    overflow: hidden;
+    padding: 20px 0 20px 30px;
+    margin-bottom: 60px;
+    background: url("../images/change-password-form.png") repeat-x 0 bottom #ffbf10;
+}
+.remind-password-form .row {
+    position: relative;
+    margin: 0;
+    float: left;
+}
+.remind-password-form .row label {
+    display: block;
+    margin: 0 0 3px;
+    padding: 0 !important;
+    width: auto;
+    text-align: left;
+    white-space: nowrap;
+}
+.remind-password-form .row label strong {
+    font-weight: 400;
+    color: #0b0b0b;
+}
+.remind-password-form .row input[type=email],
+.remind-password-form .row input[type=password],
+.remind-password-form .row input[type=text] {
+    padding: 6px 10px !important;
+    border: #fff 1px solid;
+}
+.remind-password-form .row input[type=email].error,
+.remind-password-form .row input[type=password].error,
+.remind-password-form .row input[type=text].error {
+    border-color: #d50a00;
+}
+.remind-password-form .errorMessage {
+    position: absolute;
+    background: #d50a00;
+    bottom: 37px;
+    margin: 0;
+    z-index: 150;
+    max-width: none;
+    white-space: nowrap;
+    left: 10px;
+}
+.remind-password-form .errorMessage:before {
+    left: 30px;
+    top: 100%;
+    margin: 0;
+    background: url("../images/red-arrow-down.png") no-repeat 0 bottom;
+    width: 10px;
+    height: 7px;
+}
+.remind-password-form .buttons {
+    padding-top: 8px;
+    clear: none;
+    text-align: left;
+}
+.remind-password-form .buttons input[type=submit] {
+    height: 48px;
+    padding: 0;
+    background: url("../images/red-large-btn.png") repeat-x 0 0 #ea0c00;
+    text-transform: uppercase;
+}
+.remind-password-form .buttons input[type=submit]:hover {
+    background-position: 0 -49px;
+}
+.remind-password-form .buttons input[type=submit]:active {
+    background-position: 0 -98px;
 }

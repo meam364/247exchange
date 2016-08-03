@@ -2,6 +2,10 @@
     background: #fff;
     padding: 20px 40px;
     border-radius: 6px;
+
+    * {
+      box-sizing: content-box;
+    }
 }
 .popup h3 {
     margin: 0 0 28px;
@@ -148,4 +152,83 @@ input.btn-orange-middle {
 }
 .popup-form .jquery-selectbox .jquery-selectbox-list .jquery-selectbox-item:hover {
     color: #fa5926;
+}
+.color-red {
+    color: #c52d21;
+}
+.card-popup {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    line-height: 17px;
+    font-size: 14px;
+}
+.card-popup p {
+    margin-bottom: 16px;
+}
+.form-card-note {
+    clear: both;
+    display: block;
+    color: #8a8a8a;
+    font-size: 11px;
+    line-height: 14px;
+}
+input + .form-card-note {
+    top: -2px;
+    position: relative;
+}
+.card-popup .txt-right {
+    position: relative;
+}
+.card-popup label {
+    display: block;
+    line-height: 24px;
+    font-weight: 400;
+    color: #1c1c1c;
+}
+.card-popup .popup-form {
+    margin-right: -30px;
+}
+.card-popup .row {
+    margin-bottom: 20px;
+}
+.card-popup .row .span-2 {
+    margin-right: 10px;
+}
+.hover-info {
+    position: absolute;
+    display: none;
+    right: -7px;
+    bottom: 100%;
+    padding: 26px;
+    margin-bottom: 8px;
+    background: #fff;
+    border: #e4e4e4 1px solid;
+    border-radius: 5px;
+    z-index: 9999;
+    box-shadow: 0 5px 27px 0 rgba(0,0,0,0.47);
+    color: #777777;
+    font-size: 11px;
+    line-height: 13px;
+}
+div:hover > .hover-info {
+    display: block;
+}
+.hover-info strong {
+    display: block;
+    color: #040404;
+    font-size: 14px;
+    line-height: 22px;
+}
+.hover-info:after {
+    content: "";
+    position: absolute;
+    right: 38px;
+    bottom: -7px;
+    width: 25px;
+    height: 8px;
+    background: url("../images/arrow-hint.png") no-repeat;
+}
+.hover-info img {
+    display: block;
+    margin-bottom: 13px;
 }
