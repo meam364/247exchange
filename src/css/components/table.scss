@@ -12,6 +12,7 @@ caption,
 td,
 th {
     padding: 4px 10px 4px 5px;
+    float: none !important;
 }
 tbody tr.even td,
 tbody tr:nth-child(even) td {
