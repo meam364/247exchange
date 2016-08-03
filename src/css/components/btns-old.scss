@@ -42,9 +42,17 @@ a.btn-green-large,
 a.btn-grey-large {
     display: inline-block;
 }
+.btn-red-small {
+    height: 28px;
+    line-height: 28px;
+    background-color: #e34627;
+    background: url("../images/red-btn.png") repeat-x 0 0;
+    color: #fff;
+}
 .btn-green-large,
 .btn-grey-large,
-.btn-orange-small {
+.btn-orange-small,
+.btn-red-small {
     position: relative;
     color: #fff;
     &:hover {

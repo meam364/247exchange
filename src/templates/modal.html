@@ -56,45 +56,117 @@
     </div>
     <div style="clear: left; float: left;" id="test2" class="popup modal-test2">
 
-        <h1></h1>
+      <div class="popup clearfix">
 
-        <div></div>
+<div style="width: 450px; margin: 0 auto;">
+<div style="float: left;">
+<h1>EPRO Payment</h1>
+</div>
+<div style="float: right;"><img src="https://www.247exchange.com/images/gallery/73.png" alt="EPRO Voucher &amp; Wallet" width="127" height="39"><br><center><a href="https://www.ewalletplus.net/" target="_blank">Voucher &amp; Wallet</a></center></div>
+</div>
+<div style="clear: both;">&nbsp;</div>
+<p>Please enter your credit/debit card details, and as soon as our Payment Processor<br> authorizes the payment (usually takes seconds), your Bitcoins will be in your wallet.</p>
+<p><script language="JavaSctipt" type="text/javascript">
 
+    if (!ibemp_submit)
+    {
+      function ibemp_submit(owner)
+      {
+        $("#ibempFormSubmit").attr("disabled", true);
 
-        <div class="popup-form span-8">
+        $("#ibempFormSubmit").val("Please wait...");
 
-            <form id="autoLogin" action="/popupLogin?error_id=68392" method="POST"><div style="visibility:hidden"><input type="hidden" value="1" name="yform_autoLogin" id="yform_autoLogin"></div>
-        
-        <div style="visibility:hidden">
-        <input enabled="1" id="device_id" name="MemberLogin[device_id]" type="hidden"></div>
-        <div class="row field_email">
+        $.ajax({
+          dataType: "html",
+          url: $(owner).attr("action")+"&ajax=1",
+          type: "POST",
+          data: $(owner).serialize(),
+          success: function(data)
+          {
+            $(".fancybox-inner .popup").html(data);
+          },
+          error: function(request, status, error)
+          {
+            alert(request.responseText);
+          },
+          complete: function()
+          {
+            $("#ibempFormSubmit").val("LOAD 62.63 EUR");
 
-        <input class="text span-8" id="login_user_email" placeholder="E-mail" name="MemberLogin[email]" type="text" maxlength="255" value="" style="cursor: auto; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAALZJREFUOBFjYKAANDQ0rGWiQD9IqzgL0BQ3IKMXiB8AcSKQ/waIrYDsKUD8Fir2pKmpSf/fv3+zgPxfzMzMSbW1tbeBbAaQC+b+//9fB4h9gOwikCAQTAPyDYHYBciuBQkANfcB+WZAbPP37992kBgIUOoFBiZGRsYkIL4ExJvZ2NhAXmFgYmLKBPLPAfFuFhaWJpAYEBQC+SeA+BDQC5UQIQpJYFgdodQLLyh0w6j20RCgUggAAEREPpKMfaEsAAAAAElFTkSuQmCC&quot;); background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; background-repeat: no-repeat;" autocomplete="off">
+            $("#ibempFormSubmit").attr("disabled", false);
+          }
+        });
 
-        </div>
-        <div class="row field_password">
+        return false;
+      }
+    }
 
-        <input class="text span-8" placeholder="Password" name="MemberLogin[password]" id="MemberLogin_password" type="password" maxlength="255" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAALZJREFUOBFjYKAANDQ0rGWiQD9IqzgL0BQ3IKMXiB8AcSKQ/waIrYDsKUD8Fir2pKmpSf/fv3+zgPxfzMzMSbW1tbeBbAaQC+b+//9fB4h9gOwikCAQTAPyDYHYBciuBQkANfcB+WZAbPP37992kBgIUOoFBiZGRsYkIL4ExJvZ2NhAXmFgYmLKBPLPAfFuFhaWJpAYEBQC+SeA+BDQC5UQIQpJYFgdodQLLyh0w6j20RCgUggAAEREPpKMfaEsAAAAAElFTkSuQmCC&quot;); background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; background-repeat: no-repeat;" autocomplete="off">
+  </script>
 
-        </div>
-        <div id="new_password_container" style="display: none;"><div class="row field_new_password">
+  <style type="text/css">
 
-        <input class="text span-8" placeholder="New Password" name="MemberLogin[new_password]" id="MemberLogin_new_password" type="password" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAALZJREFUOBFjYKAANDQ0rGWiQD9IqzgL0BQ3IKMXiB8AcSKQ/waIrYDsKUD8Fir2pKmpSf/fv3+zgPxfzMzMSbW1tbeBbAaQC+b+//9fB4h9gOwikCAQTAPyDYHYBciuBQkANfcB+WZAbPP37992kBgIUOoFBiZGRsYkIL4ExJvZ2NhAXmFgYmLKBPLPAfFuFhaWJpAYEBQC+SeA+BDQC5UQIQpJYFgdodQLLyh0w6j20RCgUggAAEREPpKMfaEsAAAAAElFTkSuQmCC&quot;); background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; background-repeat: no-repeat;" autocomplete="off">
+  div.hint
+  {
+    clear: both;
+    display: block;
+    color: #8a8a8a;
+    font-size: 11px;
+    line-height: 14px;
+    top: -2px;
+    position: relative;
+  }
 
-        </div>
-        <div class="row field_new_password_again">
+  </style></p><div class="popup-form card-popup span-11" style="padding: 0px;" id="ibemp_container"><form id="serviceInstabillPayForm" onsubmit="return ibemp_submit(this);" action="/service/ibemp/pay?id=83660" method="post"><div style="visibility:hidden"><input type="hidden" value="1" name="yform_serviceInstabillPayForm" id="yform_serviceInstabillPayForm"></div>
 
-        <input class="text span-8" placeholder="New Password Again" name="MemberLogin[new_password_again]" id="MemberLogin_new_password_again" type="password" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAALZJREFUOBFjYKAANDQ0rGWiQD9IqzgL0BQ3IKMXiB8AcSKQ/waIrYDsKUD8Fir2pKmpSf/fv3+zgPxfzMzMSbW1tbeBbAaQC+b+//9fB4h9gOwikCAQTAPyDYHYBciuBQkANfcB+WZAbPP37992kBgIUOoFBiZGRsYkIL4ExJvZ2NhAXmFgYmLKBPLPAfFuFhaWJpAYEBQC+SeA+BDQC5UQIQpJYFgdodQLLyh0w6j20RCgUggAAEREPpKMfaEsAAAAAElFTkSuQmCC&quot;); background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; background-repeat: no-repeat;" autocomplete="off">
+<div class="span-11"><div class="span-6"><div class="row field_CardNumber">
+<label for="ServiceIbempPayForm_CardNumber" class="required">Card Number <span class="required">*</span></label>
+<input class="span-6" name="ServiceIbempPayForm[CardNumber]" id="ServiceIbempPayForm_CardNumber" type="text" maxlength="19" style="cursor: auto; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; background-repeat: no-repeat;">
+<div class="hint">Example: 2234229033401294</div>
+</div>
+</div><div class="span-5 last txt-right" style="z-index: 100;">
+      <img src="/images/tpl/card-number.png" alt="">
+      <div class="hover-info">
+        <img src="/images/tpl/card.jpg" alt="">
+        <p>Front side, 16 digits.</p>
+      </div>
+    </div><div style="clear: left;"></div></div><div class="span-11"><div class="span-2"><div class="row field_ExpMonth">
+<label for="ServiceIbempPayForm_ExpMonth" class="required">Month <span class="required">*</span></label>
+<input class="span-2" name="ServiceIbempPayForm[ExpMonth]" id="ServiceIbempPayForm_ExpMonth" type="text" maxlength="2">
+<div class="hint">Example: 12</div>
+</div>
+</div><div class="span-2 append-1"><div class="row field_ExpYear">
+<label for="ServiceIbempPayForm_ExpYear" class="required">Year <span class="required">*</span></label>
+<input class="span-2" name="ServiceIbempPayForm[ExpYear]" id="ServiceIbempPayForm_ExpYear" type="text" maxlength="4">
+<div class="hint">Example: 12</div>
+</div>
+</div><div class="span-6 last txt-right" style="z-index: 100;">
+      <img src="/images/tpl/card-number2.png" alt="">
+      <div class="hover-info">
+        <img src="/images/tpl/card2.jpg" alt="">
+        <p><strong>Card expiration</strong> (Front side, 4 digit: month and year)</p>
+      </div>
+    </div></div><div class="span-11"><div class="span-4"><div class="row field_SecurityCode">
+<label for="ServiceIbempPayForm_SecurityCode" class="required">Security Code <span class="required">*</span></label>
+<input class="span-4" name="ServiceIbempPayForm[SecurityCode]" id="ServiceIbempPayForm_SecurityCode" type="text" maxlength="10">
+<div class="hint">Example: 229</div>
+</div>
+</div><div class="span-7 last txt-right" style="z-index: 100;">
+      <img src="/images/tpl/card-number3.png" alt="">
+      <div class="hover-info">
+        <img src="/images/tpl/card3.jpg" alt="">
+        <p><strong>Security Code</strong> (Back side, last 3 digits.)</p>
+      </div>
+    </div><div style="clear: left;"></div></div><div style="float: right;"><iframe width="1" height="1" frameborder="0" scrolling="no" src="/kount/logo/page">
 
-        </div>
-        </div><a href="/resetPassword" target="_blank" class="fright">Forgot Password?</a>
-        <div class="row buttons"><input class="btn-orange-middle" type="submit" value="Login">
-        </div>
+&lt;img width="1" height="1" src="/kount/logo/image?rand=1470200472" /&gt;
 
-        </form>
+</iframe></div>
+<div class="row buttons"><input class="btn-green-large" id="ibempFormSubmit" name="submit" type="submit" value="LOAD 62.63 EUR">
+</div>
 
-
-        </div>
+</form></div><p></p>
+<center>By clicking on "LOAD ...", I accept <a href="https://www.empcorp.com/legal-terms" target="_blank">Terms &amp; Conditions</a> of EMPCORP</center>
+</div>
 
     </div>
 </div>

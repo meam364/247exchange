@@ -1,0 +1,38 @@
+.hover-info {
+    position: absolute;
+    display: none;
+    right: -7px;
+    bottom: 100%;
+    padding: 26px;
+    margin-bottom: 8px;
+    background: #fff;
+    border: #e4e4e4 1px solid;
+    border-radius: 5px;
+    z-index: 9999;
+    box-shadow: 0 5px 27px 0 rgba(0,0,0,0.47);
+    color: #777777;
+    font-size: 11px;
+    line-height: 13px;
+}
+div:hover > .hover-info {
+    display: block;
+}
+.hover-info strong {
+    display: block;
+    color: #040404;
+    font-size: 14px;
+    line-height: 22px;
+}
+.hover-info:after {
+    content: "";
+    position: absolute;
+    right: 38px;
+    bottom: -7px;
+    width: 25px;
+    height: 8px;
+    background: url("../images/arrow-hint.png") no-repeat;
+}
+.hover-info img {
+    display: block;
+    margin-bottom: 13px;
+}
