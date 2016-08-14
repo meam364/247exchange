@@ -22,7 +22,30 @@
     </div>
     <div class="container">
         <div class="main">
-          <a href="#" class="show-more">Показать еще <span>10 новостей</span> из <span>350</span></a>
+            <div style="float: left;">
+                <div class="step-form" style="float: left; margin-bottom: 10px;">
+                    <div class="green-form change-form">
+                        <form enctype="multipart/form-data" id="yw0" action="/member/verification/one?module=photo" method="post">
+                            <div style="display:none">
+                                <input type="hidden" value="1" name="yform_e4f2b6fe" id="yform_e4f2b6fe">
+                            </div>
+                            <div class="row field_photo">
+                                <label for="VerificationPhoto_photo">Selfie or Photo</label>
+                                <input id="ytVerificationPhoto_photo" type="hidden" value="" name="VerificationPhoto[photo]">
+                                <div class="fileform">
+                                    <div class="selectbutton">Select File</div>
+                                    <div class="fileformlabel">No file selected</div>
+                                    <input name="VerificationPhoto[photo]" id="VerificationPhoto_photo" type="file">
+                                </div>
+                            </div>
+                            <div class="row buttons">
+                                <input name="submit" type="submit" value="Submit">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="show-more">Показать еще <span>10 новостей</span> из <span>350</span></a>
             <div class="promo-block">
                 <div class="promo-block-inner"><a class="btn-green btn-rounded lnk-right" href="/service/instabill/paymentDetails/print?id=13377" target="_blank"> printable version</a>
                     <h3 class="heading green">PAYMENT INFORMATION</h3>
