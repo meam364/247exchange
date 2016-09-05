@@ -34,6 +34,7 @@ var jelect = $('.js-jelect'),
 
 jelect.on( 'change', function (e) {
     current[0].className = 'choose-lang-mob__current js-jelect-current choose-lang-mob__current-' + this.value;
+    current[1].className = 'choose-lang-mob__current js-jelect-current choose-lang-mob__current-' + this.value;
 });
 $('#full-view').on('click', function(e) {
         e.preventDefault();

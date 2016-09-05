@@ -1,7 +1,7 @@
 .btn-green-large,
 .btn-grey-large {
     vertical-align: middle;
-    text-decoration: none;
+    text-decoration: none !important;
     padding: 15px 24px;
     height: 54px;
     border: none;
@@ -12,7 +12,7 @@
     line-height: 24px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #fff;
+    color: #fff !important;
     z-index: 1;
     box-sizing: border-box!important;
 }
