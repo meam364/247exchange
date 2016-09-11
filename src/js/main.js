@@ -29,6 +29,11 @@ $('.btn-collapse-more').on('click', function() {
     isMore = !isMore;
 })
 
+$('.page_show_popup').css({marginTop: getPopupHeight()});
+
+ function getPopupHeight() {
+    return $('.popup-block').outerHeight();
+ }
 var jelect = $('.js-jelect'),
     current = $('.js-jelect-current');
 
