@@ -31,6 +31,11 @@ $('.btn-collapse-more').on('click', function() {
 
 $('.page_show_popup').css({marginTop: getPopupHeight()});
 
+$('.popup-block__close').on('click', function(e) {
+    e.preventDefault();
+    $('.popup-block').hide();
+    $('.page_show_popup').css({marginTop: 0});
+})
  function getPopupHeight() {
     return $('.popup-block').outerHeight();
  }
