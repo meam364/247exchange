@@ -1,3 +1,9 @@
+.messagesHistoryRow {
+    @media (max-width: 950px) {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
 .greybg-greenborder-block {
     position: relative;
     padding: 18px 20px;
