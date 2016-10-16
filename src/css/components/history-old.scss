@@ -1,7 +1,9 @@
 .messagesHistoryRow {
     @media (max-width: 950px) {
         width: 100%;
-        margin: 0 auto;
+        float: none;
+        max-width: 630px;
+        margin: 32px auto 0;
     }
 }
 .greybg-greenborder-block {

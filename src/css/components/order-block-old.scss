@@ -1,0 +1,8 @@
+.order-block {
+    @media(max-width: 950px) {
+        float: none;
+        width: 100%;
+        max-width: 630px;
+        margin: 0 auto;
+    }
+}
